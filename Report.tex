@@ -344,11 +344,22 @@ This model does not take failures into account. We can extend it to protect it f
 The \textit{Proposer} and the \textit{Learner}, that are single machines with a central role in the algorithm, have a backup machine that requests from them a heartbeat periodically. The Proposer's backup also retrieves the queue of requests (it does not add much overhead on the network, since the requests are lightweight objects). If the main machine fails, the backup steps in and the original machine, if it manages to restart itself, assumes the role of backup.\\
 Periodically, the \textit{Acceptor} machines send a heartbeat to the Proposer and to the Learner. If one of the Acceptors crashes, then it can not send it anymore; after K consecutive missed heartbeats (in order to allow for network hiccups), the Proposer and the Learner decrement the NumberOfAcceptors variable; the Writing requests that arrive after this adjustment can still be executed by the remaining machines. This helps to guarantee the availability of the service.\\
 
+\clearpage
+\section{Programming Task}
 
+\subsection{High-Level Design Decisions, Modularity, Fault-Tolerance}
 
+\subsection{Question 1} 
 
- 
-
+\textit{Describe your overall implementation of the CustomerTransactionManager and the ItemDataManager interfaces. \\
+Overview of your code:\\}
+~\\
+The interface \verb|CustomerTransactionManager| is implemented in the class \verb|CustomerTransactionsHandler|.\\
+When we create an instance of the class, we fix the number of \verb|ItemDataManager|s and the set of registered customers.\\
+The \verb|ItemDataManager|s associated with this \verb|CustomerTransactionsHandler| are stored in a List.\\
+The customers are stored in a ConcurrentHashMap, where the key is the customer ID that has been extracted with \verb|customer.getCustomerId()|. \\
+The ConcurrentHashMap allows for concurrent reading access, and this is necessary for the concurrency of \verb|getTotalsForRegions| invocations. Moreover, having a HashMap simplifies the class code (accessing elements, etc.).  \\
+~\\
 
 
 
