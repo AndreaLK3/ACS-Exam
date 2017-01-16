@@ -7,11 +7,11 @@ import com.acertaininventorymanager.interfaces.ItemDataManager;
 import com.acertaininventorymanager.utils.InexistentItemPurchaseException;
 import com.acertaininventorymanager.utils.InventoryManagerException;
 
-public class ItemDataService implements ItemDataManager {
+public class ItemDataHandler implements ItemDataManager {
 
-	List<ItemPurchase> listOfItemPurchases = new ArrayList<ItemPurchase>();
+	private List<ItemPurchase> listOfItemPurchases = new ArrayList<ItemPurchase>();
 	
-	public ItemDataService() {
+	public ItemDataHandler() {
 		
 	}
 
