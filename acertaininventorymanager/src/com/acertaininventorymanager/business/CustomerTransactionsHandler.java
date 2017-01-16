@@ -13,7 +13,7 @@ import com.acertaininventorymanager.utils.InexistentCustomerException;
 import com.acertaininventorymanager.utils.InventoryManagerException;
 import com.acertaininventorymanager.utils.NonPositiveIntegerException;
 
-public class CustomerTransactionsService implements CustomerTransactionManager {
+public class CustomerTransactionsHandler implements CustomerTransactionManager {
 
 	ConcurrentHashMap<Integer,Customer> customers = new ConcurrentHashMap<>();
 	int numOfItemDataManagers;
@@ -22,11 +22,12 @@ public class CustomerTransactionsService implements CustomerTransactionManager {
 	
 	/**The constructor.
 	 * @param  numOfItemDataManagers*/
-	public CustomerTransactionsService(int numOfItemDataManagers) {
+	public CustomerTransactionsHandler(int numOfItemDataManagers, Set<Customer> startingCustomers) {
 		this.numOfItemDataManagers = numOfItemDataManagers;
 		for (int i=1; i<=numOfItemDataManagers; i++){
 			IDMs.add(new ItemDataService());
 		}
+		addCustomers(startingCustomers);
 	}
 	
 	
@@ -36,7 +37,7 @@ public class CustomerTransactionsService implements CustomerTransactionManager {
  *  - update the total value spent by each customer
  * */
 	@Override
-	public void processOrders(Set<ItemPurchase> itemPurchases)
+	public synchronized void processOrders(Set<ItemPurchase> itemPurchases)
 			throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
 
 		for (ItemPurchase itP : itemPurchases){
@@ -64,7 +65,7 @@ public class CustomerTransactionsService implements CustomerTransactionManager {
 		if (! isPositiveInteger(itemPurchase.getCustomerId()) )
 				throw new NonPositiveIntegerException();
 		
-		if (! (customers.containsValue(itemPurchase.getCustomerId())))
+		if (! (customers.containsKey(itemPurchase.getCustomerId())))
 			throw new InexistentCustomerException();
 		
 		if (! isPositiveInteger(itemPurchase.getQuantity()) )
@@ -160,6 +161,15 @@ public class CustomerTransactionsService implements CustomerTransactionManager {
 				throw new EmptyRegionException();
 		}
 		
+	}
+	
+	/**Helper function: adds new customers to the CTM.**/
+	public void addCustomers(Set<Customer> newCustomers){
+		for (Customer c : newCustomers){
+			int key = c.getCustomerId();
+			Customer value = c;
+			customers.put(key, value);
+		}
 	}
 
 }

@@ -16,13 +16,13 @@ public class ItemDataService implements ItemDataManager {
 	}
 
 	@Override
-	public void addItemPurchase(ItemPurchase itemPurchase) throws InventoryManagerException {
+	public synchronized void addItemPurchase(ItemPurchase itemPurchase) throws InventoryManagerException {
 		listOfItemPurchases.add(itemPurchase);
 
 	}
 
 	@Override
-	public void removeItemPurchase(int orderId, int customerId, int itemId)
+	public synchronized void removeItemPurchase(int orderId, int customerId, int itemId)
 			throws InexistentItemPurchaseException, InventoryManagerException {
 		ItemPurchase itemPurchase = findItemPurchase(orderId, customerId, itemId);
 		if (itemPurchase==null){
@@ -38,7 +38,7 @@ public class ItemDataService implements ItemDataManager {
 	/**Searches an ItemPurchase in this ItemDataManager. If the element is not found, it returns null 
 	 * (the higher layer may throw an exception).
 	 * **/
-	private ItemPurchase findItemPurchase(int orderId, int customerId, int itemId){
+	public ItemPurchase findItemPurchase(int orderId, int customerId, int itemId){
 		ItemPurchase foundItemPurchase = null;
 		
 		for (ItemPurchase itemPur : listOfItemPurchases){
