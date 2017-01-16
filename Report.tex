@@ -356,13 +356,15 @@ Overview of your code:\\}
 ~\\
 The interface \verb|CustomerTransactionManager| is implemented in the class \verb|CustomerTransactionsHandler|.\\
 When we create an instance of the class, we fix the number of \verb|ItemDataManager|s and the set of registered customers.\\
-The \verb|ItemDataManager|s associated with this \verb|CustomerTransactionsHandler| are stored in a List.\\
-The customers are stored in a ConcurrentHashMap, where the key is the customer ID that has been extracted with \verb|customer.getCustomerId()|. \\
-The ConcurrentHashMap allows for concurrent reading access, and this is necessary for the concurrency of \verb|getTotalsForRegions| invocations. Moreover, having a HashMap simplifies the class code (accessing elements, etc.).  \\
+The customers are stored in a ConcurrentHashMap, where the key is the customer ID. \\
+In the same way, another ConcurrentHashMap stores the \verb|ItemDataManager|s associated with this \verb|CustomerTransactionsHandler|.\\
 ~\\
-
-
-
+The class \verb|ItemDataHandler| implements the interface \verb|ItemDataManager|. It represents a single ItemDataManager.\\
+A private \verb|List<ItemPurchase>| contains the item purchases associated with this instance.\\
+~\\
+\textit{What RPC semantics are implemented between clients and the \verb|CustomerTransactionManager|? What about between the
+\verb|CustomerTransactionManager| and the \verb|ItemDataManager|? Explain.
+}
 
 
 

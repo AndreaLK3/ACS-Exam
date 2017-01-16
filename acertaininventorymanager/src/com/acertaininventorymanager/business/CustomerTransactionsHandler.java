@@ -17,7 +17,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 
 	ConcurrentHashMap<Integer,Customer> customers = new ConcurrentHashMap<>();
 	int numOfItemDataManagers;
-	List<ItemDataManager> IDMs = new ArrayList<>();
+	ConcurrentHashMap<Integer, ItemDataManager> IDMs = new ConcurrentHashMap<>();
 	
 	
 	/**The constructor.
@@ -25,7 +25,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	public CustomerTransactionsHandler(int numOfItemDataManagers, Set<Customer> startingCustomers) {
 		this.numOfItemDataManagers = numOfItemDataManagers;
 		for (int i=1; i<=numOfItemDataManagers; i++){
-			IDMs.add(new ItemDataService());
+			IDMs.put(i, new ItemDataHandler());
 		}
 		addCustomers(startingCustomers);
 	}
