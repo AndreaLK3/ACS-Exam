@@ -139,7 +139,7 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 		InventoryResponse invResponse = new InventoryResponse();
 
 		try {
-			myInvManager.getTotalsForRegions(regionIDs);
+			invResponse.setList(myInvManager.getTotalsForRegions(regionIDs));
 		} catch (InventoryManagerException ex) {
 			invResponse.setException(ex);
 		}
