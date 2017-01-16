@@ -28,6 +28,9 @@ public class ItemDataService implements ItemDataManager {
 		if (itemPurchase==null){
 			throw new InexistentItemPurchaseException();
 		}
+		else {
+			listOfItemPurchases.remove(itemPurchase);
+		}
 		
 
 	}
