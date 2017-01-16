@@ -12,7 +12,7 @@ public class ItemDataService implements ItemDataManager {
 	List<ItemPurchase> listOfItemPurchases = new ArrayList<ItemPurchase>();
 	
 	public ItemDataService() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Override

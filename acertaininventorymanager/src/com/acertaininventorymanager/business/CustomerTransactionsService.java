@@ -25,7 +25,7 @@ public class CustomerTransactionsService implements CustomerTransactionManager {
 	public CustomerTransactionsService(int numOfItemDataManagers) {
 		this.numOfItemDataManagers = numOfItemDataManagers;
 		for (int i=1; i<=numOfItemDataManagers; i++){
-			// add empty IDMs;
+			IDMs.add(new ItemDataService());
 		}
 	}
 	
