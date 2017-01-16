@@ -32,11 +32,10 @@ public class CTMbasicTests {
 	public final static Set<Integer> REGIONS = new HashSet<Integer>(Arrays.asList(1, 2, 3));
 	public final static int RANDOMINT_BOUND = 1000;
 	
-	Random randGen = new Random();
+	public static Random randGen = new Random();
 	
 	private CustomerTransactionManager ctm;
 	Set<Customer> customers;
-	private boolean localTest = true;
 
 
 	/**Initialization before every test: 
@@ -54,7 +53,7 @@ public class CTMbasicTests {
 
 	/**Helper function: creates a set of customers, with cID in [0,999] and 
 	 * belonging to one region chosen at random.*/
-	private Set<Customer> createSetOfCustomers(){
+	public static Set<Customer> createSetOfCustomers(){
 		Set<Customer> setOfCustomers = new HashSet<>();
 		
 		for (int i=1; i<=NUM_OF_CUSTOMERS; i++){

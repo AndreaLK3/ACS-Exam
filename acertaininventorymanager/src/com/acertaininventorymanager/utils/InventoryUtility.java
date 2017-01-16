@@ -114,7 +114,6 @@ public final class InventoryUtility {
 	 *            the string
 	 * @return the integer
 	 * @throws InventoryManagerException
-	 *             the book store exception
 	 */
 	public static int convertStringToInt(String str) throws InventoryManagerException {
 		int returnValue = 0;
@@ -133,7 +132,7 @@ public final class InventoryUtility {
 	 *
 	 * @param requestURI
 	 *            the request URI
-	 * @return the book store message tag
+	 * @return the message tag
 	 */
 	public static InventoryMessageTag convertURItoMessageTag(String requestURI) {
 
@@ -153,7 +152,7 @@ public final class InventoryUtility {
 	 *
 	 * @param client
 	 *            the client
-	 * @param bookStoreRequest
+	 * @param inventoryRequest
 	 *            the book store request
 	 * @param serializer
 	 *            the serializer
@@ -161,20 +160,20 @@ public final class InventoryUtility {
 	 * @throws InventoryManagerException
 	 *             the book store exception
 	 */
-	public static InventoryResponse performHttpExchange(HttpClient client, InventoryRequest bookStoreRequest,
+	public static InventoryResponse performHttpExchange(HttpClient client, InventoryRequest inventoryRequest,
 			InventorySerializer serializer) throws InventoryManagerException {
 		Request request;
 
-		switch (bookStoreRequest.getMethod()) {
+		switch (inventoryRequest.getMethod()) {
 		case GET:
-			request = client.newRequest(bookStoreRequest.getURLString()).method(HttpMethod.GET);
+			request = client.newRequest(inventoryRequest.getURLString()).method(HttpMethod.GET);
 			break;
 
 		case POST:
 			try {
-				byte[] serializedValue = serializer.serialize(bookStoreRequest.getInputValue());
+				byte[] serializedValue = serializer.serialize(inventoryRequest.getInputValue());
 				ContentProvider contentProvider = new BytesContentProvider(serializedValue);
-				request = client.POST(bookStoreRequest.getURLString()).content(contentProvider);
+				request = client.POST(inventoryRequest.getURLString()).content(contentProvider);
 			} catch (IOException ex) {
 				throw new InventoryManagerException("Serialization error", ex);
 			}
@@ -197,20 +196,20 @@ public final class InventoryUtility {
 			throw new InventoryManagerException(InvManagerClientConstants.STR_ERR_CLIENT_REQUEST_EXCEPTION, ex);
 		}
 
-		InventoryResponse bookStoreResponse;
+		InventoryResponse invResponse;
 
 		try {
-			bookStoreResponse = (InventoryResponse) serializer.deserialize(response.getContent());
+			invResponse = (InventoryResponse) serializer.deserialize(response.getContent());
 		} catch (IOException ex) {
 			throw new InventoryManagerException("Deserialization error", ex);
 		}
 
-		InventoryManagerException exception = bookStoreResponse.getException();
+		InventoryManagerException exception = invResponse.getException();
 
 		if (exception != null) {
 			throw exception;
 		}
 
-		return bookStoreResponse;
+		return invResponse;
 	}
 }

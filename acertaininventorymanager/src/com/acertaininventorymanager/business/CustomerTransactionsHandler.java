@@ -165,12 +165,17 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	}
 	
 	/**Helper function: adds new customers to the CTM.**/
-	public void addCustomers(Set<Customer> newCustomers){
+	public synchronized void addCustomers(Set<Customer> newCustomers){
 		for (Customer c : newCustomers){
 			int key = c.getCustomerId();
 			Customer value = c;
 			customers.put(key, value);
 		}
+	}
+	
+	/**This function eliminates all customers from the CTM. Used for testing purposes.**/
+	public synchronized void removeAllCustomers(){
+		customers = new ConcurrentHashMap<>();
 	}
 
 }

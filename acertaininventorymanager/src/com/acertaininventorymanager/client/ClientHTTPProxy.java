@@ -8,6 +8,9 @@ import org.eclipse.jetty.util.thread.QueuedThreadPool;
 
 import com.acertaininventorymanager.utils.InventoryKryoSerializer;
 import com.acertaininventorymanager.utils.InventoryXStreamSerializer;
+import com.acertaininventorymanager.utils.InventoryUtility;
+import com.acertaininventorymanager.utils.InventoryResult;
+import com.acertaininventorymanager.business.Customer;
 import com.acertaininventorymanager.business.ItemPurchase;
 import com.acertaininventorymanager.business.RegionTotal;
 import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
@@ -94,12 +97,12 @@ public class ClientHTTPProxy implements CustomerTransactionManager {
 	 * @see com.acertaininventorymanager.interfaces.StockManager#getBooks()
 	 
 	@SuppressWarnings("unchecked")
-	public List<StockBook> getBooks() throws BookStoreException {
+	public List<StockBook> getBooks() throws InventoryException {
 		String urlString = serverAddress + "/" + InventoryMessageTag.LISTBOOKS;
-		InventoryRequest bookStoreRequest = InventoryRequest.newGetRequest(urlString);
-		BookStoreResponse bookStoreResponse = InventoryUtility.performHttpExchange(client, bookStoreRequest,
+		InventoryRequest invRequest = InventoryRequest.newGetRequest(urlString);
+		InventoryResponse invResponse = InventoryUtility.performHttpExchange(client, invRequest,
 				serializer.get());
-		return (List<StockBook>) bookStoreResponse.getList();
+		return (List<StockBook>) invResponse.getList();
 	}
 
 	
@@ -109,10 +112,10 @@ public class ClientHTTPProxy implements CustomerTransactionManager {
 	 * com.acertaininventorymanager.interfaces.StockManager#updateEditorPicks(java.util
 	 * .Set)
 	 
-	public void updateEditorPicks(Set<BookEditorPick> editorPicksValues) throws BookStoreException {
+	public void updateEditorPicks(Set<BookEditorPick> editorPicksValues) throws InventoryException {
 		String urlString = serverAddress + "/" + InventoryMessageTag.UPDATEEDITORPICKS + "?";
-		InventoryRequest bookStoreRequest = InventoryRequest.newPostRequest(urlString, editorPicksValues);
-		InventoryUtility.performHttpExchange(client, bookStoreRequest, serializer.get());
+		InventoryRequest invRequest = InventoryRequest.newPostRequest(urlString, editorPicksValues);
+		InventoryUtility.performHttpExchange(client, invRequest, serializer.get());
 	}
 
 */
@@ -134,7 +137,7 @@ public class ClientHTTPProxy implements CustomerTransactionManager {
 		String urlString = serverAddress + "/" + InventoryMessageTag.PROCESSORDERS;
 		InventoryRequest invReq = InventoryRequest.newPostRequest(urlString, itemPurchases);
 		InventoryUtility.performHttpExchange(client, invReq, serializer.get());
-		
+		return;
 	}
 
 	@Override
@@ -142,9 +145,32 @@ public class ClientHTTPProxy implements CustomerTransactionManager {
 			throws NonPositiveIntegerException, EmptyRegionException, InventoryManagerException {
 
 		String urlString = serverAddress + "/" + InventoryMessageTag.GETREGIONTOTALS;
-		InventoryRequest invRequest = InventoryRequest.newGetRequest(urlString);
+		InventoryRequest invRequest = InventoryRequest.newPostRequest(urlString, regionIds);
 		InventoryResponse invResponse = InventoryUtility.performHttpExchange(client, invRequest,
 				serializer.get());
 		return (List<RegionTotal>) invResponse.getList();
+	}
+	
+	
+	public void addCustomers(Set<Customer> customers)
+			throws NonPositiveIntegerException, EmptyRegionException, InventoryManagerException {
+
+		String urlString = serverAddress + "/" + InventoryMessageTag.ADDCUSTOMERS;
+		InventoryRequest invRequest = InventoryRequest.newPostRequest(urlString, customers);
+		InventoryUtility.performHttpExchange(client, invRequest,
+				serializer.get());
+		return;
+	}
+	
+	
+	public void removeAllCustomers()
+			throws NonPositiveIntegerException, EmptyRegionException, InventoryManagerException {
+
+		String urlString = serverAddress + "/" + InventoryMessageTag.CLEARCUSTOMERS;
+		// Creating zero-length buffer for POST request body, because we don't
+		// need to send any data; this request is just a signal to remove all
+		// customers.
+		InventoryRequest invRequest = InventoryRequest.newPostRequest(urlString, "");
+		InventoryResponse invResponse = InventoryUtility.performHttpExchange(client, invRequest, serializer.get());
 	}
 }

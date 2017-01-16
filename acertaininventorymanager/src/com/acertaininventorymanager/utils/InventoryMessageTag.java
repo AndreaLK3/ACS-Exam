@@ -10,6 +10,12 @@ public enum InventoryMessageTag {
 	PROCESSORDERS,
 	
 	/** The tag for the "get regions' totals" message. */
-	GETREGIONTOTALS
+	GETREGIONTOTALS, 
+	
+	/** The tag for the "add customers' totals" message. */
+	ADDCUSTOMERS,
+	
+	/** The tag for the "eliminate all customers' totals" message. */
+	CLEARCUSTOMERS
 
 }

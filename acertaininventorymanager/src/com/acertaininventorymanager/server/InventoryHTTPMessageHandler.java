@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
+import com.acertaininventorymanager.business.Customer;
+import com.acertaininventorymanager.business.CustomerTransactionsHandler;
 import com.acertaininventorymanager.business.ItemPurchase;
 import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
 import com.acertaininventorymanager.interfaces.InventorySerializer;
@@ -35,7 +37,7 @@ import com.esotericsoftware.kryo.io.Input;
  */
 public class InventoryHTTPMessageHandler extends AbstractHandler {
 	/** The inventory manager. */
-	private CustomerTransactionManager myInvManager = null;
+	private CustomerTransactionsHandler myInvManager = null;
 
 	/** The serializer. */
 	private static ThreadLocal<InventorySerializer> serializer;
@@ -46,7 +48,7 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 	 * @param bookStore
 	 *            the book store
 	 */
-	public InventoryHTTPMessageHandler(CustomerTransactionManager invManager) {
+	public InventoryHTTPMessageHandler(CustomerTransactionsHandler invManager) {
 		myInvManager = invManager;
 
 		// Setup the type of serializer.
@@ -93,6 +95,14 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 			case GETREGIONTOTALS:
 				getRegionTotals(request, response);
 				break;
+				
+			case ADDCUSTOMERS:
+				addCustomers(request,response);
+				break;
+				
+			case CLEARCUSTOMERS:
+				removeAllCustomers(request,response);
+				break;
 
 			default:
 				System.err.println("Unsupported message tag.");
@@ -136,6 +146,31 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 
 		byte[] serializedResponseContent = serializer.get().serialize(invResponse);
 		response.getOutputStream().write(serializedResponseContent);
+	}
+
+	private void addCustomers(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		byte[] serializedRequestContent = getSerializedRequestContent(request);
+
+		Set<Customer> theCustomers = (Set<Customer>) serializer.get().deserialize(serializedRequestContent);
+		InventoryResponse invResponse = new InventoryResponse();
+
+		myInvManager.addCustomers(theCustomers);
+		
+		byte[] serializedResponseContent = serializer.get().serialize(invResponse);
+		response.getOutputStream().write(serializedResponseContent);
+		
+	}
+
+
+
+	private void removeAllCustomers(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		
+		myInvManager.removeAllCustomers();
+		
+		InventoryResponse invResponse = new InventoryResponse();
+		byte[] serializedResponseContent = serializer.get().serialize(invResponse);
+		response.getOutputStream().write(serializedResponseContent);
+		
 	}
 	
 	/*
