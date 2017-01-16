@@ -86,7 +86,24 @@ public class ItemPurchase {
 		return unitPrice;
 	}
 
-	// TODO: include here code for hashCode and equals as required by your
-	// implementation. Note that an item purchase is identified by the
-	// combination of orderId, customerId, and itemId
+	@Override
+	public boolean equals(Object obj){
+		if (! (obj instanceof ItemPurchase) ){
+			return false;
+		}
+		ItemPurchase p2 = (ItemPurchase)obj;
+		if (this.orderId == p2.getOrderId() &&
+			this.customerId == p2.getCustomerId() &&
+			this.itemId == p2.getItemId() ){
+				return true;
+		} else{
+			return false;
+		}
+	}
+	
+	@Override
+	public int hashCode(){
+		return (this.orderId + 2*this.customerId + this.itemId % 2);
+	}
+	
 }

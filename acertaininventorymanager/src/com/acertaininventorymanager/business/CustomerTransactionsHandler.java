@@ -24,7 +24,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	 * @param  numOfItemDataManagers*/
 	public CustomerTransactionsHandler(int numOfItemDataManagers, Set<Customer> startingCustomers) {
 		this.numOfItemDataManagers = numOfItemDataManagers;
-		for (int i=1; i<=numOfItemDataManagers; i++){
+		for (int i=0; i<numOfItemDataManagers; i++){
 			IDMs.put(i, new ItemDataHandler());
 		}
 		addCustomers(startingCustomers);
@@ -56,7 +56,8 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 
 	}
 
-	private void validateItemPurchase(ItemPurchase itemPurchase)
+	//TODO: add read/write locks on the CTH
+	private synchronized void validateItemPurchase(ItemPurchase itemPurchase)
 			throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
 
 		if (! isPositiveInteger(itemPurchase.getOrderId()) )

@@ -29,7 +29,7 @@ public class CTMbasicTests {
 	public final static int NUM_OF_IDM=5;
 	public final static int NUM_OF_CUSTOMERS = 20;
 	public final static int ITEMS_PER_CUSTOMER = 10;
-	public final static Set<Integer> REGIONS = new HashSet<Integer>(Arrays.asList(0, 1, 2, 3));
+	public final static Set<Integer> REGIONS = new HashSet<Integer>(Arrays.asList(1, 2, 3));
 	public final static int RANDOMINT_BOUND = 1000;
 	
 	Random randGen = new Random();
@@ -58,8 +58,8 @@ public class CTMbasicTests {
 		Set<Customer> setOfCustomers = new HashSet<>();
 		
 		for (int i=1; i<=NUM_OF_CUSTOMERS; i++){
-			int cId = randGen.nextInt(1000);
-			int cReg = randGen.nextInt(REGIONS.size());
+			int cId = randGen.nextInt(1000)+1;
+			int cReg = randGen.nextInt(REGIONS.size())+1;
 			Customer c = new Customer(cId, cReg);
 			setOfCustomers.add(c);
 		}

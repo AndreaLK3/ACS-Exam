@@ -63,6 +63,24 @@ public class Customer {
 		this.valueBought = valueBought;
 	}
 	
-	// TODO: include here code for hashCode and equals as required by your
-	// implementation. Note that a customer is identified by the customerId
+
+	@Override
+	public boolean equals(Object obj){
+		if (! (obj instanceof Customer) ){
+			return false;
+		}
+		Customer c2 = (Customer)obj;
+		if (this.customerId == c2.getCustomerId()){
+			return true;
+		} else{
+			return false;
+		}
+	}
+	
+	
+	@Override
+	public int hashCode(){
+		return this.customerId;
+	}
+	
 }
