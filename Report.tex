@@ -416,6 +416,54 @@ As a commit protocol, we could use 2PhaseCommit: in Phase 1, the Supervisor asks
 
 \subsection{Question 2}
 
+\textit{Each instance of the }ItemDataManager\textit{ interface executes
+concurrent addition and removal of item purchases. Describe how you ensured before-or-after atomicity
+of these operations. In particular, mention the following aspects in your answer:}\\
+\textit{- Which method did you use for ensuring serializability at each }ItemDataManager\textit{ instance?}\\
+\textit{Describe your method at a high level.}\\
+\textit{- Argue for the correctness of your method; to do so, show how your method is logically equivalent
+to a trivial solution based on a single global lock or to a well-known locking protocol, e.g., a
+variant of two-phase locking.\\
+- Argue for the performance of your method; to do so, explain your assumptions about the
+workload the service is exposed to and why you believe other alternatives you considered, e.g.,
+different granularities of locking, would be better or worse than your choice.\\}
+NOTE:\textit{ The method you design for atomicity does not need to be complex, as long as you argue
+convincingly for its correctness, its trade-off in complexity of implementation and performance, and how
+it fits in the system as a whole.}\\
+~\\
+To ensure before-or-after atomicity in the ItemDataManager operations, I simply used a global lock: a shared lock for reading operations (in the utility function \verb|findItemPurchase(...)|), an exclusive lock for writing operations (\verb|addItemPurchase|, \verb!removeItemPurchase!).\\ More accurately, the lock encloses the operations on the List<ItemPurchase>.\\
+The lock is implemented in the class \verb|GlobalReadWriteLock(...)|), and it is based on a counter.\\
+With a shared lock active, \verb!counter!>0. With an exclusive lock active, \verb!counter!==-1. The threads are handled with wait() and notifyAll().\\
+~\\
+The actions performed by \verb|addItemPurchase| and \verb|removeItemPurchase| add or remove an element from the List. \\
+In order to do this without creating inconsistencies, the List must be locked in the meanwhile. (If an operation "updateItemPurchase" existed, working on one element, I would have used an element-wise granularity).\\
+The reading lock in \verb|findItemPurchase| ensures that the list can not be modified while we are looking for an element.\\
+~\\
+\clearpage
+
+\subsection{Question 3}
+
+\textit{The }CustomerTransactionManager\textit{ service executes
+operations originated at multiple clients. Describe how you ensured before-or-after atomicity of these
+operations. In particular, mention the following aspects in your answer:}\\
+\textit{ - Which method did you use for ensuring serializability at the}
+CustomerTransactionManager \textit{service (e.g., locking vs. optimistic approach)? Describe
+your method at a high level.\\
+ - Argue for the correctness of your method; to do so, show how your method is logically equivalent
+to a trivial solution based on a single global lock or to a well-known locking protocol, e.g., a
+variant of two-phase locking.\\
+ - Argue for whether or not you need to consider the issue of reads on predicates vs. multigranularity
+locking in your implementation, and explain why.\\
+ - Argue for the performance of your method; to do so, explain your assumptions about the
+workload the service is exposed to and why you believe other alternatives you considered (e.g.,
+locking vs. optimistic approach) would be better or worse than your choice.\\
+NOTE: The method you design for atomicity does not need to be complex, as long as you argue
+convincingly for its correctness, its trade-off in complexity of implementation and performance, and how
+it fits in the system as a whole. However, note that an implementation that provides more concurrency
+will be valued higher than one providing less.\\}
+~\\
+
+
 
 
 \end{document}

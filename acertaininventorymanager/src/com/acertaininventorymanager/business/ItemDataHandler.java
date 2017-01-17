@@ -11,14 +11,21 @@ import com.acertaininventorymanager.utils.InventoryManagerException;
 public class ItemDataHandler implements ItemDataManager {
 
 	private List<ItemPurchase> listOfItemPurchases = new ArrayList<ItemPurchase>();
+	private GlobalReadWriteLock lockManager = new GlobalReadWriteLock();
 	
 	public ItemDataHandler() {
 	}
 
 	@Override
 	public synchronized void addItemPurchase(ItemPurchase itemPurchase) throws InventoryManagerException {
+		try {
+			lockManager.writeLock();
+			listOfItemPurchases.add(itemPurchase);
+			lockManager.releaseWriteLock();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
-		listOfItemPurchases.add(itemPurchase);
 
 	}
 
@@ -31,7 +38,14 @@ public class ItemDataHandler implements ItemDataManager {
 			throw new InexistentItemPurchaseException();
 		}
 		else {
-			listOfItemPurchases.remove(itemPurchase);
+			try {
+				lockManager.writeLock();
+				listOfItemPurchases.remove(itemPurchase);
+				lockManager.releaseWriteLock();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
 		}
 		
 
@@ -42,15 +56,29 @@ public class ItemDataHandler implements ItemDataManager {
 	 * **/
 	public ItemPurchase findItemPurchase(int orderId, int customerId, int itemId){
 		ItemPurchase foundItemPurchase = null;
-		
-		for (ItemPurchase itemPur : listOfItemPurchases){
-			if (itemPur.getOrderId() == orderId &&
-				itemPur.getCustomerId() == customerId && 
-				itemPur.getItemId() == itemId) {
-					foundItemPurchase = itemPur;
+		try {
+			lockManager.readLock();
+			
+			for (ItemPurchase itemPur : listOfItemPurchases){
+				if (itemPur.getOrderId() == orderId &&
+					itemPur.getCustomerId() == customerId && 
+					itemPur.getItemId() == itemId) {
+						foundItemPurchase = itemPur;
+				}
 			}
+			lockManager.releaseReadLock();
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
+		
 		return foundItemPurchase;
+	}
+
+	/**Only for testing purposes: 
+	 * Getter method to check the list of purchases registered in this IDM.*/
+	public List<ItemPurchase> getListOfItemPurchases() {
+		return listOfItemPurchases;
 	}
 	
 }

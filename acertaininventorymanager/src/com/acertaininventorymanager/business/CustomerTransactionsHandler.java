@@ -217,4 +217,27 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 		failingIDM.setServerAddress(InvManagerClientConstants.ADDRESSPART + (InvManagerClientConstants.DEFAULT_PORT-1));
 	}
 
+
+	/**For testing purposes> allows us to use removeItemPurchase in the IDMs */
+	public void removeOrders(Set<ItemPurchase> itemPurchases) throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
+		for (ItemPurchase itP : itemPurchases){
+			validateItemPurchase(itP);
+		}
+		
+		for (ItemPurchase itP : itemPurchases){
+			int idmNumber = hashingFunction(itP)+1;
+			ItemDataManager theIdm = IDMs.get(idmNumber);
+			int orderID = itP.getOrderId();
+			int customerID = itP.getCustomerId();
+			int itemID = itP.getItemId();			
+			
+			theIdm.removeItemPurchase(orderID, customerID, itemID);
+			
+			Customer theCustomer = customers.get(itP.getCustomerId());
+			long oldTotal = theCustomer.getValueBought();
+			theCustomer.setValueBought(oldTotal - itP.getUnitPrice()*itP.getQuantity());
+		}
+		
+	}
+
 }

@@ -213,7 +213,7 @@ public class RPCtests {
 	}
 	
 	/**Helper function.*/
-	private RegionTotal getRegionTotal(Integer regID, List<RegionTotal> regionTotals){
+	public static RegionTotal getRegionTotal(Integer regID, List<RegionTotal> regionTotals){
 		RegionTotal result = null;
 		for (RegionTotal regTot : regionTotals){
 			if (regTot.getRegionId()==regID)

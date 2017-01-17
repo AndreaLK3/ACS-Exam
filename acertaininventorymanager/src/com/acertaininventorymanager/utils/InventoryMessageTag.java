@@ -8,6 +8,7 @@ public enum InventoryMessageTag {
 
 	/** The tag for the "process orders" message. */
 	PROCESSORDERS,
+	REMOVEORDERS,
 	
 	/** The tag for the "get regions' totals" message. */
 	GETREGIONTOTALS, 
@@ -20,7 +21,6 @@ public enum InventoryMessageTag {
 	
 	/** From CTM to IDMs : The tag for the "add item purchase" message. */
 	ADDPURCHASE,
-	
 	REMOVEPURCHASE, 
 	
 	/** The tag to tell the CTM to make one of its IDMs fail. */
