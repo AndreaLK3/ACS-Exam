@@ -1,5 +1,6 @@
 package com.acertaininventorymanager.client;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
@@ -104,12 +105,12 @@ public class CtmClientHTTPProxy implements ItemDataManager{
 	}
 
 	@Override
-	public void removeItemPurchase(int orderId, int customerId, int itemId)
-			throws InexistentItemPurchaseException, InventoryManagerException {
+	public void removeItemPurchase(int orderId, int customerId, int itemId) throws InventoryManagerException
+			{
 		String urlString = serverAddress + "/" + InventoryMessageTag.REMOVEPURCHASE;
 		int[] paramsArray = {orderId, customerId, itemId};
 		InventoryRequest invReq = InventoryRequest.newPostRequest(urlString, paramsArray);
-		InventoryUtility.performHttpExchange(client, invReq, serializer.get());
+		InventoryResponse invResp = InventoryUtility.performHttpExchange(client, invReq, serializer.get());
 		return;
 		
 	}

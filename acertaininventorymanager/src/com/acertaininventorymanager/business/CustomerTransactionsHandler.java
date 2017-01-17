@@ -59,7 +59,6 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 		for (ItemPurchase itP : itemPurchases){
 			int idmNumber = hashingFunction(itP)+1;
 			ItemDataManager theIdm = IDMs.get(idmNumber);
-			//TODO: remove debug System.out.println(theIdm);
 			theIdm.addItemPurchase(itP);
 			
 			Customer theCustomer = customers.get(itP.getCustomerId());

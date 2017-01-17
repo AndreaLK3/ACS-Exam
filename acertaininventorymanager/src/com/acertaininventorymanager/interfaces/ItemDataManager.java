@@ -1,5 +1,7 @@
 package com.acertaininventorymanager.interfaces;
 
+import java.io.IOException;
+
 import com.acertaininventorymanager.business.Customer;
 import com.acertaininventorymanager.business.ItemPurchase;
 import com.acertaininventorymanager.utils.InexistentItemPurchaseException;
@@ -38,9 +40,9 @@ public interface ItemDataManager {
 	 * @param itemId
 	 *            - the identifier of the item.
 	 * @throws InexistentItemPurchaseException
-	 * @throws InventoryManagerException
+	 * @throws InventoryManagerException 
 	 */
 	public void removeItemPurchase(int orderId, int customerId, int itemId)
-			throws InexistentItemPurchaseException, InventoryManagerException;
+			throws InexistentItemPurchaseException, InventoryManagerException, IOException;
 
 }

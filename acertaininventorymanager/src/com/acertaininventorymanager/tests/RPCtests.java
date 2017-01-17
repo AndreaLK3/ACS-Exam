@@ -182,6 +182,26 @@ public class RPCtests {
 		
 	}
 	
+	/**This negative test checks the validation phase of the CTM.
+	 * If an integer < 0 is given as parameter, the NonPositiveIntegerException should occur.**/
+	@Test
+	public void testProcessInvalidOrders() {
+				
+		Customer aCustomer = customers.stream().findAny().get();
+		ItemPurchase purchase1 = new ItemPurchase(2,-45, 2, 2, 2);
+
+		Set<ItemPurchase> itPurchases = new HashSet<>(Arrays.asList(purchase1));
+		
+		try {
+			ctm.processOrders(itPurchases);
+			fail();
+		} catch (InventoryManagerException e) {
+			assertTrue(e instanceof NonPositiveIntegerException);
+		}
+		
+	}
+	
+	
 	/**Helper function.*/
 	private ItemPurchase createRandomItemPurchase(Customer aCustomer){
 		int cID = aCustomer.getCustomerId();
