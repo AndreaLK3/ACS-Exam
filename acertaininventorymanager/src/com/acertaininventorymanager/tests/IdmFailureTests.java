@@ -23,6 +23,7 @@ import com.acertaininventorymanager.utils.InexistentCustomerException;
 import com.acertaininventorymanager.utils.InventoryManagerException;
 import com.acertaininventorymanager.utils.NonPositiveIntegerException;
 
+//TODO: either find a way to cause timeouts while communicating with IDMs, or remove this entirely.
 public class IdmFailureTests {
 	
 	public final static int NUM_OF_IDM=1;

@@ -390,5 +390,32 @@ CustomerTransactionManager\textit{? Why does your failure containment implementa
 \textit{out to guarantee a fail-soft design for the }CustomerTransactionManager\textit{ with respect to}
 ItemDataManager\textit{ instances?}\\
 ~\\
+The failures we can detect and contain are fail-stop. We assume that when an ItemDataManager fails, the machine stops and any further attempt to communicate with that machine causes a timeout.\\
+We catch the failure in the intermediate layer, in \verb|CtmClientHTTPProxy|. In the remote procedure calls (addItemPurchase and removeItemPurchase), when we execute \verb|performHTTPexchange(...)|, we catch any resulting exception:\\
+if the message of the exception was the one defined in \\
+\textit{InvManagerClientConstants.STR\_ERR\_CLIENT\_REQUEST\_TIMEOUT}, then we do nothing and the execution proceeds as always (apart from the fact that the modification that should have been carried out in that IDM has not been executed). \\
+If the exception had another cause, and the error was something different from fail-stop, we throw the exception again.\\
+This is in accord with the definition of fail-soft: the system continues to work, guaranteeing a subset of its initial specifications. In this case, those items that would be assigned to the failed IDM are lost.\\
+~\\
+\textit{You have implemented the services under the assumption that durability is not provided as a
+property. Consider what would happen if the staff of acertaininventorymanager.com
+decided to migrate the implementation of both the }CustomerTransactionManager\textit{ and 
+the }ItemDataManager\textit{ to utilize a two-level memory with durability provided by a recovery
+protocol such as ARIES at each component. Would there be a need then to implement a commit
+protocol among the several components? Explain why or why not.}\\
+~\\
+Yes, we would need a commit protocol among the IDMs.\\
+We can consider a \textit{processOrders} invocation as a distributed transaction, that acts upon several sites/IDMs. For this transaction, we must guarantee all-or-nothing atomicity. Either all of the itemPurchases are registered in the IDMs, or none is.\\
+If an IDM fails, then the ARIES recovery protocol resumes the normal course of operations, but in doing so it rolls back the transactions (addItemPurchases) that were active and not yet committed.\\
+As a commit protocol, we could use 2PhaseCommit: in Phase 1, the Supervisor asks the sites if the transaction \textit{processOrders} can be committed, and they respond with yes/no. Depending on the outcome of the vote, the Supervisor orders the sites to doCommit/doAbort.\\
+
+
+ \clearpage
+ 
+\subsection{Before-or-After Atomicity}
+
+\subsection{Question 2}
+
+
 
 \end{document}

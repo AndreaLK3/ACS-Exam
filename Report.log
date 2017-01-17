@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  17 JAN 2017 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  17 JAN 2017 16:24
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -864,7 +864,47 @@ r \T1/futs/m/it/10.95 in-stances con-tained at the \T1/futs/m/n/10.95 Cus-tomer
 -Trans-ac-tion-Man-ager\T1/futs/m/it/10.95 ? 
  []
 
-[9 <./RPC.png>] [10] (Report.aux) ) 
+[9 <./RPC.png>]
+Overfull \hbox (16.84166pt too wide) in paragraph at lines 393--393
+[]\T1/futs/m/n/10.95 The fail-ures we can de-tect and con-tain are fail-stop. W
+e as-sume that when an Item-Data-Man-ager 
+ []
+
+
+Overfull \hbox (19.55118pt too wide) in paragraph at lines 394--394
+[]\T1/futs/m/n/10.95 We catch the fail-ure in the in-ter-me-di-ate layer, in []
+\T1/cmtt/m/n/10.95 CtmClientHTTPProxy\T1/futs/m/n/10.95 . In the re-mote pro-ce
+-dure 
+ []
+
+
+Overfull \hbox (33.75871pt too wide) in paragraph at lines 394--394
+\T1/futs/m/n/10.95 calls (ad-dItem-Pur-chase and re-moveIt-em-Pur-chase), when 
+we ex-e-cute []\T1/cmtt/m/n/10.95 performHTTPexchange(...)\T1/futs/m/n/10.95 , 
+
+ []
+
+
+Overfull \hbox (8.47588pt too wide) in paragraph at lines 402--405
+\T1/futs/m/n/10.95 Item-Data-Man-ager \T1/futs/m/it/10.95 to uti-lize a two-lev
+el mem-ory with dura-bil-ity pro-vided by a re-cov-ery pro-to-col 
+ []
+
+
+Overfull \hbox (5.20197pt too wide) in paragraph at lines 402--405
+\T1/futs/m/it/10.95 such as ARIES at each com-po-nent. Would there be a need th
+en to im-ple-ment a com-mit pro-to-col 
+ []
+
+
+Overfull \hbox (6.48299pt too wide) in paragraph at lines 410--410
+\T1/futs/m/n/10.95 De-pend-ing on the out-come of the vote, the Su-per-vi-sor o
+r-ders the sites to do-Com-mit/doAbort.  
+ []
+
+[10] [11
+
+] (Report.aux) ) 
 Here is how much of TeX's memory you used:
  7194 strings out of 493334
  112373 string characters out of 3139243
@@ -873,18 +913,18 @@ Here is how much of TeX's memory you used:
  80564 words of font info for 99 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,11n,54p,8819b,306s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
-/fontname/8r.enc} <C:\Users\Zatoichi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\ecsx1200.pk> <C:\Users\Zatoichi\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk> <C:\Users\Zatoichi\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2074.pk><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/adobe/utopia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adob
-e/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri
-8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Report.pdf (10 pages, 337788 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <
+C:\Users\Zatoichi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+csx1200.pk> <C:\Users\Zatoichi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ectt1095.pk> <C:\Users\Zatoichi\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecsx2074.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/fourier/fourier-ms.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/uto
+pia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Report.pdf (11 pages, 341623 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
+ 177 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
