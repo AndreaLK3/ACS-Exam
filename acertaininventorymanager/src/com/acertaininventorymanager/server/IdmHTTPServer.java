@@ -1,25 +1,26 @@
 package com.acertaininventorymanager.server;
 
+
 import java.util.HashSet;
 import java.util.Set;
 
 import com.acertaininventorymanager.utils.InventoryConstants;
 import com.acertaininventorymanager.business.Customer;
 import com.acertaininventorymanager.business.CustomerTransactionsHandler;
+import com.acertaininventorymanager.business.ItemDataHandler;
+import com.acertaininventorymanager.client.InvManagerClientConstants;
 
 /**
- * Starts the {@link InvManagerHTTPServer} that the clients will communicate
+ * Starts the {@link CtmHTTPServer} that the clients will communicate
  * with.
  */
-public class InvManagerHTTPServer {
+public class IdmHTTPServer {
 
-	/** The Constant defaultListenOnPort. */
-	private static final int DEFAULT_PORT = 8081;
 
 	/**
-	 * Prevents the instantiation of a new {@link InvManagerHTTPServer}.
+	 * Prevents the instantiation of a new {@link CtmHTTPServer}.
 	 */
-	private InvManagerHTTPServer() {
+	private IdmHTTPServer() {
 		// Prevent instances from being created.
 	}
 
@@ -28,17 +29,16 @@ public class InvManagerHTTPServer {
 	 *
 	 * @param args
 	 *            the arguments; 
-	 *            args[0]=number of IDMS associated with a CTM. 
+	 *            args[0]=IMPORTANT: the port the server listens on. 
 	 */
 	public static void main(String[] args) {
 		
-		int listenOnPort = DEFAULT_PORT;
-		int numOfAssociatedIDMs = Integer.parseInt(args[0]);
-		Set<Customer> emptyCustomersSet = new HashSet<Customer>();
-		CustomerTransactionsHandler theCth = new CustomerTransactionsHandler(numOfAssociatedIDMs, emptyCustomersSet);
+		int listenOnPort = Integer.parseInt(args[0]);
+		
+		ItemDataHandler theIdm = new ItemDataHandler();
 		
 		
-		InventoryHTTPMessageHandler handler = new InventoryHTTPMessageHandler(theCth);
+		IdmHTTPMessageHandler handler = new IdmHTTPMessageHandler(theIdm);
 		String serverPortString = System.getProperty(InventoryConstants.PROPERTY_KEY_SERVER_PORT);
 
 		if (serverPortString != null) {

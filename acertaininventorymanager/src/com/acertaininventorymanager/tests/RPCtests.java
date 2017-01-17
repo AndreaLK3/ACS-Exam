@@ -18,13 +18,15 @@ import org.junit.Test;
 import com.acertaininventorymanager.business.Customer;
 import com.acertaininventorymanager.business.CustomerTransactionsHandler;
 import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
-import com.acertaininventorymanager.server.InvManagerHTTPServer;
+import com.acertaininventorymanager.server.CtmHTTPServer;
+import com.acertaininventorymanager.server.IdmHTTPServer;
 import com.acertaininventorymanager.utils.EmptyRegionException;
 import com.acertaininventorymanager.utils.InventoryManagerException;
 import com.acertaininventorymanager.utils.NonPositiveIntegerException;
 import com.acertaininventorymanager.business.ItemPurchase;
 import com.acertaininventorymanager.business.RegionTotal;
 import com.acertaininventorymanager.client.ClientHTTPProxy;
+import com.acertaininventorymanager.client.InvManagerClientConstants;
 
 public class RPCtests {
 	
@@ -53,12 +55,12 @@ public class RPCtests {
 				e.printStackTrace();
 			}
 			
-			//////////The Server thread /////////
+			//////////The CTM Server thread /////////
 			Thread t = new Thread() {
 			    public void run() {
 			        try {
 			        	String[] args = {String.valueOf(NUM_OF_IDM)};
-						InvManagerHTTPServer.main(args);
+						CtmHTTPServer.main(args);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -66,6 +68,23 @@ public class RPCtests {
 			};
 			t.start();
 			////////// 
+			
+			//////////Start the IDM Servers /////////
+			for (int i=1; i<=NUM_OF_IDM; i++){
+				int portNumber = InvManagerClientConstants.DEFAULT_PORT + i;
+	        	String portNumberS = String.valueOf(portNumber);
+				new Thread() {
+				    public void run() {
+				        try {
+				        	String[] args = {portNumberS};
+							IdmHTTPServer.main(args);
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+				    }
+				}.start();
+			}
+			///////// 
 	
 		}
 	}
@@ -89,7 +108,7 @@ public class RPCtests {
 			client.addCustomers(customers);
 		}
 		Set<ItemPurchase> purchases = createSetOfItemPurchases(customers);
-		ctm.processOrders(purchases);
+		client.processOrders(purchases);
 	}
 
 	/**Helper function: creates a set of customers, with cID in [0,999] and 

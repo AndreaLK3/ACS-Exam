@@ -103,7 +103,12 @@ public class ItemPurchase {
 	
 	@Override
 	public int hashCode(){
-		return (this.orderId + 2*this.customerId + this.itemId % 2);
+		return (this.orderId + this.customerId + this.itemId);
+	}
+	
+	@Override
+	public String toString(){
+		return "Purchase: (oId= "+orderId+", cId="+customerId+", iId="+itemId+" )";
 	}
 	
 }

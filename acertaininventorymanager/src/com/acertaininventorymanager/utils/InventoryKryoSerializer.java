@@ -5,10 +5,22 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashSet;
+
+import com.acertaininventorymanager.business.Customer;
+import com.acertaininventorymanager.business.ItemPurchase;
+import com.acertaininventorymanager.client.ClientHTTPProxy;
+import com.acertaininventorymanager.client.CtmClientHTTPProxy;
 import com.acertaininventorymanager.interfaces.InventorySerializer;
+import com.acertaininventorymanager.server.CtmHTTPMessageHandler;
+import com.acertaininventorymanager.server.CtmHTTPServer;
+import com.acertaininventorymanager.server.IdmHTTPMessageHandler;
+import com.acertaininventorymanager.server.IdmHTTPServer;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import com.esotericsoftware.minlog.Log;
+
 import org.objenesis.strategy.StdInstantiatorStrategy;
 
 /**
@@ -27,6 +39,7 @@ public final class InventoryKryoSerializer implements InventorySerializer {
 	 */
 	public InventoryKryoSerializer() {
 		binaryStream = new Kryo();
+		//binaryStream.setRegistrationRequired(false); //ADD-ON to solve "encountered unregistered class ID" problem
 		binaryStream.setInstantiatorStrategy(new Kryo.DefaultInstantiatorStrategy(new StdInstantiatorStrategy()));
 	}
 

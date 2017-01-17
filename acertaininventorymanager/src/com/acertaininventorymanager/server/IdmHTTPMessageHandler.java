@@ -13,6 +13,7 @@ import org.eclipse.jetty.server.handler.AbstractHandler;
 
 import com.acertaininventorymanager.business.Customer;
 import com.acertaininventorymanager.business.CustomerTransactionsHandler;
+import com.acertaininventorymanager.business.ItemDataHandler;
 import com.acertaininventorymanager.business.ItemPurchase;
 import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
 import com.acertaininventorymanager.interfaces.InventorySerializer;
@@ -26,30 +27,23 @@ import com.acertaininventorymanager.utils.InventoryXStreamSerializer;
 import com.esotericsoftware.kryo.io.Input;
 
 /**
- * {@link InventoryHTTPMessageHandler} implements the message handler class
+ * Implements the message handler class server-side,
  * which is invoked to handle messages received by the
- * {@link InventoryHTTPServerUtility}. It decodes the HTTP message and invokes
- * the {@link CertainInventory} server API.
- * 
- * @see AbstractHandler
- * @see InventoryHTTPServerUtility
- * @see CertainInventory
+ * HTTPServerUtility. It decodes the HTTP message and invokes
+ * the server API.
  */
-public class InventoryHTTPMessageHandler extends AbstractHandler {
+public class IdmHTTPMessageHandler extends AbstractHandler {
 	/** The inventory manager. */
-	private CustomerTransactionsHandler myInvManager = null;
+	private ItemDataHandler myItemDataManager = null;
 
 	/** The serializer. */
 	private static ThreadLocal<InventorySerializer> serializer;
 
 	/**
-	 * Instantiates a new {@link InventoryHTTPMessageHandler}.
-	 *
-	 * @param bookStore
-	 *            the book store
+	 * Instantiates a new {@link IdmHTTPMessageHandler}.
 	 */
-	public InventoryHTTPMessageHandler(CustomerTransactionsHandler invManager) {
-		myInvManager = invManager;
+	public IdmHTTPMessageHandler(ItemDataHandler itemDataManager) {
+		myItemDataManager = itemDataManager;
 
 		// Setup the type of serializer.
 		if (InventoryConstants.BINARY_SERIALIZATION) {
@@ -88,24 +82,16 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 			System.err.println("No message tag.");
 		} else {
 			switch (messageTag) {
-			case PROCESSORDERS:
-				processOrders(request, response);
+			case ADDPURCHASE:
+				addPurchase(request, response);
 				break;
 
-			case GETREGIONTOTALS:
-				getRegionTotals(request, response);
+			case REMOVEPURCHASE:
+				removePurchase(request, response);
 				break;
 				
-			case ADDCUSTOMERS:
-				addCustomers(request,response);
-				break;
-				
-			case CLEARCUSTOMERS:
-				removeAllCustomers(request,response);
-				break;
-
 			default:
-				System.err.println("Unsupported message tag.");
+				System.err.println("Unsupported message tag. This is the : " + this.getClass().getSimpleName() + " . The tag was:" + messageTag);
 				break;
 			}
 		}
@@ -114,7 +100,43 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 		baseRequest.setHandled(true);
 	}
 
+private void addPurchase(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	byte[] serializedRequestContent = getSerializedRequestContent(request);
 
+	ItemPurchase purchase = (ItemPurchase) serializer.get().deserialize(serializedRequestContent);
+	InventoryResponse invResponse = new InventoryResponse();
+
+	try {
+		myItemDataManager.addItemPurchase(purchase);
+	} catch (InventoryManagerException ex) {
+		invResponse.setException(ex);
+	}
+
+	byte[] serializedResponseContent = serializer.get().serialize(invResponse);
+	response.getOutputStream().write(serializedResponseContent);
+		
+	}
+
+private void removePurchase(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	byte[] serializedRequestContent = getSerializedRequestContent(request);
+
+	int[] parametersArray = (int []) serializer.get().deserialize(serializedRequestContent);
+	InventoryResponse invResponse = new InventoryResponse();
+
+	int orderId = parametersArray[0]; int customerId = parametersArray[1]; int itemId = parametersArray[2];
+	try {
+		myItemDataManager.removeItemPurchase(orderId, customerId, itemId);
+	} catch (InventoryManagerException ex) {
+		invResponse.setException(ex);
+	}
+
+	byte[] serializedResponseContent = serializer.get().serialize(invResponse);
+	response.getOutputStream().write(serializedResponseContent);
+		
+	}
+		
+
+/*
 	private void processOrders(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		byte[] serializedRequestContent = getSerializedRequestContent(request);
 
@@ -122,7 +144,7 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 		InventoryResponse invResponse = new InventoryResponse();
 
 		try {
-			myInvManager.processOrders(purchases);
+			myItemDataManager.processOrders(purchases);
 		} catch (InventoryManagerException ex) {
 			invResponse.setException(ex);
 		}
@@ -139,7 +161,7 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 		InventoryResponse invResponse = new InventoryResponse();
 
 		try {
-			invResponse.setList(myInvManager.getTotalsForRegions(regionIDs));
+			invResponse.setList(myItemDataManager.getTotalsForRegions(regionIDs));
 		} catch (InventoryManagerException ex) {
 			invResponse.setException(ex);
 		}
@@ -154,7 +176,7 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 		Set<Customer> theCustomers = (Set<Customer>) serializer.get().deserialize(serializedRequestContent);
 		InventoryResponse invResponse = new InventoryResponse();
 
-		myInvManager.addCustomers(theCustomers);
+		myItemDataManager.addCustomers(theCustomers);
 		
 		byte[] serializedResponseContent = serializer.get().serialize(invResponse);
 		response.getOutputStream().write(serializedResponseContent);
@@ -165,14 +187,14 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 
 	private void removeAllCustomers(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
-		myInvManager.removeAllCustomers();
+		myItemDataManager.removeAllCustomers();
 		
 		InventoryResponse invResponse = new InventoryResponse();
 		byte[] serializedResponseContent = serializer.get().serialize(invResponse);
 		response.getOutputStream().write(serializedResponseContent);
 		
 	}
-	
+	*/
 	/*
 	*//**
 	 * Gets the stock books by ISBN.
@@ -440,3 +462,4 @@ public class InventoryHTTPMessageHandler extends AbstractHandler {
 		return serializedRequestContent;
 	}
 }
+

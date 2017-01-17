@@ -37,6 +37,7 @@ public final class InventoryXStreamSerializer implements InventorySerializer {
 	@Override
 	public Object deserialize(byte[] bytes) {
 		String xml = new String(bytes);
+		System.out.println(xml);
 		return xmlStream.fromXML(xml);
 	}
 }

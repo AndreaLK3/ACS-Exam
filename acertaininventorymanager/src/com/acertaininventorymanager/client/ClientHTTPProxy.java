@@ -91,34 +91,7 @@ public class ClientHTTPProxy implements CustomerTransactionManager {
 		this.serverAddress = serverAddress;
 	}
 
-/*	
-	 * (non-Javadoc)
-	 * 
-	 * @see com.acertaininventorymanager.interfaces.StockManager#getBooks()
-	 
-	@SuppressWarnings("unchecked")
-	public List<StockBook> getBooks() throws InventoryException {
-		String urlString = serverAddress + "/" + InventoryMessageTag.LISTBOOKS;
-		InventoryRequest invRequest = InventoryRequest.newGetRequest(urlString);
-		InventoryResponse invResponse = InventoryUtility.performHttpExchange(client, invRequest,
-				serializer.get());
-		return (List<StockBook>) invResponse.getList();
-	}
 
-	
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.acertaininventorymanager.interfaces.StockManager#updateEditorPicks(java.util
-	 * .Set)
-	 
-	public void updateEditorPicks(Set<BookEditorPick> editorPicksValues) throws InventoryException {
-		String urlString = serverAddress + "/" + InventoryMessageTag.UPDATEEDITORPICKS + "?";
-		InventoryRequest invRequest = InventoryRequest.newPostRequest(urlString, editorPicksValues);
-		InventoryUtility.performHttpExchange(client, invRequest, serializer.get());
-	}
-
-*/
 	/**
 	 * Stops the proxy.
 	 */

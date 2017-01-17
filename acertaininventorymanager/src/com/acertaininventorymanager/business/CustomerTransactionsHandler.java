@@ -6,8 +6,12 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.acertaininventorymanager.client.CtmClientHTTPProxy;
+import com.acertaininventorymanager.client.InvManagerClientConstants;
 import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
 import com.acertaininventorymanager.interfaces.ItemDataManager;
+import com.acertaininventorymanager.server.CtmHTTPServer;
+import com.acertaininventorymanager.server.IdmHTTPServer;
 import com.acertaininventorymanager.utils.EmptyRegionException;
 import com.acertaininventorymanager.utils.InexistentCustomerException;
 import com.acertaininventorymanager.utils.InventoryManagerException;
@@ -20,12 +24,20 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	ConcurrentHashMap<Integer, ItemDataManager> IDMs = new ConcurrentHashMap<>();
 	
 	
-	/**The constructor.
-	 * @param  numOfItemDataManagers*/
-	public CustomerTransactionsHandler(int numOfItemDataManagers, Set<Customer> startingCustomers) {
+	/**The constructor. Creates the CtmClientHTTPProxies associated with the IDMs,
+	 * and registers the proxies in the ConcurrentHashMap. Note: Does not start any IDM Server.
+	 * @param  numOfItemDataManagers
+	 * @throws Exception */
+	public CustomerTransactionsHandler(int numOfItemDataManagers, Set<Customer> startingCustomers) throws Exception {
 		this.numOfItemDataManagers = numOfItemDataManagers;
-		for (int i=0; i<numOfItemDataManagers; i++){
-			IDMs.put(i, new ItemDataHandler());
+		
+		for (int i=1; i<=numOfItemDataManagers; i++){
+		
+			int portNumber = InvManagerClientConstants.DEFAULT_PORT + i;
+			String portNumberS = String.valueOf(portNumber);
+			String serverAddress = InvManagerClientConstants.ADDRESSPART + portNumberS;
+			
+;			IDMs.put(i, new CtmClientHTTPProxy(serverAddress));
 		}
 		addCustomers(startingCustomers);
 	}
@@ -45,14 +57,15 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 		}
 		
 		for (ItemPurchase itP : itemPurchases){
-			int idm = hashingFunction(itP);
-			IDMs.get(idm).addItemPurchase(itP);
+			int idmNumber = hashingFunction(itP)+1;
+			ItemDataManager theIdm = IDMs.get(idmNumber);
+			//TODO: remove debug System.out.println(theIdm);
+			theIdm.addItemPurchase(itP);
 			
 			Customer theCustomer = customers.get(itP.getCustomerId());
 			long oldTotal = theCustomer.getValueBought();
 			theCustomer.setValueBought(oldTotal + itP.getUnitPrice()*itP.getQuantity());
 		}
-		
 
 	}
 

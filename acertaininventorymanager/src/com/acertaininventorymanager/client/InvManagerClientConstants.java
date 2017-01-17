@@ -35,6 +35,13 @@ public final class InvManagerClientConstants {
 	/** The Constant strERR_CLIENT_ENCODING. */
 	public static final String STR_ERR_CLIENT_ENCODING = "CLIENT_ENCODING";
 
+	/**NEW: default listening port. It is the CTM's server port, and the basis for the IDM servers,
+	 * that use defaultPort+i*/
+	public static final int DEFAULT_PORT = 8081;
+	
+	/**The first part of the Servers' address*/
+	public static final String ADDRESSPART = "http://localhost:";
+	
 	/**
 	 * Prevents the instantiation of a new {@link InvManagerClientConstants}.
 	 */

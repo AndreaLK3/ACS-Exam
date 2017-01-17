@@ -16,6 +16,12 @@ public enum InventoryMessageTag {
 	ADDCUSTOMERS,
 	
 	/** The tag for the "eliminate all customers' totals" message. */
-	CLEARCUSTOMERS
+	CLEARCUSTOMERS,
+	
+	/** From CTM to IDMs : The tag for the "add item purchase" message. */
+	ADDPURCHASE,
+	
+	/** From CTM to IDMs: The tag for the "remove item purchase" message. */
+	REMOVEPURCHASE,
 
 }
