@@ -56,7 +56,6 @@
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
 
-
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
@@ -355,21 +354,41 @@ Periodically, the \textit{Acceptor} machines send a heartbeat to the Proposer an
 Overview of your code:\\}
 ~\\
 The interface \verb|CustomerTransactionManager| is implemented in the class \verb|CustomerTransactionsHandler|.\\
-When we create an instance of the class, we fix the number of \verb|ItemDataManager|s and the set of registered customers.\\
+When we create an instance of the class, we fix the number of \verb|ItemDataManager|s and we define the initial set of registered customers.\\
 The customers are stored in a ConcurrentHashMap, where the key is the customer ID. \\
 In the same way, another ConcurrentHashMap stores the \verb|ItemDataManager|s associated with this \verb|CustomerTransactionsHandler|.\\
 ~\\
-The class \verb|ItemDataHandler| implements the interface \verb|ItemDataManager|. It represents a single ItemDataManager.\\
+The class \verb|ItemDataHandler| implements the interface \verb|ItemDataManager|. \\
 A private \verb|List<ItemPurchase>| contains the item purchases associated with this instance.\\
+\begin{figure}[h]
+    \includegraphics[width=1.1\textwidth,center]{PackageStructure.png}
+\end{figure}
+
 ~\\
-\textit{What RPC semantics are implemented between clients and the \verb|CustomerTransactionManager|? What about between the
-\verb|CustomerTransactionManager| and the \verb|ItemDataManager|? Explain.
-}
-
-
-
-
-
-
+\textit{What RPC semantics are implemented between clients and the }\verb|CustomerTransactionManager|\textit{? What about between the} \verb|CustomerTransactionManager|\textit{ and the }\verb|ItemDataManager|\textit{? Explain.}
+~\\
+Regarding the RPC between clients and \verb|CustomerTransactionManager|:\\
+Instead of using \verb|CustomerTransactionsHandler| as we would in a local setting, we use the class \verb|ClientHTTPProxy|, that implements the same \verb|CustomerTransactionManager| interface.\\
+The \verb|ClientHTTPProxy| contains the proxy invocations that serialize the client requests and marshal them across the network.\\
+~\\
+Server-side, the class \verb|CtmHTTPMessageHandler| implements the naming service: it reads the keywords contained in the client messages (PROCESSORDERS, GETREGIONTOTALS, etc.) and it invokes the appropriate method to handle the request. \\
+It passes the parameters to the API functions of \verb|CustomerTransactionManager|.
+~\\
+The class \verb|CtmHTTPServer| starts the Server for the CustomerTransactionManager layer. It listens on the DEFAULT\_PORT=8081.\\
+~\\
+About the RPC between the \verb|CustomerTransactionManager| layer and the \verb|ItemDataManager|s:\\
+In its constructor, the intermediate layer (\verb|CustomerTransactionsHandler|) creates a number of \verb|CtmClientHTTPProxy|, that implement the \verb|ItemDataManager| interface. In the ConcurrentHashMap, each one of those has a key $i$. They listen on the port DEFAULT\_PORT + i.\\
+~\\
+In both cases, we implemented at-most-once RPC semantics. While some operations are idempotent (such as getTotalsForRegions) and could be repeated, we attempt to invoke a service only once.\\ 
+~\\
+\begin{figure}[h]
+	 \includegraphics[width=1.0\textwidth,center]{RPC.png}
+\end{figure}
+~\\
+\textit{How are failures of }ItemDataManager\textit{ instances contained at the}
+CustomerTransactionManager\textit{? Why does your failure containment implementation turn}
+\textit{out to guarantee a fail-soft design for the }CustomerTransactionManager\textit{ with respect to}
+ItemDataManager\textit{ instances?}\\
+~\\
 
 \end{document}
