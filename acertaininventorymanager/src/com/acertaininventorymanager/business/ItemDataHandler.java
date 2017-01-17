@@ -3,6 +3,7 @@ package com.acertaininventorymanager.business;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.acertaininventorymanager.client.InvManagerClientConstants;
 import com.acertaininventorymanager.interfaces.ItemDataManager;
 import com.acertaininventorymanager.utils.InexistentItemPurchaseException;
 import com.acertaininventorymanager.utils.InventoryManagerException;
@@ -12,11 +13,11 @@ public class ItemDataHandler implements ItemDataManager {
 	private List<ItemPurchase> listOfItemPurchases = new ArrayList<ItemPurchase>();
 	
 	public ItemDataHandler() {
-		
 	}
 
 	@Override
 	public synchronized void addItemPurchase(ItemPurchase itemPurchase) throws InventoryManagerException {
+		
 		listOfItemPurchases.add(itemPurchase);
 
 	}
@@ -24,6 +25,7 @@ public class ItemDataHandler implements ItemDataManager {
 	@Override
 	public synchronized void removeItemPurchase(int orderId, int customerId, int itemId)
 			throws InexistentItemPurchaseException, InventoryManagerException {
+		
 		ItemPurchase itemPurchase = findItemPurchase(orderId, customerId, itemId);
 		if (itemPurchase==null){
 			throw new InexistentItemPurchaseException();
@@ -50,4 +52,5 @@ public class ItemDataHandler implements ItemDataManager {
 		}
 		return foundItemPurchase;
 	}
+	
 }

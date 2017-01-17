@@ -103,6 +103,10 @@ public class CtmHTTPMessageHandler extends AbstractHandler {
 			case CLEARCUSTOMERS:
 				removeAllCustomers(request,response);
 				break;
+				
+			case CAUSEIDMFAILURE:
+				causeIDMfailure(request,response);
+				break;
 
 			default:
 				System.err.println("Unsupported message tag. This is the : " + this.getClass().getSimpleName() + " . The tag was:" + messageTag);
@@ -115,11 +119,22 @@ public class CtmHTTPMessageHandler extends AbstractHandler {
 	}
 
 
+	private void causeIDMfailure(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		byte[] serializedRequestContent = getSerializedRequestContent(request);
+
+		InventoryResponse invResponse = new InventoryResponse();
+
+		myInvManager.causeIDMfailure();
+
+		byte[] serializedResponseContent = serializer.get().serialize(invResponse);
+		response.getOutputStream().write(serializedResponseContent);
+		
+	}
+
 	private void processOrders(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		byte[] serializedRequestContent = getSerializedRequestContent(request);
 
 		Set<ItemPurchase> purchases = (Set<ItemPurchase>) serializer.get().deserialize(serializedRequestContent);
-		//System.out.println("Set of purchases:\n" + purchases);//TODO: remove this debug
 		InventoryResponse invResponse = new InventoryResponse();
 
 		try {

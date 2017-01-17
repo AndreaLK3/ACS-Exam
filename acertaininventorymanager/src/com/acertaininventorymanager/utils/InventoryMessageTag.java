@@ -21,7 +21,9 @@ public enum InventoryMessageTag {
 	/** From CTM to IDMs : The tag for the "add item purchase" message. */
 	ADDPURCHASE,
 	
-	/** From CTM to IDMs: The tag for the "remove item purchase" message. */
-	REMOVEPURCHASE,
+	REMOVEPURCHASE, 
+	
+	/** The tag to tell the CTM to make one of its IDMs fail. */
+	CAUSEIDMFAILURE,
 
 }

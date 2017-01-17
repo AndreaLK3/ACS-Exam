@@ -16,7 +16,6 @@ import com.acertaininventorymanager.client.InvManagerClientConstants;
  */
 public class IdmHTTPServer {
 
-
 	/**
 	 * Prevents the instantiation of a new {@link CtmHTTPServer}.
 	 */

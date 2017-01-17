@@ -15,7 +15,7 @@ public final class InvManagerClientConstants {
 	public static final int CLIENT_MAX_THREADSPOOL_THREADS = 250;
 
 	/** The Constant CLIENT_MAX_TIMEOUT_MILLISECS. */
-	public static final int CLIENT_MAX_TIMEOUT_MILLISECS = 30000;
+	public static final int CLIENT_MAX_TIMEOUT_MILLISECS = 10000;
 
 	/** The Constant strERR_CLIENT_REQUEST_SENDING. */
 	public static final String STR_ERR_CLIENT_REQUEST_SENDING = "ERR_CLIENT_REQUEST_SENDING";

@@ -146,4 +146,12 @@ public class ClientHTTPProxy implements CustomerTransactionManager {
 		InventoryRequest invRequest = InventoryRequest.newPostRequest(urlString, "");
 		InventoryResponse invResponse = InventoryUtility.performHttpExchange(client, invRequest, serializer.get());
 	}
+	
+	public void causeIDMfailure() throws InventoryManagerException{
+		String urlString = serverAddress + "/" + InventoryMessageTag.CAUSEIDMFAILURE;
+		// Creating zero-length buffer for POST request body, because we don't
+		// need to send any data
+		InventoryRequest invRequest = InventoryRequest.newPostRequest(urlString, "");
+		InventoryResponse invResponse = InventoryUtility.performHttpExchange(client, invRequest, serializer.get());
+	}
 }

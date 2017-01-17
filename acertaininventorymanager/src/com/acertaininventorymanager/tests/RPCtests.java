@@ -128,7 +128,7 @@ public class RPCtests {
 	/**Helper function: given a set of customers, creates a set of item purchases.
 	 * The customerID belongs to one of the customers, while the purchase data
 	 * (orderID, itemID, quantity, unit price) are chosen at random.*/
-	private Set<ItemPurchase> createSetOfItemPurchases(Set<Customer> customers){
+	public static Set<ItemPurchase> createSetOfItemPurchases(Set<Customer> customers){
 		Set<ItemPurchase> setOfPurchases = new HashSet<>();
 		
 		for (Customer c : customers){

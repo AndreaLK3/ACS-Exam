@@ -43,6 +43,6 @@ public interface ItemDataManager {
 	 * @throws InventoryManagerException 
 	 */
 	public void removeItemPurchase(int orderId, int customerId, int itemId)
-			throws InexistentItemPurchaseException, InventoryManagerException, IOException;
+			throws InexistentItemPurchaseException, InventoryManagerException;
 
 }

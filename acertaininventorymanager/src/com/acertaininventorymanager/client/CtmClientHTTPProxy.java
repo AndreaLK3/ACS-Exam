@@ -38,6 +38,7 @@ public class CtmClientHTTPProxy implements ItemDataManager{
 
 	/**
 	 * Initializes a new CtmClientHTTPProxy.
+	 * @throws Exception 
 	 */
 	public CtmClientHTTPProxy(String serverAddress) throws Exception {
 
@@ -49,6 +50,7 @@ public class CtmClientHTTPProxy implements ItemDataManager{
 		}
 
 		setServerAddress(serverAddress);
+		
 		client = new HttpClient();
 
 		// Max concurrent connections to every address.
@@ -61,6 +63,7 @@ public class CtmClientHTTPProxy implements ItemDataManager{
 		client.setConnectTimeout(InvManagerClientConstants.CLIENT_MAX_TIMEOUT_MILLISECS);
 
 		client.start();
+
 	}
 
 	/**
@@ -95,11 +98,20 @@ public class CtmClientHTTPProxy implements ItemDataManager{
 	}
 
 	@Override
-	public void addItemPurchase(ItemPurchase itemPurchase) throws InventoryManagerException {
-		//TODO: remove debug System.out.println("This is a "+this.getClass().getSimpleName() + " . My Server address is: " + serverAddress);
+	public void addItemPurchase(ItemPurchase itemPurchase) throws InventoryManagerException{
+		
 		String urlString = serverAddress + "/" + InventoryMessageTag.ADDPURCHASE;
 		InventoryRequest invReq = InventoryRequest.newPostRequest(urlString, itemPurchase);
-		InventoryUtility.performHttpExchange(client, invReq, serializer.get());
+		try {
+			InventoryUtility.performHttpExchange(client, invReq, serializer.get());
+		} catch (InventoryManagerException e) {
+			if (e.getMessage() == InvManagerClientConstants.STR_ERR_CLIENT_REQUEST_TIMEOUT){
+				//do nothing; the exception is caught and the execution continues.
+			}
+			else {
+				throw e;
+			}
+		}
 		return;
 		
 	}
@@ -110,7 +122,16 @@ public class CtmClientHTTPProxy implements ItemDataManager{
 		String urlString = serverAddress + "/" + InventoryMessageTag.REMOVEPURCHASE;
 		int[] paramsArray = {orderId, customerId, itemId};
 		InventoryRequest invReq = InventoryRequest.newPostRequest(urlString, paramsArray);
-		InventoryResponse invResp = InventoryUtility.performHttpExchange(client, invReq, serializer.get());
+		try {
+			InventoryUtility.performHttpExchange(client, invReq, serializer.get());
+		} catch (InventoryManagerException e) {
+			if (e.getMessage() == InvManagerClientConstants.STR_ERR_CLIENT_REQUEST_TIMEOUT){
+				//do nothing; the exception is caught and the execution continues.
+			}
+			else {
+				throw e;
+			}
+		}
 		return;
 		
 	}

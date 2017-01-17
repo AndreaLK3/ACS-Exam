@@ -14,12 +14,13 @@ import com.acertaininventorymanager.server.CtmHTTPServer;
 import com.acertaininventorymanager.server.IdmHTTPServer;
 import com.acertaininventorymanager.utils.EmptyRegionException;
 import com.acertaininventorymanager.utils.InexistentCustomerException;
+import com.acertaininventorymanager.utils.InexistentItemPurchaseException;
 import com.acertaininventorymanager.utils.InventoryManagerException;
 import com.acertaininventorymanager.utils.NonPositiveIntegerException;
 
 public class CustomerTransactionsHandler implements CustomerTransactionManager {
 
-	ConcurrentHashMap<Integer,Customer> customers = new ConcurrentHashMap<>();
+	private ConcurrentHashMap<Integer,Customer> customers = new ConcurrentHashMap<>();
 	int numOfItemDataManagers;
 	ConcurrentHashMap<Integer, ItemDataManager> IDMs = new ConcurrentHashMap<>();
 	
@@ -188,6 +189,32 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	/**This function eliminates all customers from the CTM. Used for testing purposes.**/
 	public synchronized void removeAllCustomers(){
 		customers = new ConcurrentHashMap<>();
+	}
+	
+	/**This function removes a specific item purchase from the IDM that contains it, 
+	 * and updates the customer's data.
+	 * @throws InventoryManagerException 
+	 * @throws InexistentItemPurchaseException **/
+	public synchronized void removeItemPurchase(int orderId, int customerId, int itemId) 
+			throws InexistentItemPurchaseException, InventoryManagerException{
+		ItemPurchase temp = new ItemPurchase(orderId, customerId, itemId, 1, 1);
+		int idmNumber = hashingFunction(temp)+1;
+		ItemDataManager theIdm = IDMs.get(idmNumber);
+		
+		theIdm.removeItemPurchase(orderId, customerId, itemId);
+		
+	}
+
+	/**For testing purposes.*/
+	public ConcurrentHashMap<Integer, ItemDataManager> getIDMs() {
+		return IDMs;
+	}
+	
+	/**For testing purposes (work in progress).
+	 * @throws Exception */
+	public void causeIDMfailure() {
+		CtmClientHTTPProxy failingIDM = (CtmClientHTTPProxy) IDMs.get(1);
+		failingIDM.setServerAddress(InvManagerClientConstants.ADDRESSPART + (InvManagerClientConstants.DEFAULT_PORT-1));
 	}
 
 }
