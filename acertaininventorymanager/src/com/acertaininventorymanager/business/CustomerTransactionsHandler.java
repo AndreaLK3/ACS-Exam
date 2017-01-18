@@ -2,9 +2,13 @@ package com.acertaininventorymanager.business;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import com.acertaininventorymanager.client.CtmClientHTTPProxy;
 import com.acertaininventorymanager.client.InvManagerClientConstants;
@@ -12,6 +16,7 @@ import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
 import com.acertaininventorymanager.interfaces.ItemDataManager;
 import com.acertaininventorymanager.server.CtmHTTPServer;
 import com.acertaininventorymanager.server.IdmHTTPServer;
+import com.acertaininventorymanager.utils.AbortedTransactionException;
 import com.acertaininventorymanager.utils.EmptyRegionException;
 import com.acertaininventorymanager.utils.InexistentCustomerException;
 import com.acertaininventorymanager.utils.InexistentItemPurchaseException;
@@ -20,9 +25,13 @@ import com.acertaininventorymanager.utils.NonPositiveIntegerException;
 
 public class CustomerTransactionsHandler implements CustomerTransactionManager {
 
-	private ConcurrentHashMap<Integer,Customer> customers = new ConcurrentHashMap<>();
-	int numOfItemDataManagers;
-	ConcurrentHashMap<Integer, ItemDataManager> IDMs = new ConcurrentHashMap<>();
+	private final static int ID_RANDOMBOUND = 1000;
+	private final Random randGen = new Random();
+	
+	private HashMap<Integer,Customer> customers = new HashMap<>();
+	private final int numOfItemDataManagers;
+	private ConcurrentHashMap<Integer, ItemDataManager> IDMs = new ConcurrentHashMap<>();
+	private Strict2PLManager lockManager;
 	
 	
 	/**The constructor. Creates the CtmClientHTTPProxies associated with the IDMs,
@@ -31,6 +40,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	 * @throws Exception */
 	public CustomerTransactionsHandler(int numOfItemDataManagers, Set<Customer> startingCustomers) throws Exception {
 		this.numOfItemDataManagers = numOfItemDataManagers;
+		lockManager = new Strict2PLManager();
 		
 		for (int i=1; i<=numOfItemDataManagers; i++){
 		
@@ -38,7 +48,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 			String portNumberS = String.valueOf(portNumber);
 			String serverAddress = InvManagerClientConstants.ADDRESSPART + portNumberS;
 			
-;			IDMs.put(i, new CtmClientHTTPProxy(serverAddress));
+			IDMs.put(i, new CtmClientHTTPProxy(serverAddress));
 		}
 		addCustomers(startingCustomers);
 	}
@@ -50,9 +60,12 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
  *  - update the total value spent by each customer
  * */
 	@Override
-	public synchronized void processOrders(Set<ItemPurchase> itemPurchases)
+	public void processOrders(Set<ItemPurchase> itemPurchases)
 			throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
-
+		
+		Integer xactId = Thread.currentThread().hashCode() / 16384 + randGen.nextInt(ID_RANDOMBOUND);
+		Set<ItemPurchase> readyToUndoSet = new HashSet<>();
+		
 		for (ItemPurchase itP : itemPurchases){
 			validateItemPurchase(itP);
 		}
@@ -62,14 +75,24 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 			ItemDataManager theIdm = IDMs.get(idmNumber);
 			theIdm.addItemPurchase(itP);
 			
-			Customer theCustomer = customers.get(itP.getCustomerId());
+			Integer cId = itP.getCustomerId();
+			try {
+				lockManager.tryToAcquireLock(xactId, cId, LockType.WRITELOCK);
+			} catch (AbortedTransactionException e) {
+				// TODO: Rollback:
+				e.printStackTrace();
+			}
+			
+			Customer theCustomer = customers.get(cId);
 			long oldTotal = theCustomer.getValueBought();
 			theCustomer.setValueBought(oldTotal + itP.getUnitPrice()*itP.getQuantity());
+			lockManager.releaseLock(xactId, cId);
+			readyToUndoSet.add(itP);
 		}
 
 	}
 
-	//TODO: add read/write locks on the CTH
+
 	private synchronized void validateItemPurchase(ItemPurchase itemPurchase)
 			throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
 
@@ -122,16 +145,29 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	public List<RegionTotal> getTotalsForRegions(Set<Integer> regionIds)
 			throws NonPositiveIntegerException, EmptyRegionException, InventoryManagerException {
 		
+		Integer xactId = Thread.currentThread().hashCode() / 65536 + randGen.nextInt(ID_RANDOMBOUND);
+		
 		validateRegionIds(regionIds);
-
+		
 		Set<Integer> customerIds = customers.keySet();
 		HashMap<Integer,RegionTotal> regionTotals = new HashMap<>();
 		List<RegionTotal> outputListRegionTotals = new ArrayList<>();
 		
 		for (Integer customerId : customerIds){
+			
+			try {
+				lockManager.tryToAcquireLock(xactId, customerId, LockType.READLOCK);
+			} catch (AbortedTransactionException e) {
+				e.printStackTrace();
+				return getTotalsForRegions(regionIds);
+			}
+			
 			Customer c = customers.get(customerId);
 			
 			int cRegId = c.getRegionId();
+			
+			lockManager.releaseLock(xactId, customerId);
+			
 			RegionTotal cRegTot = regionTotals.get(cRegId);
 			long oldTotal = 0;
 			if (cRegTot != null){
@@ -177,6 +213,31 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 		
 	}
 	
+	
+	
+	/**Remove a set of item purchases. Useful for undoing aborted transactions.*/
+	public void removeOrders(Set<ItemPurchase> itemPurchases) throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
+		for (ItemPurchase itP : itemPurchases){
+			validateItemPurchase(itP);
+		}
+		
+		for (ItemPurchase itP : itemPurchases){
+			int idmNumber = hashingFunction(itP)+1;
+			ItemDataManager theIdm = IDMs.get(idmNumber);
+			int orderID = itP.getOrderId();
+			int customerID = itP.getCustomerId();
+			int itemID = itP.getItemId();			
+			
+			theIdm.removeItemPurchase(orderID, customerID, itemID);
+			
+			Customer theCustomer = customers.get(itP.getCustomerId());
+			long oldTotal = theCustomer.getValueBought();
+			theCustomer.setValueBought(oldTotal - itP.getUnitPrice()*itP.getQuantity());
+		}
+		
+	}
+	
+	
 	/**Helper function: adds new customers to the CTM.**/
 	public synchronized void addCustomers(Set<Customer> newCustomers){
 		for (Customer c : newCustomers){
@@ -188,7 +249,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	
 	/**This function eliminates all customers from the CTM. Used for testing purposes.**/
 	public synchronized void removeAllCustomers(){
-		customers = new ConcurrentHashMap<>();
+		customers = new HashMap<>();
 	}
 	
 	/**This function removes a specific item purchase from the IDM that contains it, 
@@ -218,26 +279,6 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	}
 
 
-	/**For testing purposes> allows us to use removeItemPurchase in the IDMs */
-	public void removeOrders(Set<ItemPurchase> itemPurchases) throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
-		for (ItemPurchase itP : itemPurchases){
-			validateItemPurchase(itP);
-		}
-		
-		for (ItemPurchase itP : itemPurchases){
-			int idmNumber = hashingFunction(itP)+1;
-			ItemDataManager theIdm = IDMs.get(idmNumber);
-			int orderID = itP.getOrderId();
-			int customerID = itP.getCustomerId();
-			int itemID = itP.getItemId();			
-			
-			theIdm.removeItemPurchase(orderID, customerID, itemID);
-			
-			Customer theCustomer = customers.get(itP.getCustomerId());
-			long oldTotal = theCustomer.getValueBought();
-			theCustomer.setValueBought(oldTotal - itP.getUnitPrice()*itP.getQuantity());
-		}
-		
-	}
+
 
 }

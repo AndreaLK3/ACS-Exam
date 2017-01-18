@@ -1,5 +1,6 @@
 package com.acertaininventorymanager.business;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class MyLock {
@@ -11,6 +12,7 @@ public class MyLock {
 	public MyLock(Integer theObjectId, LockType theLockStatus, Integer tIdOfHolder) {
 		objectId = theObjectId;
 		lockStatus = theLockStatus;
+		holders = new HashSet<>();
 		holders.add(tIdOfHolder);
 	}
 
