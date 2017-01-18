@@ -39,5 +39,11 @@ public class MyLock {
 	public Set<Integer> getHolders(){
 		return holders;
 	}
+	
+	@Override
+	public String toString(){
+		return "Lock: ObjectID: " +objectId + " - status: " + lockStatus +
+				" - Holders: " + holders;
+	}
 
 }

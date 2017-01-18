@@ -64,33 +64,54 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 			throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
 		
 		Integer xactId = Thread.currentThread().hashCode() / 16384 + randGen.nextInt(ID_RANDOMBOUND);
-		Set<ItemPurchase> readyToUndoSet = new HashSet<>();
+		Set<ItemPurchase> ordersYetToBeProcessed = new HashSet<>(itemPurchases);
 		
 		for (ItemPurchase itP : itemPurchases){
 			validateItemPurchase(itP);
 		}
 		
-		for (ItemPurchase itP : itemPurchases){
-			int idmNumber = hashingFunction(itP)+1;
-			ItemDataManager theIdm = IDMs.get(idmNumber);
-			theIdm.addItemPurchase(itP);
+		try { 
+			//process each itemPurchase
+			for (ItemPurchase itP : itemPurchases){
+				int idmNumber = hashingFunction(itP)+1;
+				ItemDataManager theIdm = IDMs.get(idmNumber);
+				theIdm.addItemPurchase(itP);
 			
-			Integer cId = itP.getCustomerId();
-			try {
+				Integer cId = itP.getCustomerId();
+			
 				lockManager.tryToAcquireLock(xactId, cId, LockType.WRITELOCK);
-			} catch (AbortedTransactionException e) {
-				// TODO: Rollback:
-				e.printStackTrace();
+				
+				Customer theCustomer = customers.get(cId);
+				long oldTotal = theCustomer.getValueBought();
+				theCustomer.setValueBought(oldTotal + itP.getUnitPrice()*itP.getQuantity());
+				//once an itemPurchase has been registered, it is eliminated from the YetToProcess set;
+				//in case there is a deadlock and the transaction aborts, we will restart from there.
+				ordersYetToBeProcessed.remove(itP); 
 			}
 			
-			Customer theCustomer = customers.get(cId);
-			long oldTotal = theCustomer.getValueBought();
-			theCustomer.setValueBought(oldTotal + itP.getUnitPrice()*itP.getQuantity());
-			lockManager.releaseLock(xactId, cId);
-			readyToUndoSet.add(itP);
+			//release phase
+			for (ItemPurchase itP : itemPurchases){
+				Integer cId = itP.getCustomerId();
+				lockManager.releaseLock(xactId, cId);
+			}
+				
+				
+		} catch (AbortedTransactionException e) {
+			// Rollback:
+			//release phase
+			for (ItemPurchase itP : itemPurchases){
+				Integer customerId = itP.getCustomerId();
+				lockManager.releaseLock(xactId, customerId);
+			}
+			//start transaction to complete the remaining orders, to ensure all-or-nothing atomicity (all)
+			processOrders(ordersYetToBeProcessed);
+			e.printStackTrace();
 		}
-
+			
+		
 	}
+	
+	
 
 
 	private synchronized void validateItemPurchase(ItemPurchase itemPurchase)
@@ -152,31 +173,42 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 		Set<Integer> customerIds = customers.keySet();
 		HashMap<Integer,RegionTotal> regionTotals = new HashMap<>();
 		List<RegionTotal> outputListRegionTotals = new ArrayList<>();
-		
-		for (Integer customerId : customerIds){
-			
-			try {
+		List<Integer> cIds = new ArrayList<>();
+		try{
+			//process each element
+			for (Integer customerId : customerIds){
 				lockManager.tryToAcquireLock(xactId, customerId, LockType.READLOCK);
-			} catch (AbortedTransactionException e) {
-				e.printStackTrace();
-				return getTotalsForRegions(regionIds);
+					
+				Customer c = customers.get(customerId);
+				
+				int cRegId = c.getRegionId();
+				
+				RegionTotal cRegTot = regionTotals.get(cRegId);
+				long oldTotal = 0;
+				if (cRegTot != null){
+					oldTotal = cRegTot.getTotalValueBought();
+				}
+				RegionTotal updatedCRegTot = new RegionTotal(cRegId, oldTotal+c.getValueBought());
+				regionTotals.put(cRegId, updatedCRegTot);
+				//register the customerId of the customer we have locked, for the subsequent release phase
+				cIds.add(customerId);
+				
 			}
 			
-			Customer c = customers.get(customerId);
-			
-			int cRegId = c.getRegionId();
-			
-			lockManager.releaseLock(xactId, customerId);
-			
-			RegionTotal cRegTot = regionTotals.get(cRegId);
-			long oldTotal = 0;
-			if (cRegTot != null){
-				oldTotal = cRegTot.getTotalValueBought();
+			//release phase
+			for (Integer cId : cIds){
+				lockManager.releaseLock(xactId, cId);
 			}
-			RegionTotal updatedCRegTot = new RegionTotal(cRegId, oldTotal+c.getValueBought());
-			regionTotals.put(cRegId, updatedCRegTot);
-
 		}
+		catch(AbortedTransactionException e){
+			//release phase
+			for (Integer cId : cIds){
+				lockManager.releaseLock(xactId, cId);
+			}
+			//try again
+			getTotalsForRegions(regionIds);
+		}
+		
 		
 		for (Integer regionId : regionIds){
 			outputListRegionTotals.add(regionTotals.get(regionId));
@@ -221,18 +253,36 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 			validateItemPurchase(itP);
 		}
 		
-		for (ItemPurchase itP : itemPurchases){
-			int idmNumber = hashingFunction(itP)+1;
-			ItemDataManager theIdm = IDMs.get(idmNumber);
-			int orderID = itP.getOrderId();
-			int customerID = itP.getCustomerId();
-			int itemID = itP.getItemId();			
+		Integer xactId = Thread.currentThread().hashCode() / 65536 + randGen.nextInt(ID_RANDOMBOUND);
+		Set<ItemPurchase> ordersYetToBeCanceled = new HashSet<>(itemPurchases); 
+		
+		try {
+			for (ItemPurchase itP : itemPurchases){
+				int idmNumber = hashingFunction(itP)+1;
+				ItemDataManager theIdm = IDMs.get(idmNumber);
+				int orderID = itP.getOrderId();
+				int customerID = itP.getCustomerId();
+				int itemID = itP.getItemId();			
+				
+				theIdm.removeItemPurchase(orderID, customerID, itemID);
+				
+				lockManager.tryToAcquireLock(xactId, customerID, LockType.WRITELOCK);
+				Customer theCustomer = customers.get(itP.getCustomerId());
+				long oldTotal = theCustomer.getValueBought();
+				theCustomer.setValueBought(oldTotal - itP.getUnitPrice()*itP.getQuantity());
+				//modification to the recovery data structure:
+				
+			}
 			
-			theIdm.removeItemPurchase(orderID, customerID, itemID);
+			//release phase
+			for (ItemPurchase itP : itemPurchases){
+				int cId = itP.getCustomerId();
+				lockManager.releaseLock(xactId, cId);
+			}
 			
-			Customer theCustomer = customers.get(itP.getCustomerId());
-			long oldTotal = theCustomer.getValueBought();
-			theCustomer.setValueBought(oldTotal - itP.getUnitPrice()*itP.getQuantity());
+			
+		} catch (AbortedTransactionException e){
+			
 		}
 		
 	}

@@ -70,11 +70,9 @@ public class WaitingGraphManager {
 				
 			} catch (InterruptedException e) {
 				e.printStackTrace();
-				exploreAndSolveDeadlocks();
 			}
 		}
 		theLockManager.flagTransactionAsAborted(deadlockNode);
-		theLockManager.awakeTransactions();
 		
 		
 	}
@@ -118,7 +116,7 @@ public class WaitingGraphManager {
 		
 		for (Integer node : adjNodes){
 			reachableNodes.add(node);
-			reachableNodes.addAll(explorePath(target, node, reachableNodes, graphSize, graph));
+			reachableNodes.addAll(explorePath(target, node, new ArrayList<Integer>(reachableNodes), graphSize, graph));
 		}
 		
 		return reachableNodes;

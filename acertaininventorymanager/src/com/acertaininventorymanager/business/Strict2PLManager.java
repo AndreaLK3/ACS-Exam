@@ -46,22 +46,26 @@ public class Strict2PLManager {
 						lockType==LockType.WRITELOCK && objectLock.getLockStatus()!=LockType.FREE){
 			 
 						Set<Integer> holdersOfThisObject = objectLock.getHolders();
-
+						
+						//if the transaction already holds this object, it must not wait for itself
+						if (! holdersOfThisObject.contains(xactId)){
+							
 							waitGraphManager.addEdges(xactId, holdersOfThisObject);
-						
-						//now must wait.
-						try {
-							wait();
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-						}
-						
-						if (! abortedXactIds.contains(xactId)) {
-							tryToAcquireLock(xactId,objectId,lockType);
-						}
-						else
-							throw new AbortedTransactionException();
-			
+							
+							//now, we wait for 0.01 seconds and then we try again
+							if (! abortedXactIds.contains(xactId)) {
+								try {
+									Thread.sleep(10);
+									//System.out.println("Waiting for lock to get freed on the objectId:"+objectId);
+									//System.out.println(locksTable);
+								} catch (InterruptedException e) {
+									e.printStackTrace();
+								}
+								tryToAcquireLock(xactId,objectId,lockType);
+							}
+							else
+								throw new AbortedTransactionException();
+						}			
 		}
 	}
 		
@@ -70,25 +74,28 @@ public class Strict2PLManager {
 	
 		MyLock objectLock = locksTable.get(objectId);
 		
-		objectLock.removeHolder(xactId);
-		waitGraphManager.removeXactFromGraph(xactId);
-		
-		
-		if (objectLock.getHolders().size()==0){
-			objectLock.setLockStatus(LockType.FREE);
-		}//otherwise, we don't change anything
-		awakeTransactions();
-		
-		
+		if (objectLock!=null) {
+			objectLock.removeHolder(xactId);
+			waitGraphManager.removeXactFromGraph(xactId);
+			
+			
+			if (objectLock.getHolders().size()==0){
+				objectLock.setLockStatus(LockType.FREE);
+			}//otherwise, we don't change anything	
+			
+			//System.out.println("Successfully released lock on Object: " + objectId);
+		}
 	}
 		
-		
-	public synchronized void awakeTransactions(){
-		notifyAll();
-	}
 	
 	public void flagTransactionAsAborted(int xactId){
 		abortedXactIds.add(xactId);
+	}
+
+
+	/**Returns the list of aborted transactions. For testing purposes.*/
+	public ConcurrentLinkedQueue<Integer> getAbortedXactIds() {
+		return abortedXactIds;
 	}
 
 
