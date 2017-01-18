@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  17 JAN 2017 19:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  19 JAN 2017 00:49
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -909,20 +909,14 @@ show how your method is log-i-cally equiv-a-lent
  []
 
 
-Overfull \hbox (6.63637pt too wide) in paragraph at lines 430--432
-\T1/futs/m/it/10.95 con-vinc-ingly for its cor-rect-ness, its trade-off in com-
-plex-ity of im-ple-men-ta-tion and per-for-mance, 
- []
-
-
-Overfull \hbox (28.71901pt too wide) in paragraph at lines 434--434
+Overfull \hbox (28.71901pt too wide) in paragraph at lines 432--432
 \T1/futs/m/n/10.95 global lock: a shared lock for read-ing op-er-a-tions (in th
 e util-ity func-tion []\T1/cmtt/m/n/10.95 findItemPurchase(...)\T1/futs/m/n/10.
 95 ), 
  []
 
 
-Overfull \hbox (6.4501pt too wide) in paragraph at lines 439--439
+Overfull \hbox (6.4501pt too wide) in paragraph at lines 437--437
 []\T1/futs/m/n/10.95 In or-der to do this with-out cre-at-ing in-con-sis-ten-ci
 es, the List must be locked in the mean-while. 
  []
@@ -930,30 +924,101 @@ es, the List must be locked in the mean-while.
 [11
 
 ]
-Overfull \hbox (0.44957pt too wide) in paragraph at lines 446--448
+Overfull \hbox (0.44957pt too wide) in paragraph at lines 444--446
 \T1/futs/m/it/10.95 De-scribe how you en-sured before-or-after atom-ic-ity of t
 hese op-er-a-tions. In par-tic-u-lar, men-tion 
  []
 
 
-Overfull \hbox (13.75381pt too wide) in paragraph at lines 463--463
+Overfull \hbox (13.75381pt too wide) in paragraph at lines 458--458
 []\T1/futs/m/it/10.95 - Ar-gue for the cor-rect-ness of your method; to do so, 
 show how your method is log-i-cally equiv-a-lent 
  []
 
 
-Overfull \hbox (22.4042pt too wide) in paragraph at lines 463--463
+Overfull \hbox (22.4042pt too wide) in paragraph at lines 458--458
 []\T1/futs/m/it/10.95 - Ar-gue for whether or not you need to con-sider the is-
 sue of reads on pred-i-cates vs. multi-gran-u-lar-ity 
  []
 
 
-Overfull \hbox (6.63637pt too wide) in paragraph at lines 463--463
-\T1/futs/m/it/10.95 con-vinc-ingly for its cor-rect-ness, its trade-off in com-
-plex-ity of im-ple-men-ta-tion and per-for-mance, 
+Overfull \hbox (23.3569pt too wide) in paragraph at lines 460--460
+\T1/futs/m/n/10.95 Strict 2PL pro-to-col with dead-lock de-tec-tion. I im-ple-m
+ented it us-ing the classes Strict2PLManager, 
+ []
+
+
+Overfull \hbox (9.84474pt too wide) in paragraph at lines 463--463
+\T1/futs/m/n/10.95 lock on the cus-tomer, as well as on the IDM as-so-ci-ated w
+ith the pur-chase. I am in-vok-ing, 
+ []
+
+
+Overfull \hbox (1.50092pt too wide) in paragraph at lines 464--465
+[]\T1/futs/m/n/10.95 The afore-men-tioned method ex-e-cutes all ap-pro-pri-ate 
+eval-u-a-tions (shared vs. ex-clu-sive 
+ []
+
+
+Overfull \hbox (13.69904pt too wide) in paragraph at lines 470--470
+[]\T1/futs/m/n/10.95 Periodically, an-other thread checks the graph for cy-cles
+. If some is found, one node/transaction 
+ []
+
+
+Overfull \hbox (10.2279pt too wide) in paragraph at lines 471--471
+[]\T1/futs/m/n/10.95 The Cus-tomer-Trans-ac-tion-Man-ager has reg-is-tered the 
+or-ders that have been al-ready pro-cessed. 
+ []
+
+
+Overfull \hbox (18.06802pt too wide) in paragraph at lines 471--471
+\T1/futs/m/n/10.95 When a trans-ac-tion has been aborted, it re-leases all the 
+locks it holds (elim-i-nat-ing the dead-lock), 
  []
 
 [12
+
+]
+Overfull \hbox (25.07611pt too wide) in paragraph at lines 475--476
+\T1/futs/m/n/10.95 op-er-a-tions have to lock the en-tire in-ter-nal list to mo
+d-ify it, I deemed the loss in con-cur-rency 
+ []
+
+
+Overfull \hbox (9.68059pt too wide) in paragraph at lines 476--477
+[]\T1/futs/m/n/10.95 Optimistic con-cur-rency con-trol would have 2 draw-backs:
+ first, when a sin-gle trans-ac-tion 
+ []
+
+
+Overfull \hbox (11.25734pt too wide) in paragraph at lines 476--477
+\T1/futs/m/n/10.95 space and then trans-fer all the ob-jects a trans-ac-tion mo
+d-i-fies. De-pend-ing on the num-ber 
+ []
+
+[13
+
+]
+Overfull \hbox (24.74751pt too wide) in paragraph at lines 486--488
+\T1/futs/m/it/10.95 Describe your high-level strat-egy to test your im-ple-men-
+ta-tion of the \T1/futs/m/n/10.95 Cus-tomer-Trans-ac-tion-Man-ager. 
+ []
+
+
+Overfull \hbox (7.99417pt too wide) in paragraph at lines 488--489
+[]\T1/futs/m/it/10.95 - How did you test all-or-nothing atom-ic-ity of op-er-a-
+tions at the \T1/futs/m/n/10.95 Cus-tomer-Trans-ac-tion-Man-ager?  
+ []
+
+
+Overfull \hbox (11.1696pt too wide) in paragraph at lines 490--492
+[] \T1/futs/m/it/10.95 - How did you test before-or-after atom-ic-ity of op-er-
+a-tions at the \T1/futs/m/n/10.95 Cus-tomer-Trans-ac-tion-Man-ager\T1/futs/m/it
+/10.95 ? 
+ []
+
+[14
 
 ] (Report.aux) ) 
 Here is how much of TeX's memory you used:
@@ -973,9 +1038,9 @@ ublic/fourier/fourier-ms.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/uto
 pia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Report.pdf (12 pages, 347813 bytes).
+Output written on Report.pdf (14 pages, 353437 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

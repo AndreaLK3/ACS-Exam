@@ -100,7 +100,7 @@ public class WaitingGraphManager {
 	
 	/**Returns a List of the integer IDs of the nodes that can be reached from the starting one,
 	 * BFS.*/
-	private List<Integer> explorePath(Integer target, Integer currentStart, List<Integer> reachableNodes,
+	private synchronized List<Integer> explorePath(Integer target, Integer currentStart, List<Integer> reachableNodes,
 										Integer graphSize, ConcurrentHashMap<Integer, List<Integer>> graph){
 		
 		if (reachableNodes.contains(target) || graphSize==0){
@@ -108,12 +108,12 @@ public class WaitingGraphManager {
 		}
 		
 		graphSize--;
-		
-		List<Integer> adjNodes = graph.get(currentStart);
+
+		List<Integer> adjNodes = new ArrayList<Integer>(graph.get(currentStart));
 		if (adjNodes == null){
 			return reachableNodes;
 		}
-		
+
 		for (Integer node : adjNodes){
 			reachableNodes.add(node);
 			reachableNodes.addAll(explorePath(target, node, new ArrayList<Integer>(reachableNodes), graphSize, graph));

@@ -49,6 +49,12 @@ public class Strict2PLManager {
 						
 						//if the transaction already holds this object, it must not wait for itself
 						if (! holdersOfThisObject.contains(xactId)){
+							System.out.print("xactId: " + xactId);
+							System.out.print(" . holders of this object:");
+							for (Integer holder : holdersOfThisObject ){
+								System.out.print(holder +" , ");
+							}
+							System.out.println("____________");
 							
 							waitGraphManager.addEdges(xactId, holdersOfThisObject);
 							
@@ -56,8 +62,8 @@ public class Strict2PLManager {
 							if (! abortedXactIds.contains(xactId)) {
 								try {
 									Thread.sleep(10);
-									//System.out.println("Waiting for lock to get freed on the objectId:"+objectId);
-									//System.out.println(locksTable);
+									System.out.println("Waiting for lock to get freed on the objectId:"+objectId);
+									System.out.println(locksTable);
 								} catch (InterruptedException e) {
 									e.printStackTrace();
 								}
@@ -83,7 +89,7 @@ public class Strict2PLManager {
 				objectLock.setLockStatus(LockType.FREE);
 			}//otherwise, we don't change anything	
 			
-			//System.out.println("Successfully released lock on Object: " + objectId);
+			System.out.println("Successfully released lock on Object: " + objectId);
 		}
 	}
 		

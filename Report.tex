@@ -427,9 +427,7 @@ variant of two-phase locking.\\
 - Argue for the performance of your method; to do so, explain your assumptions about the
 workload the service is exposed to and why you believe other alternatives you considered, e.g.,
 different granularities of locking, would be better or worse than your choice.\\}
-NOTE:\textit{ The method you design for atomicity does not need to be complex, as long as you argue
-convincingly for its correctness, its trade-off in complexity of implementation and performance, and how
-it fits in the system as a whole.}\\
+
 ~\\
 To ensure before-or-after atomicity in the ItemDataManager operations, I simply used a global lock: a shared lock for reading operations (in the utility function \verb|findItemPurchase(...)|), an exclusive lock for writing operations (\verb|addItemPurchase|, \verb!removeItemPurchase!).\\ More accurately, the lock encloses the operations on the List<ItemPurchase>.\\
 The lock is implemented in the class \verb|GlobalReadWriteLock(...)|), and it is based on a counter.\\
@@ -457,11 +455,48 @@ locking in your implementation, and explain why.\\
  - Argue for the performance of your method; to do so, explain your assumptions about the
 workload the service is exposed to and why you believe other alternatives you considered (e.g.,
 locking vs. optimistic approach) would be better or worse than your choice.\\
-NOTE: The method you design for atomicity does not need to be complex, as long as you argue
-convincingly for its correctness, its trade-off in complexity of implementation and performance, and how
-it fits in the system as a whole. However, note that an implementation that provides more concurrency
-will be valued higher than one providing less.\\}
+}
 ~\\
+To ensure before-or-after atomicity at the CustomerTransactionManager layer, I used a Strict 2PL protocol with deadlock detection. I implemented it using the classes Strict2PLManager, MyLock and WaitingGraphManager.\\
+The customers and the IDMs are stored in 2 \verb|HashMap|s in the CustomerTransactionHandler. When a transaction is executed (eg. when a thread invokes \verb|processOrders|), I proceed this way:
+\begin{itemize}
+\item when I process each element (eg. each ItemPurchase), I try to acquire the appropriate lock on the customer, as well as on the IDM associated with the purchase. I am invoking, in \verb|Strict2PLManager|, the function \\\verb|tryToAcquireLock(Integer xactId, Integer objectId, LockType lockType)|
+\item The aforementioned method executes all appropriate evaluations (shared vs. exclusive lock, is this transaction already holding the lock?, etc.), and if there are no deadlocks the method eventually returns.
+\item after the transaction has executed its task over all the elements, we enter the Release phase: we release the locks over all the objects we were processing, and the method concludes.
+\end{itemize}
+In order to solve the deadlocks: \\
+The transactions holding the lock on an object are stored in the \verb|MyLock| class.\\
+When $T_i$ has to wait for the lock on an object, we add a number of edges to the waiting graph stored in \verb|WaitingGraphManager|.\\
+Periodically, another thread checks the graph for cycles. If some is found, one node/transaction is flagged as "to be aborted" in the Strict2PLManager. An \verb|AbortedTransactionException| is thrown.\\
+The CustomerTransactionManager has registered the orders that have been already processed. When a transaction has been aborted, it rolls back all the modifications that were made on the IDMs and Customers, and finally it releases all the locks it holds (eliminating the deadlock).\\
+\clearpage
+Observations:
+\begin{itemize}
+\item Different threads can access different ItemDataManagers, but 1 IDM can be accessed by a single thread at a time, and it stays locked and associated with that thread for the whole duration of the transaction. Given that the \verb|addPurchase| and \verb|removePurchase| operations have to lock the entire internal list to modify it, I deemed the loss in concurrency an acceptable trade-off, to be able to implement the Strict2PL protocol.
+\item Optimistic concurrency control would have 2 drawbacks: first, when a single transaction is in the Validation phase, no other transaction is allowed to commit (otherwise we could have value conflicts). Moreover, we would have to write in a private working space and then transfer all the objects a transaction modifies. Depending on the number of ItemPurchases, we may have to operate with a great number of customers, and that also increases the probability of intersection of different Writng Sets.
+\item I find the parallelism achieved on the \verb|Customer|s set satisfactory. 2 \verb|getRegionTotals| invocations, querying different regions, can access different customers in parallel. \\I recognize that \verb|processOrders| could be improved, if I released the lock on the IDMs and the customers as soon as I am not operating on them, but this would be 2PL, not Strict2PL, and I would have to face cascading aborts.
+\end{itemize}
+
+\clearpage
+
+\subsection{Testing}
+
+\subsection{Question 4}
+
+\textit{Describe your high-level strategy to test your implementation of the}
+CustomerTransactionManager.\textit{ In particular, mention the following aspects in your answer:\\
+ - How did you test all-or-nothing atomicity of operations at the}
+CustomerTransactionManager?\\
+\textit{ - How did you test before-or-after atomicity of operations at the}
+CustomerTransactionManager\textit{? Recall that you must document how your tests verify that
+anomalies do not occur (e.g., dirty reads or dirty writes).}\\
+
+
+
+
+
+
+
 
 
 
