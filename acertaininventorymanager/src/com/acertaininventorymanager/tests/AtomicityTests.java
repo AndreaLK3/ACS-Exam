@@ -34,7 +34,7 @@ public class AtomicityTests {
 	public final static int RANDOMINT_BOUND = 1000;
 	public final static int NUM_OF_CUSTOMERS = 20;
 	public final static Set<Integer> REGIONS = new HashSet<Integer>(Arrays.asList(1, 2, 3));
-	public final static int ITERATIONS = 100;
+	public final static int ITERATIONS = 500;
 	
 	private static ClientHTTPProxy client;
 	private static CustomerTransactionManager ctm;

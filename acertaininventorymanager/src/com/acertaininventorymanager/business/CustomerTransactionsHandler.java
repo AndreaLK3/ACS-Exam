@@ -348,7 +348,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 		CtmClientHTTPProxy failingIDM = (CtmClientHTTPProxy) IDMs.get(1);
 		failingIDM.setServerAddress(InvManagerClientConstants.ADDRESSPART + (InvManagerClientConstants.DEFAULT_PORT-1));
 	}
-	
+
 	
 
 

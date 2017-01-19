@@ -89,7 +89,7 @@ public class Strict2PLManager {
 				objectLock.setLockStatus(LockType.FREE);
 			}//otherwise, we don't change the status	
 			
-			System.out.println("Successfully released lock of " + xactId + " on Object: " + objectId);
+			//Print debug : System.out.println("Successfully released lock of " + xactId + " on Object: " + objectId);
 		}
 	}
 		

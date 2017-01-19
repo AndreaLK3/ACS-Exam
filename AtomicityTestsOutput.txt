@@ -1,1873 +1,1050 @@
-2017-01-19 17:33:08.704:INFO::main: Logging initialized @2035ms
-2017-01-19 17:33:10.024:INFO:oejs.Server:Thread-9: jetty-9.3.14.v20161028
-2017-01-19 17:33:10.024:INFO:oejs.Server:Thread-13: jetty-9.3.14.v20161028
-2017-01-19 17:33:10.024:INFO:oejs.Server:Thread-12: jetty-9.3.14.v20161028
-2017-01-19 17:33:10.040:INFO:oejs.Server:Thread-10: jetty-9.3.14.v20161028
-2017-01-19 17:33:10.043:INFO:oejs.Server:Thread-11: jetty-9.3.14.v20161028
-2017-01-19 17:33:10.152:INFO:oejs.Server:Thread-8: jetty-9.3.14.v20161028
-2017-01-19 17:33:10.199:INFO:oejs.AbstractConnector:Thread-10: Started ServerConnector@312d093a{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
-2017-01-19 17:33:10.199:INFO:oejs.Server:Thread-10: Started @3528ms
-2017-01-19 17:33:10.199:INFO:oejs.AbstractConnector:Thread-11: Started ServerConnector@13761f63{HTTP/1.1,[http/1.1]}{0.0.0.0:8084}
-2017-01-19 17:33:10.214:INFO:oejs.Server:Thread-11: Started @3534ms
-2017-01-19 17:33:10.214:INFO:oejs.AbstractConnector:Thread-9: Started ServerConnector@5eb0289a{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
-2017-01-19 17:33:10.214:INFO:oejs.Server:Thread-9: Started @3538ms
-2017-01-19 17:33:10.230:INFO:oejs.AbstractConnector:Thread-13: Started ServerConnector@3de8908a{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}
-2017-01-19 17:33:10.230:INFO:oejs.Server:Thread-13: Started @3559ms
-2017-01-19 17:33:10.230:INFO:oejs.AbstractConnector:Thread-8: Started ServerConnector@dc2a910{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-2017-01-19 17:33:10.230:INFO:oejs.Server:Thread-8: Started @3560ms
-2017-01-19 17:33:10.246:INFO:oejs.AbstractConnector:Thread-12: Started ServerConnector@784eeff{HTTP/1.1,[http/1.1]}{0.0.0.0:8085}
-2017-01-19 17:33:10.246:INFO:oejs.Server:Thread-12: Started @3569ms
+2017-01-19 17:46:21.553:INFO::main: Logging initialized @2373ms
+2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-10: jetty-9.3.14.v20161028
+2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-12: jetty-9.3.14.v20161028
+2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-11: jetty-9.3.14.v20161028
+2017-01-19 17:46:22.626:INFO:oejs.Server:Thread-13: jetty-9.3.14.v20161028
+2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-9: jetty-9.3.14.v20161028
+2017-01-19 17:46:22.644:INFO:oejs.Server:Thread-8: jetty-9.3.14.v20161028
+2017-01-19 17:46:22.769:INFO:oejs.AbstractConnector:Thread-8: Started ServerConnector@23e53e4e{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-8: Started @3600ms
+2017-01-19 17:46:22.769:INFO:oejs.AbstractConnector:Thread-10: Started ServerConnector@2711062b{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+2017-01-19 17:46:22.769:INFO:oejs.AbstractConnector:Thread-9: Started ServerConnector@28675fc5{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-9: Started @3601ms
+2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-10: Started @3601ms
+2017-01-19 17:46:22.784:INFO:oejs.AbstractConnector:Thread-12: Started ServerConnector@604cd2ea{HTTP/1.1,[http/1.1]}{0.0.0.0:8085}
+2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-12: Started @3608ms
+2017-01-19 17:46:22.784:INFO:oejs.AbstractConnector:Thread-13: Started ServerConnector@7b0d4217{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}
+2017-01-19 17:46:22.800:INFO:oejs.Server:Thread-13: Started @3614ms
+2017-01-19 17:46:22.800:INFO:oejs.AbstractConnector:Thread-11: Started ServerConnector@24d7278e{HTTP/1.1,[http/1.1]}{0.0.0.0:8084}
+2017-01-19 17:46:22.800:INFO:oejs.Server:Thread-11: Started @3619ms
 *****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 25719 on Object: 413
-Successfully released lock of 25719 on Object: 6
-Successfully released lock of 25719 on Object: 6
-Successfully released lock of 25719 on Object: 252
-Successfully released lock of 46387 on Object: 637
-Successfully released lock of 46387 on Object: 486
-Successfully released lock of 46387 on Object: 523
-Successfully released lock of 46387 on Object: 841
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 47237 on Object: 413
-Successfully released lock of 47237 on Object: 6
-Successfully released lock of 47237 on Object: 6
-Successfully released lock of 47237 on Object: 252
-Successfully released lock of 107153 on Object: 637
-Successfully released lock of 107153 on Object: 486
-Successfully released lock of 107153 on Object: 523
-Successfully released lock of 107153 on Object: 841
-Successfully released lock of 105175 on Object: 413
-Successfully released lock of 105175 on Object: 6
-Successfully released lock of 105175 on Object: 6
-Successfully released lock of 105175 on Object: 252
-Successfully released lock of 112536 on Object: 637
-Successfully released lock of 112536 on Object: 486
-Successfully released lock of 112536 on Object: 523
-Successfully released lock of 112536 on Object: 841
-Successfully released lock of 25796 on Object: 413
-Successfully released lock of 25796 on Object: 6
-Successfully released lock of 25796 on Object: 6
-Successfully released lock of 25796 on Object: 252
-Successfully released lock of 45841 on Object: 637
-Successfully released lock of 45841 on Object: 486
-Successfully released lock of 45841 on Object: 523
-Successfully released lock of 45841 on Object: 841
-Successfully released lock of 46519 on Object: 413
-Successfully released lock of 46519 on Object: 6
-Successfully released lock of 46519 on Object: 6
-Successfully released lock of 46519 on Object: 252
-Successfully released lock of 106430 on Object: 637
-Successfully released lock of 106430 on Object: 486
-Successfully released lock of 106430 on Object: 523
-Successfully released lock of 106430 on Object: 841
-Successfully released lock of 105156 on Object: 413
-Successfully released lock of 105156 on Object: 6
-Successfully released lock of 105156 on Object: 6
-Successfully released lock of 105156 on Object: 252
-Successfully released lock of 111910 on Object: 637
-Successfully released lock of 111910 on Object: 486
-Successfully released lock of 111910 on Object: 523
-Successfully released lock of 111910 on Object: 841
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 25642 on Object: 413
-Successfully released lock of 25642 on Object: 6
-Successfully released lock of 25642 on Object: 6
-Successfully released lock of 25642 on Object: 252
-Successfully released lock of 45865 on Object: 637
-Successfully released lock of 45865 on Object: 486
-Successfully released lock of 45865 on Object: 523
-Successfully released lock of 45865 on Object: 841
-Successfully released lock of 47110 on Object: 413
-Successfully released lock of 47110 on Object: 6
-Successfully released lock of 47110 on Object: 6
-Successfully released lock of 47110 on Object: 252
-Successfully released lock of 107135 on Object: 637
-Successfully released lock of 107135 on Object: 486
-Successfully released lock of 107135 on Object: 523
-Successfully released lock of 107135 on Object: 841
-Successfully released lock of 105246 on Object: 413
-Successfully released lock of 105246 on Object: 6
-Successfully released lock of 105246 on Object: 6
-Successfully released lock of 105246 on Object: 252
-Successfully released lock of 111755 on Object: 637
-Successfully released lock of 111755 on Object: 486
-Successfully released lock of 111755 on Object: 523
-Successfully released lock of 111755 on Object: 841
-Successfully released lock of 25024 on Object: 413
-Successfully released lock of 25024 on Object: 6
-Successfully released lock of 25024 on Object: 6
-Successfully released lock of 25024 on Object: 252
-Successfully released lock of 46250 on Object: 637
-Successfully released lock of 46250 on Object: 486
-Successfully released lock of 46250 on Object: 523
-Successfully released lock of 46250 on Object: 841
-Successfully released lock of 46907 on Object: 413
-Successfully released lock of 46907 on Object: 6
-Successfully released lock of 46907 on Object: 6
-Successfully released lock of 46907 on Object: 252
-Successfully released lock of 106279 on Object: 637
-Successfully released lock of 106279 on Object: 486
-Successfully released lock of 106279 on Object: 523
-Successfully released lock of 106279 on Object: 841
-Successfully released lock of 105059 on Object: 413
-Successfully released lock of 105059 on Object: 6
-Successfully released lock of 105059 on Object: 6
-Successfully released lock of 105059 on Object: 252
-Successfully released lock of 112175 on Object: 637
-Successfully released lock of 112175 on Object: 486
-Successfully released lock of 112175 on Object: 523
-Successfully released lock of 112175 on Object: 841
-Successfully released lock of 25701 on Object: 413
-Successfully released lock of 25701 on Object: 6
-Successfully released lock of 25701 on Object: 6
-Successfully released lock of 25701 on Object: 252
-Successfully released lock of 45689 on Object: 637
-Successfully released lock of 45689 on Object: 486
-Successfully released lock of 45689 on Object: 523
-Successfully released lock of 45689 on Object: 841
-Successfully released lock of 47280 on Object: 413
-Successfully released lock of 47280 on Object: 6
-Successfully released lock of 47280 on Object: 6
-Successfully released lock of 47280 on Object: 252
-Successfully released lock of 106422 on Object: 637
-Successfully released lock of 106422 on Object: 486
-Successfully released lock of 106422 on Object: 523
-Successfully released lock of 106422 on Object: 841
-Successfully released lock of 105194 on Object: 413
-Successfully released lock of 105194 on Object: 6
-Successfully released lock of 105194 on Object: 6
-Successfully released lock of 105194 on Object: 252
-Successfully released lock of 112281 on Object: 637
-Successfully released lock of 112281 on Object: 486
-Successfully released lock of 112281 on Object: 523
-Successfully released lock of 112281 on Object: 841
-Successfully released lock of 25643 on Object: 413
-Successfully released lock of 25643 on Object: 6
-Successfully released lock of 25643 on Object: 6
-Successfully released lock of 25643 on Object: 252
-Successfully released lock of 46313 on Object: 637
-Successfully released lock of 46313 on Object: 486
-Successfully released lock of 46313 on Object: 523
-Successfully released lock of 46313 on Object: 841
-Successfully released lock of 47288 on Object: 413
-Successfully released lock of 47288 on Object: 6
-Successfully released lock of 47288 on Object: 6
-Successfully released lock of 47288 on Object: 252
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 106830 on Object: 637
-Successfully released lock of 106830 on Object: 486
-Successfully released lock of 106830 on Object: 523
-Successfully released lock of 106830 on Object: 841
-Successfully released lock of 105156 on Object: 413
-Successfully released lock of 105156 on Object: 6
-Successfully released lock of 105156 on Object: 6
-Successfully released lock of 105156 on Object: 252
-Successfully released lock of 112700 on Object: 637
-Successfully released lock of 112700 on Object: 486
-Successfully released lock of 112700 on Object: 523
-Successfully released lock of 112700 on Object: 841
-Successfully released lock of 25223 on Object: 413
-Successfully released lock of 25223 on Object: 6
-Successfully released lock of 25223 on Object: 6
-Successfully released lock of 25223 on Object: 252
-Successfully released lock of 46399 on Object: 637
-Successfully released lock of 46399 on Object: 486
-Successfully released lock of 46399 on Object: 523
-Successfully released lock of 46399 on Object: 841
-Successfully released lock of 46862 on Object: 413
-Successfully released lock of 46862 on Object: 6
-Successfully released lock of 46862 on Object: 6
-Successfully released lock of 46862 on Object: 252
-Successfully released lock of 106992 on Object: 637
-Successfully released lock of 106992 on Object: 486
-Successfully released lock of 106992 on Object: 523
-Successfully released lock of 106992 on Object: 841
-Successfully released lock of 105677 on Object: 413
-Successfully released lock of 105677 on Object: 6
-Successfully released lock of 105677 on Object: 6
-Successfully released lock of 105677 on Object: 252
-Successfully released lock of 112060 on Object: 637
-Successfully released lock of 112060 on Object: 486
-Successfully released lock of 112060 on Object: 523
-Successfully released lock of 112060 on Object: 841
-Successfully released lock of 25366 on Object: 413
-Successfully released lock of 25366 on Object: 6
-Successfully released lock of 25366 on Object: 6
-Successfully released lock of 25366 on Object: 252
-Successfully released lock of 46031 on Object: 637
-Successfully released lock of 46031 on Object: 486
-Successfully released lock of 46031 on Object: 523
-Successfully released lock of 46031 on Object: 841
-Successfully released lock of 47003 on Object: 413
-Successfully released lock of 47003 on Object: 6
-Successfully released lock of 47003 on Object: 6
-Successfully released lock of 47003 on Object: 252
-Successfully released lock of 106348 on Object: 637
-Successfully released lock of 106348 on Object: 486
-Successfully released lock of 106348 on Object: 523
-Successfully released lock of 106348 on Object: 841
-Successfully released lock of 105106 on Object: 413
-Successfully released lock of 105106 on Object: 6
-Successfully released lock of 105106 on Object: 6
-Successfully released lock of 105106 on Object: 252
-Successfully released lock of 112433 on Object: 637
-Successfully released lock of 112433 on Object: 486
-Successfully released lock of 112433 on Object: 523
-Successfully released lock of 112433 on Object: 841
-Successfully released lock of 25644 on Object: 413
-Successfully released lock of 25644 on Object: 6
-Successfully released lock of 25644 on Object: 6
-Successfully released lock of 25644 on Object: 252
-Successfully released lock of 45472 on Object: 637
-Successfully released lock of 45472 on Object: 486
-Successfully released lock of 45472 on Object: 523
-Successfully released lock of 45472 on Object: 841
-Successfully released lock of 47259 on Object: 413
-Successfully released lock of 47259 on Object: 6
-Successfully released lock of 47259 on Object: 6
-Successfully released lock of 47259 on Object: 252
-Successfully released lock of 106541 on Object: 637
-Successfully released lock of 106541 on Object: 486
-Successfully released lock of 106541 on Object: 523
-Successfully released lock of 106541 on Object: 841
-Successfully released lock of 104774 on Object: 413
-Successfully released lock of 104774 on Object: 6
-Successfully released lock of 104774 on Object: 6
-Successfully released lock of 104774 on Object: 252
-Successfully released lock of 111964 on Object: 637
-Successfully released lock of 111964 on Object: 486
-Successfully released lock of 111964 on Object: 523
-Successfully released lock of 111964 on Object: 841
-Successfully released lock of 25017 on Object: 413
-Successfully released lock of 25017 on Object: 6
-Successfully released lock of 25017 on Object: 6
-Successfully released lock of 25017 on Object: 252
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 45780 on Object: 637
-Successfully released lock of 45780 on Object: 486
-Successfully released lock of 45780 on Object: 523
-Successfully released lock of 45780 on Object: 841
-Successfully released lock of 46622 on Object: 413
-Successfully released lock of 46622 on Object: 6
-Successfully released lock of 46622 on Object: 6
-Successfully released lock of 46622 on Object: 252
-Successfully released lock of 106782 on Object: 637
-Successfully released lock of 106782 on Object: 486
-Successfully released lock of 106782 on Object: 523
-Successfully released lock of 106782 on Object: 841
-Successfully released lock of 104801 on Object: 413
-Successfully released lock of 104801 on Object: 6
-Successfully released lock of 104801 on Object: 6
-Successfully released lock of 104801 on Object: 252
-Successfully released lock of 112040 on Object: 637
-Successfully released lock of 112040 on Object: 486
-Successfully released lock of 112040 on Object: 523
-Successfully released lock of 112040 on Object: 841
-Successfully released lock of 25700 on Object: 413
-Successfully released lock of 25700 on Object: 6
-Successfully released lock of 25700 on Object: 6
-Successfully released lock of 25700 on Object: 252
-Successfully released lock of 45527 on Object: 637
-Successfully released lock of 45527 on Object: 486
-Successfully released lock of 45527 on Object: 523
-Successfully released lock of 45527 on Object: 841
-Successfully released lock of 46661 on Object: 413
-Successfully released lock of 46661 on Object: 6
-Successfully released lock of 46661 on Object: 6
-Successfully released lock of 46661 on Object: 252
-Successfully released lock of 106418 on Object: 637
-Successfully released lock of 106418 on Object: 486
-Successfully released lock of 106418 on Object: 523
-Successfully released lock of 106418 on Object: 841
-Successfully released lock of 105152 on Object: 413
-Successfully released lock of 105152 on Object: 6
-Successfully released lock of 105152 on Object: 6
-Successfully released lock of 105152 on Object: 252
-Successfully released lock of 111886 on Object: 637
-Successfully released lock of 111886 on Object: 486
-Successfully released lock of 111886 on Object: 523
-Successfully released lock of 111886 on Object: 841
-Successfully released lock of 25497 on Object: 413
-Successfully released lock of 25497 on Object: 6
-Successfully released lock of 25497 on Object: 6
-Successfully released lock of 25497 on Object: 252
-Successfully released lock of 46304 on Object: 637
-Successfully released lock of 46304 on Object: 486
-Successfully released lock of 46304 on Object: 523
-Successfully released lock of 46304 on Object: 841
-Successfully released lock of 46463 on Object: 413
-Successfully released lock of 46463 on Object: 6
-Successfully released lock of 46463 on Object: 6
-Successfully released lock of 46463 on Object: 252
-Successfully released lock of 106204 on Object: 637
-Successfully released lock of 106204 on Object: 486
-Successfully released lock of 106204 on Object: 523
-Successfully released lock of 106204 on Object: 841
-Successfully released lock of 105493 on Object: 413
-Successfully released lock of 105493 on Object: 6
-Successfully released lock of 105493 on Object: 6
-Successfully released lock of 105493 on Object: 252
-Successfully released lock of 112124 on Object: 637
-Successfully released lock of 112124 on Object: 486
-Successfully released lock of 112124 on Object: 523
-Successfully released lock of 112124 on Object: 841
-Successfully released lock of 25135 on Object: 413
-Successfully released lock of 25135 on Object: 6
-Successfully released lock of 25135 on Object: 6
-Successfully released lock of 25135 on Object: 252
-Successfully released lock of 46354 on Object: 637
-Successfully released lock of 46354 on Object: 486
-Successfully released lock of 46354 on Object: 523
-Successfully released lock of 46354 on Object: 841
-Successfully released lock of 46948 on Object: 413
-Successfully released lock of 46948 on Object: 6
-Successfully released lock of 46948 on Object: 6
-Successfully released lock of 46948 on Object: 252
-Successfully released lock of 106202 on Object: 637
-Successfully released lock of 106202 on Object: 486
-Successfully released lock of 106202 on Object: 523
-Successfully released lock of 106202 on Object: 841
-Successfully released lock of 105123 on Object: 413
-Successfully released lock of 105123 on Object: 6
-Successfully released lock of 105123 on Object: 6
-Successfully released lock of 105123 on Object: 252
-Successfully released lock of 111726 on Object: 637
-Successfully released lock of 111726 on Object: 486
-Successfully released lock of 111726 on Object: 523
-Successfully released lock of 111726 on Object: 841
-Successfully released lock of 25760 on Object: 413
-Successfully released lock of 25760 on Object: 6
-Successfully released lock of 25760 on Object: 6
-Successfully released lock of 25760 on Object: 252
-Successfully released lock of 45882 on Object: 637
-Successfully released lock of 45882 on Object: 486
-Successfully released lock of 45882 on Object: 523
-Successfully released lock of 45882 on Object: 841
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 46682 on Object: 413
-Successfully released lock of 46682 on Object: 6
-Successfully released lock of 46682 on Object: 6
-Successfully released lock of 46682 on Object: 252
-Successfully released lock of 106445 on Object: 637
-Successfully released lock of 106445 on Object: 486
-Successfully released lock of 106445 on Object: 523
-Successfully released lock of 106445 on Object: 841
-Successfully released lock of 105223 on Object: 413
-Successfully released lock of 105223 on Object: 6
-Successfully released lock of 105223 on Object: 6
-Successfully released lock of 105223 on Object: 252
-Successfully released lock of 112091 on Object: 637
-Successfully released lock of 112091 on Object: 486
-Successfully released lock of 112091 on Object: 523
-Successfully released lock of 112091 on Object: 841
-Successfully released lock of 25578 on Object: 413
-Successfully released lock of 25578 on Object: 6
-Successfully released lock of 25578 on Object: 6
-Successfully released lock of 25578 on Object: 252
-Successfully released lock of 46450 on Object: 637
-Successfully released lock of 46450 on Object: 486
-Successfully released lock of 46450 on Object: 523
-Successfully released lock of 46450 on Object: 841
-Successfully released lock of 46374 on Object: 413
-Successfully released lock of 46374 on Object: 6
-Successfully released lock of 46374 on Object: 6
-Successfully released lock of 46374 on Object: 252
-Successfully released lock of 106393 on Object: 637
-Successfully released lock of 106393 on Object: 486
-Successfully released lock of 106393 on Object: 523
-Successfully released lock of 106393 on Object: 841
-Successfully released lock of 105493 on Object: 413
-Successfully released lock of 105493 on Object: 6
-Successfully released lock of 105493 on Object: 6
-Successfully released lock of 105493 on Object: 252
-Successfully released lock of 111860 on Object: 637
-Successfully released lock of 111860 on Object: 486
-Successfully released lock of 111860 on Object: 523
-Successfully released lock of 111860 on Object: 841
-Successfully released lock of 25520 on Object: 413
-Successfully released lock of 25520 on Object: 6
-Successfully released lock of 25520 on Object: 6
-Successfully released lock of 25520 on Object: 252
-Successfully released lock of 46261 on Object: 637
-Successfully released lock of 46261 on Object: 486
-Successfully released lock of 46261 on Object: 523
-Successfully released lock of 46261 on Object: 841
-Successfully released lock of 46429 on Object: 413
-Successfully released lock of 46429 on Object: 6
-Successfully released lock of 46429 on Object: 6
-Successfully released lock of 46429 on Object: 252
-Successfully released lock of 106710 on Object: 637
-Successfully released lock of 106710 on Object: 486
-Successfully released lock of 106710 on Object: 523
-Successfully released lock of 106710 on Object: 841
-Successfully released lock of 105564 on Object: 413
-Successfully released lock of 105564 on Object: 6
-Successfully released lock of 105564 on Object: 6
-Successfully released lock of 105564 on Object: 252
-Successfully released lock of 112051 on Object: 637
-Successfully released lock of 112051 on Object: 486
-Successfully released lock of 112051 on Object: 523
-Successfully released lock of 112051 on Object: 841
-Successfully released lock of 25954 on Object: 413
-Successfully released lock of 25954 on Object: 6
-Successfully released lock of 25954 on Object: 6
-Successfully released lock of 25954 on Object: 252
-Successfully released lock of 45512 on Object: 637
-Successfully released lock of 45512 on Object: 486
-Successfully released lock of 45512 on Object: 523
-Successfully released lock of 45512 on Object: 841
-Successfully released lock of 47312 on Object: 413
-Successfully released lock of 47312 on Object: 6
-Successfully released lock of 47312 on Object: 6
-Successfully released lock of 47312 on Object: 252
-Successfully released lock of 106393 on Object: 637
-Successfully released lock of 106393 on Object: 486
-Successfully released lock of 106393 on Object: 523
-Successfully released lock of 106393 on Object: 841
-Successfully released lock of 105525 on Object: 413
-Successfully released lock of 105525 on Object: 6
-Successfully released lock of 105525 on Object: 6
-Successfully released lock of 105525 on Object: 252
-Successfully released lock of 112547 on Object: 637
-Successfully released lock of 112547 on Object: 486
-Successfully released lock of 112547 on Object: 523
-Successfully released lock of 112547 on Object: 841
-Successfully released lock of 25774 on Object: 413
-Successfully released lock of 25774 on Object: 6
-Successfully released lock of 25774 on Object: 6
-Successfully released lock of 25774 on Object: 252
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 45459 on Object: 637
-Successfully released lock of 45459 on Object: 486
-Successfully released lock of 45459 on Object: 523
-Successfully released lock of 45459 on Object: 841
-Successfully released lock of 46367 on Object: 413
-Successfully released lock of 46367 on Object: 6
-Successfully released lock of 46367 on Object: 6
-Successfully released lock of 46367 on Object: 252
-Successfully released lock of 106354 on Object: 637
-Successfully released lock of 106354 on Object: 486
-Successfully released lock of 106354 on Object: 523
-Successfully released lock of 106354 on Object: 841
-Successfully released lock of 104849 on Object: 413
-Successfully released lock of 104849 on Object: 6
-Successfully released lock of 104849 on Object: 6
-Successfully released lock of 104849 on Object: 252
-Successfully released lock of 112379 on Object: 637
-Successfully released lock of 112379 on Object: 486
-Successfully released lock of 112379 on Object: 523
-Successfully released lock of 112379 on Object: 841
-Successfully released lock of 25956 on Object: 413
-Successfully released lock of 25956 on Object: 6
-Successfully released lock of 25956 on Object: 6
-Successfully released lock of 25956 on Object: 252
-Successfully released lock of 46308 on Object: 637
-Successfully released lock of 46308 on Object: 486
-Successfully released lock of 46308 on Object: 523
-Successfully released lock of 46308 on Object: 841
-Successfully released lock of 46515 on Object: 413
-Successfully released lock of 46515 on Object: 6
-Successfully released lock of 46515 on Object: 6
-Successfully released lock of 46515 on Object: 252
-Successfully released lock of 106189 on Object: 637
-Successfully released lock of 106189 on Object: 486
-Successfully released lock of 106189 on Object: 523
-Successfully released lock of 106189 on Object: 841
-Successfully released lock of 105557 on Object: 413
-Successfully released lock of 105557 on Object: 6
-Successfully released lock of 105557 on Object: 6
-Successfully released lock of 105557 on Object: 252
-Successfully released lock of 112469 on Object: 637
-Successfully released lock of 112469 on Object: 486
-Successfully released lock of 112469 on Object: 523
-Successfully released lock of 112469 on Object: 841
-Successfully released lock of 25856 on Object: 413
-Successfully released lock of 25856 on Object: 6
-Successfully released lock of 25856 on Object: 6
-Successfully released lock of 25856 on Object: 252
-Successfully released lock of 45593 on Object: 637
-Successfully released lock of 45593 on Object: 486
-Successfully released lock of 45593 on Object: 523
-Successfully released lock of 45593 on Object: 841
-Successfully released lock of 46462 on Object: 413
-Successfully released lock of 46462 on Object: 6
-Successfully released lock of 46462 on Object: 6
-Successfully released lock of 46462 on Object: 252
-Successfully released lock of 106420 on Object: 637
-Successfully released lock of 106420 on Object: 486
-Successfully released lock of 106420 on Object: 523
-Successfully released lock of 106420 on Object: 841
-Successfully released lock of 105007 on Object: 413
-Successfully released lock of 105007 on Object: 6
-Successfully released lock of 105007 on Object: 6
-Successfully released lock of 105007 on Object: 252
-Successfully released lock of 111970 on Object: 637
-Successfully released lock of 111970 on Object: 486
-Successfully released lock of 111970 on Object: 523
-Successfully released lock of 111970 on Object: 841
-Successfully released lock of 25413 on Object: 413
-Successfully released lock of 25413 on Object: 6
-Successfully released lock of 25413 on Object: 6
-Successfully released lock of 25413 on Object: 252
-Successfully released lock of 46232 on Object: 637
-Successfully released lock of 46232 on Object: 486
-Successfully released lock of 46232 on Object: 523
-Successfully released lock of 46232 on Object: 841
-Successfully released lock of 46697 on Object: 413
-Successfully released lock of 46697 on Object: 6
-Successfully released lock of 46697 on Object: 6
-Successfully released lock of 46697 on Object: 252
-Successfully released lock of 106795 on Object: 637
-Successfully released lock of 106795 on Object: 486
-Successfully released lock of 106795 on Object: 523
-Successfully released lock of 106795 on Object: 841
-Successfully released lock of 105179 on Object: 413
-Successfully released lock of 105179 on Object: 6
-Successfully released lock of 105179 on Object: 6
-Successfully released lock of 105179 on Object: 252
-Successfully released lock of 111827 on Object: 637
-Successfully released lock of 111827 on Object: 486
-Successfully released lock of 111827 on Object: 523
-Successfully released lock of 111827 on Object: 841
-Successfully released lock of 25818 on Object: 413
-Successfully released lock of 25818 on Object: 6
-Successfully released lock of 25818 on Object: 6
-Successfully released lock of 25818 on Object: 252
-Successfully released lock of 46281 on Object: 637
-Successfully released lock of 46281 on Object: 486
-Successfully released lock of 46281 on Object: 523
-Successfully released lock of 46281 on Object: 841
-Successfully released lock of 47003 on Object: 413
-Successfully released lock of 47003 on Object: 6
-Successfully released lock of 47003 on Object: 6
-Successfully released lock of 47003 on Object: 252
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 106257 on Object: 637
-Successfully released lock of 106257 on Object: 486
-Successfully released lock of 106257 on Object: 523
-Successfully released lock of 106257 on Object: 841
-Successfully released lock of 105295 on Object: 413
-Successfully released lock of 105295 on Object: 6
-Successfully released lock of 105295 on Object: 6
-Successfully released lock of 105295 on Object: 252
-Successfully released lock of 112524 on Object: 637
-Successfully released lock of 112524 on Object: 486
-Successfully released lock of 112524 on Object: 523
-Successfully released lock of 112524 on Object: 841
-Successfully released lock of 25476 on Object: 413
-Successfully released lock of 25476 on Object: 6
-Successfully released lock of 25476 on Object: 6
-Successfully released lock of 25476 on Object: 252
-Successfully released lock of 46057 on Object: 637
-Successfully released lock of 46057 on Object: 486
-Successfully released lock of 46057 on Object: 523
-Successfully released lock of 46057 on Object: 841
-Successfully released lock of 46643 on Object: 413
-Successfully released lock of 46643 on Object: 6
-Successfully released lock of 46643 on Object: 6
-Successfully released lock of 46643 on Object: 252
-Successfully released lock of 106919 on Object: 637
-Successfully released lock of 106919 on Object: 486
-Successfully released lock of 106919 on Object: 523
-Successfully released lock of 106919 on Object: 841
-Successfully released lock of 105500 on Object: 413
-Successfully released lock of 105500 on Object: 6
-Successfully released lock of 105500 on Object: 6
-Successfully released lock of 105500 on Object: 252
-Successfully released lock of 112562 on Object: 637
-Successfully released lock of 112562 on Object: 486
-Successfully released lock of 112562 on Object: 523
-Successfully released lock of 112562 on Object: 841
-Successfully released lock of 25555 on Object: 413
-Successfully released lock of 25555 on Object: 6
-Successfully released lock of 25555 on Object: 6
-Successfully released lock of 25555 on Object: 252
-Successfully released lock of 46439 on Object: 637
-Successfully released lock of 46439 on Object: 486
-Successfully released lock of 46439 on Object: 523
-Successfully released lock of 46439 on Object: 841
-Successfully released lock of 46954 on Object: 413
-Successfully released lock of 46954 on Object: 6
-Successfully released lock of 46954 on Object: 6
-Successfully released lock of 46954 on Object: 252
-Successfully released lock of 107105 on Object: 637
-Successfully released lock of 107105 on Object: 486
-Successfully released lock of 107105 on Object: 523
-Successfully released lock of 107105 on Object: 841
-Successfully released lock of 105186 on Object: 413
-Successfully released lock of 105186 on Object: 6
-Successfully released lock of 105186 on Object: 6
-Successfully released lock of 105186 on Object: 252
-Successfully released lock of 112416 on Object: 637
-Successfully released lock of 112416 on Object: 486
-Successfully released lock of 112416 on Object: 523
-Successfully released lock of 112416 on Object: 841
-Successfully released lock of 25169 on Object: 413
-Successfully released lock of 25169 on Object: 6
-Successfully released lock of 25169 on Object: 6
-Successfully released lock of 25169 on Object: 252
-Successfully released lock of 45622 on Object: 637
-Successfully released lock of 45622 on Object: 486
-Successfully released lock of 45622 on Object: 523
-Successfully released lock of 45622 on Object: 841
-Successfully released lock of 46857 on Object: 413
-Successfully released lock of 46857 on Object: 6
-Successfully released lock of 46857 on Object: 6
-Successfully released lock of 46857 on Object: 252
-Successfully released lock of 106466 on Object: 637
-Successfully released lock of 106466 on Object: 486
-Successfully released lock of 106466 on Object: 523
-Successfully released lock of 106466 on Object: 841
-Successfully released lock of 105677 on Object: 413
-Successfully released lock of 105677 on Object: 6
-Successfully released lock of 105677 on Object: 6
-Successfully released lock of 105677 on Object: 252
-Successfully released lock of 112023 on Object: 637
-Successfully released lock of 112023 on Object: 486
-Successfully released lock of 112023 on Object: 523
-Successfully released lock of 112023 on Object: 841
-Successfully released lock of 25063 on Object: 413
-Successfully released lock of 25063 on Object: 6
-Successfully released lock of 25063 on Object: 6
-Successfully released lock of 25063 on Object: 252
-Successfully released lock of 45899 on Object: 637
-Successfully released lock of 45899 on Object: 486
-Successfully released lock of 45899 on Object: 523
-Successfully released lock of 45899 on Object: 841
-Successfully released lock of 47227 on Object: 413
-Successfully released lock of 47227 on Object: 6
-Successfully released lock of 47227 on Object: 6
-Successfully released lock of 47227 on Object: 252
-Successfully released lock of 106252 on Object: 637
-Successfully released lock of 106252 on Object: 486
-Successfully released lock of 106252 on Object: 523
-Successfully released lock of 106252 on Object: 841
-Successfully released lock of 104920 on Object: 413
-Successfully released lock of 104920 on Object: 6
-Successfully released lock of 104920 on Object: 6
-Successfully released lock of 104920 on Object: 252
-Successfully released lock of 112366 on Object: 637
-Successfully released lock of 112366 on Object: 486
-Successfully released lock of 112366 on Object: 523
-Successfully released lock of 112366 on Object: 841
-Successfully released lock of 25593 on Object: 413
-Successfully released lock of 25593 on Object: 6
-Successfully released lock of 25593 on Object: 6
-Successfully released lock of 25593 on Object: 252
-Successfully released lock of 46394 on Object: 637
-Successfully released lock of 46394 on Object: 486
-Successfully released lock of 46394 on Object: 523
-Successfully released lock of 46394 on Object: 841
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 47037 on Object: 413
-Successfully released lock of 47037 on Object: 6
-Successfully released lock of 47037 on Object: 6
-Successfully released lock of 47037 on Object: 252
-Successfully released lock of 106529 on Object: 637
-Successfully released lock of 106529 on Object: 486
-Successfully released lock of 106529 on Object: 523
-Successfully released lock of 106529 on Object: 841
-Successfully released lock of 105454 on Object: 413
-Successfully released lock of 105454 on Object: 6
-Successfully released lock of 105454 on Object: 6
-Successfully released lock of 105454 on Object: 252
-Successfully released lock of 112643 on Object: 637
-Successfully released lock of 112643 on Object: 486
-Successfully released lock of 112643 on Object: 523
-Successfully released lock of 112643 on Object: 841
-Successfully released lock of 25920 on Object: 413
-Successfully released lock of 25920 on Object: 6
-Successfully released lock of 25920 on Object: 6
-Successfully released lock of 25920 on Object: 252
-Successfully released lock of 45580 on Object: 637
-Successfully released lock of 45580 on Object: 486
-Successfully released lock of 45580 on Object: 523
-Successfully released lock of 45580 on Object: 841
-Successfully released lock of 46487 on Object: 413
-Successfully released lock of 46487 on Object: 6
-Successfully released lock of 46487 on Object: 6
-Successfully released lock of 46487 on Object: 252
-Successfully released lock of 106618 on Object: 637
-Successfully released lock of 106618 on Object: 486
-Successfully released lock of 106618 on Object: 523
-Successfully released lock of 106618 on Object: 841
-Successfully released lock of 105050 on Object: 413
-Successfully released lock of 105050 on Object: 6
-Successfully released lock of 105050 on Object: 6
-Successfully released lock of 105050 on Object: 252
-Successfully released lock of 112541 on Object: 637
-Successfully released lock of 112541 on Object: 486
-Successfully released lock of 112541 on Object: 523
-Successfully released lock of 112541 on Object: 841
-Successfully released lock of 25648 on Object: 413
-Successfully released lock of 25648 on Object: 6
-Successfully released lock of 25648 on Object: 6
-Successfully released lock of 25648 on Object: 252
-Successfully released lock of 45708 on Object: 637
-Successfully released lock of 45708 on Object: 486
-Successfully released lock of 45708 on Object: 523
-Successfully released lock of 45708 on Object: 841
-Successfully released lock of 47203 on Object: 413
-Successfully released lock of 47203 on Object: 6
-Successfully released lock of 47203 on Object: 6
-Successfully released lock of 47203 on Object: 252
-Successfully released lock of 106273 on Object: 637
-Successfully released lock of 106273 on Object: 486
-Successfully released lock of 106273 on Object: 523
-Successfully released lock of 106273 on Object: 841
-Successfully released lock of 105244 on Object: 413
-Successfully released lock of 105244 on Object: 6
-Successfully released lock of 105244 on Object: 6
-Successfully released lock of 105244 on Object: 252
-Successfully released lock of 112538 on Object: 637
-Successfully released lock of 112538 on Object: 486
-Successfully released lock of 112538 on Object: 523
-Successfully released lock of 112538 on Object: 841
-Successfully released lock of 25070 on Object: 413
-Successfully released lock of 25070 on Object: 6
-Successfully released lock of 25070 on Object: 6
-Successfully released lock of 25070 on Object: 252
-Successfully released lock of 45709 on Object: 637
-Successfully released lock of 45709 on Object: 486
-Successfully released lock of 45709 on Object: 523
-Successfully released lock of 45709 on Object: 841
-Successfully released lock of 47001 on Object: 413
-Successfully released lock of 47001 on Object: 6
-Successfully released lock of 47001 on Object: 6
-Successfully released lock of 47001 on Object: 252
-Successfully released lock of 106291 on Object: 637
-Successfully released lock of 106291 on Object: 486
-Successfully released lock of 106291 on Object: 523
-Successfully released lock of 106291 on Object: 841
-Successfully released lock of 105511 on Object: 413
-Successfully released lock of 105511 on Object: 6
-Successfully released lock of 105511 on Object: 6
-Successfully released lock of 105511 on Object: 252
-Successfully released lock of 112226 on Object: 637
-Successfully released lock of 112226 on Object: 486
-Successfully released lock of 112226 on Object: 523
-Successfully released lock of 112226 on Object: 841
-Successfully released lock of 25379 on Object: 413
-Successfully released lock of 25379 on Object: 6
-Successfully released lock of 25379 on Object: 6
-Successfully released lock of 25379 on Object: 252
-Successfully released lock of 45751 on Object: 637
-Successfully released lock of 45751 on Object: 486
-Successfully released lock of 45751 on Object: 523
-Successfully released lock of 45751 on Object: 841
-Successfully released lock of 46993 on Object: 413
-Successfully released lock of 46993 on Object: 6
-Successfully released lock of 46993 on Object: 6
-Successfully released lock of 46993 on Object: 252
-Successfully released lock of 106863 on Object: 637
-Successfully released lock of 106863 on Object: 486
-Successfully released lock of 106863 on Object: 523
-Successfully released lock of 106863 on Object: 841
-Successfully released lock of 105402 on Object: 413
-Successfully released lock of 105402 on Object: 6
-Successfully released lock of 105402 on Object: 6
-Successfully released lock of 105402 on Object: 252
-Successfully released lock of 112390 on Object: 637
-Successfully released lock of 112390 on Object: 486
-Successfully released lock of 112390 on Object: 523
-Successfully released lock of 112390 on Object: 841
-Successfully released lock of 25736 on Object: 413
-Successfully released lock of 25736 on Object: 6
-Successfully released lock of 25736 on Object: 6
-Successfully released lock of 25736 on Object: 252
-Successfully released lock of 45488 on Object: 637
-Successfully released lock of 45488 on Object: 486
-Successfully released lock of 45488 on Object: 523
-Successfully released lock of 45488 on Object: 841
-Successfully released lock of 47234 on Object: 413
-Successfully released lock of 47234 on Object: 6
-Successfully released lock of 47234 on Object: 6
-Successfully released lock of 47234 on Object: 252
-Successfully released lock of 106982 on Object: 637
-Successfully released lock of 106982 on Object: 486
-Successfully released lock of 106982 on Object: 523
-Successfully released lock of 106982 on Object: 841
-Successfully released lock of 104880 on Object: 413
-Successfully released lock of 104880 on Object: 6
-Successfully released lock of 104880 on Object: 6
-Successfully released lock of 104880 on Object: 252
-Successfully released lock of 112276 on Object: 637
-Successfully released lock of 112276 on Object: 486
-Successfully released lock of 112276 on Object: 523
-Successfully released lock of 112276 on Object: 841
-Successfully released lock of 25160 on Object: 413
-Successfully released lock of 25160 on Object: 6
-Successfully released lock of 25160 on Object: 6
-Successfully released lock of 25160 on Object: 252
-Successfully released lock of 46419 on Object: 637
-Successfully released lock of 46419 on Object: 486
-Successfully released lock of 46419 on Object: 523
-Successfully released lock of 46419 on Object: 841
 *****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 46488 on Object: 413
-Successfully released lock of 46488 on Object: 6
-Successfully released lock of 46488 on Object: 6
-Successfully released lock of 46488 on Object: 252
-Successfully released lock of 106989 on Object: 637
-Successfully released lock of 106989 on Object: 486
-Successfully released lock of 106989 on Object: 523
-Successfully released lock of 106989 on Object: 841
-Successfully released lock of 105588 on Object: 413
-Successfully released lock of 105588 on Object: 6
-Successfully released lock of 105588 on Object: 6
-Successfully released lock of 105588 on Object: 252
-Successfully released lock of 112073 on Object: 637
-Successfully released lock of 112073 on Object: 486
-Successfully released lock of 112073 on Object: 523
-Successfully released lock of 112073 on Object: 841
-Successfully released lock of 25135 on Object: 413
-Successfully released lock of 25135 on Object: 6
-Successfully released lock of 25135 on Object: 6
-Successfully released lock of 25135 on Object: 252
-Successfully released lock of 45513 on Object: 637
-Successfully released lock of 45513 on Object: 486
-Successfully released lock of 45513 on Object: 523
-Successfully released lock of 45513 on Object: 841
-Successfully released lock of 12058 on Object: 33
-Successfully released lock of 12058 on Object: 6
-Successfully released lock of 12058 on Object: 486
-Successfully released lock of 12058 on Object: 104
-Successfully released lock of 12058 on Object: 841
-Successfully released lock of 12058 on Object: 521
-Successfully released lock of 12058 on Object: 523
-Successfully released lock of 12058 on Object: 587
-Successfully released lock of 12058 on Object: 524
-Successfully released lock of 12058 on Object: 46
-Successfully released lock of 12058 on Object: 686
-Successfully released lock of 12058 on Object: 655
-Successfully released lock of 12058 on Object: 924
-Successfully released lock of 12058 on Object: 252
-Successfully released lock of 12058 on Object: 413
-Successfully released lock of 12058 on Object: 637
-Successfully released lock of 12058 on Object: 766
-Successfully released lock of 12058 on Object: 286
-Successfully released lock of 12058 on Object: 959
-Successfully released lock of 12058 on Object: 607
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
 THREAD n:1 , iteration:0
 THREAD n:2 , iteration:0
-Successfully released lock of 107126 on Object: 637
-Successfully released lock of 107126 on Object: 486
-Successfully released lock of 107126 on Object: 523
-Successfully released lock of 107126 on Object: 841
-THREAD n:2 , iteration:1
-Successfully released lock of 112659 on Object: 413
-Successfully released lock of 112659 on Object: 6
-Successfully released lock of 112659 on Object: 6
-Successfully released lock of 112659 on Object: 252
 THREAD n:1 , iteration:1
-Successfully released lock of 105099 on Object: 637
-Successfully released lock of 105099 on Object: 486
-Successfully released lock of 105099 on Object: 523
-Successfully released lock of 105099 on Object: 841
-THREAD n:2 , iteration:2
-Successfully released lock of 25379 on Object: 413
-Successfully released lock of 25379 on Object: 6
-Successfully released lock of 25379 on Object: 6
-Successfully released lock of 25379 on Object: 252
+THREAD n:2 , iteration:1
 THREAD n:1 , iteration:2
-Successfully released lock of 45595 on Object: 637
-Successfully released lock of 45595 on Object: 486
-Successfully released lock of 45595 on Object: 523
-Successfully released lock of 45595 on Object: 841
-THREAD n:2 , iteration:3
-Successfully released lock of 104975 on Object: 413
-Successfully released lock of 104975 on Object: 6
-Successfully released lock of 104975 on Object: 6
-Successfully released lock of 104975 on Object: 252
 THREAD n:1 , iteration:3
-Successfully released lock of 106811 on Object: 413
-Successfully released lock of 106811 on Object: 6
-Successfully released lock of 106811 on Object: 6
-Successfully released lock of 106811 on Object: 252
-Successfully released lock of 8273 on Object: 637
-Successfully released lock of 8273 on Object: 486
-Successfully released lock of 8273 on Object: 523
-Successfully released lock of 8273 on Object: 841
 THREAD n:1 , iteration:4
-THREAD n:2 , iteration:4
-Successfully released lock of 46603 on Object: 637
-Successfully released lock of 46603 on Object: 486
-Successfully released lock of 46603 on Object: 523
-Successfully released lock of 46603 on Object: 841
-THREAD n:2 , iteration:5
-Successfully released lock of 112664 on Object: 413
-Successfully released lock of 112664 on Object: 6
-Successfully released lock of 112664 on Object: 6
-Successfully released lock of 112664 on Object: 252
 THREAD n:1 , iteration:5
-Successfully released lock of 25723 on Object: 637
-Successfully released lock of 25723 on Object: 486
-Successfully released lock of 25723 on Object: 523
-Successfully released lock of 25723 on Object: 841
-Successfully released lock of 45824 on Object: 413
-Successfully released lock of 45824 on Object: 6
-Successfully released lock of 45824 on Object: 6
-Successfully released lock of 45824 on Object: 252
-THREAD n:2 , iteration:6
+THREAD n:2 , iteration:2
 THREAD n:1 , iteration:6
-Successfully released lock of 106966 on Object: 637
-Successfully released lock of 104773 on Object: 413
-Successfully released lock of 106966 on Object: 486
-Successfully released lock of 104773 on Object: 6
-Successfully released lock of 106966 on Object: 523
-Successfully released lock of 104773 on Object: 6
-Successfully released lock of 106966 on Object: 841
-Successfully released lock of 104773 on Object: 252
-THREAD n:2 , iteration:7
+THREAD n:2 , iteration:3
 THREAD n:1 , iteration:7
-Successfully released lock of 47180 on Object: 413
-Successfully released lock of 47180 on Object: 6
-Successfully released lock of 8236 on Object: 637
-Successfully released lock of 47180 on Object: 6
-Successfully released lock of 8236 on Object: 486
-Successfully released lock of 47180 on Object: 252
-Successfully released lock of 8236 on Object: 523
-Successfully released lock of 8236 on Object: 841
+THREAD n:2 , iteration:4
 THREAD n:1 , iteration:8
-THREAD n:2 , iteration:8
-Successfully released lock of 25310 on Object: 637
-Successfully released lock of 112243 on Object: 413
-Successfully released lock of 25310 on Object: 486
-Successfully released lock of 112243 on Object: 6
-Successfully released lock of 25310 on Object: 523
-Successfully released lock of 112243 on Object: 6
-Successfully released lock of 25310 on Object: 841
-Successfully released lock of 112243 on Object: 252
+THREAD n:2 , iteration:5
 THREAD n:1 , iteration:9
-THREAD n:2 , iteration:9
-Successfully released lock of 46390 on Object: 637
-Successfully released lock of 46390 on Object: 486
-Successfully released lock of 46390 on Object: 523
-Successfully released lock of 46390 on Object: 841
-Successfully released lock of 106223 on Object: 413
-Successfully released lock of 106223 on Object: 6
-Successfully released lock of 106223 on Object: 6
-Successfully released lock of 106223 on Object: 252
+THREAD n:2 , iteration:6
 THREAD n:1 , iteration:10
-THREAD n:2 , iteration:10
-Successfully released lock of 105351 on Object: 637
-Successfully released lock of 105351 on Object: 486
-Successfully released lock of 105351 on Object: 523
-Successfully released lock of 105351 on Object: 841
-Successfully released lock of 46359 on Object: 413
-Successfully released lock of 46359 on Object: 6
-Successfully released lock of 46359 on Object: 6
-Successfully released lock of 46359 on Object: 252
-THREAD n:2 , iteration:11
+THREAD n:2 , iteration:7
 THREAD n:1 , iteration:11
-Successfully released lock of 8586 on Object: 637
-Successfully released lock of 8586 on Object: 486
-Successfully released lock of 8586 on Object: 523
-Successfully released lock of 8586 on Object: 841
-Successfully released lock of 111801 on Object: 413
-Successfully released lock of 111801 on Object: 6
-Successfully released lock of 111801 on Object: 6
-Successfully released lock of 111801 on Object: 252
-THREAD n:2 , iteration:12
+THREAD n:2 , iteration:8
 THREAD n:1 , iteration:12
-Successfully released lock of 25388 on Object: 637
-Successfully released lock of 25388 on Object: 486
-Successfully released lock of 25388 on Object: 523
-Successfully released lock of 25388 on Object: 841
-Successfully released lock of 8214 on Object: 413
-Successfully released lock of 8214 on Object: 6
-Successfully released lock of 8214 on Object: 6
-Successfully released lock of 8214 on Object: 252
+THREAD n:2 , iteration:9
 THREAD n:1 , iteration:13
-THREAD n:2 , iteration:13
-Successfully released lock of 8001 on Object: 637
-Successfully released lock of 8001 on Object: 486
-Successfully released lock of 8001 on Object: 523
-Successfully released lock of 8001 on Object: 841
-Successfully released lock of 25002 on Object: 413
-Successfully released lock of 25002 on Object: 6
-Successfully released lock of 25002 on Object: 6
-Successfully released lock of 25002 on Object: 252
-THREAD n:2 , iteration:14
+THREAD n:2 , iteration:10
 THREAD n:1 , iteration:14
-Successfully released lock of 25377 on Object: 637
-Successfully released lock of 25377 on Object: 486
-Successfully released lock of 25377 on Object: 523
-Successfully released lock of 25377 on Object: 841
-Successfully released lock of 8474 on Object: 413
-Successfully released lock of 8474 on Object: 6
-Successfully released lock of 8474 on Object: 6
-Successfully released lock of 8474 on Object: 252
+THREAD n:2 , iteration:11
 THREAD n:1 , iteration:15
-THREAD n:2 , iteration:15
-Successfully released lock of 7647 on Object: 413
-Successfully released lock of 7647 on Object: 6
-Successfully released lock of 7647 on Object: 6
-Successfully released lock of 7647 on Object: 252
-Successfully released lock of 25135 on Object: 637
-Successfully released lock of 25135 on Object: 486
-Successfully released lock of 25135 on Object: 523
-Successfully released lock of 25135 on Object: 841
+THREAD n:2 , iteration:12
 THREAD n:1 , iteration:16
-THREAD n:2 , iteration:16
-Successfully released lock of 45847 on Object: 637
-Successfully released lock of 45847 on Object: 486
-Successfully released lock of 45847 on Object: 523
-Successfully released lock of 45847 on Object: 841
-Successfully released lock of 25880 on Object: 413
-Successfully released lock of 25880 on Object: 6
-Successfully released lock of 25880 on Object: 6
-Successfully released lock of 25880 on Object: 252
-THREAD n:2 , iteration:17
+THREAD n:2 , iteration:13
 THREAD n:1 , iteration:17
-Successfully released lock of 112175 on Object: 637
-Successfully released lock of 112175 on Object: 486
-Successfully released lock of 112175 on Object: 523
-Successfully released lock of 112175 on Object: 841
-Successfully released lock of 46420 on Object: 413
-Successfully released lock of 46420 on Object: 6
-Successfully released lock of 46420 on Object: 6
-Successfully released lock of 46420 on Object: 252
-THREAD n:2 , iteration:18
+THREAD n:2 , iteration:14
+THREAD n:2 , iteration:15
 THREAD n:1 , iteration:18
-*****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 7808 on Object: 637
-Successfully released lock of 7808 on Object: 486
-Successfully released lock of 7808 on Object: 523
-Successfully released lock of 7808 on Object: 841
-Successfully released lock of 25626 on Object: 413
-Successfully released lock of 25626 on Object: 6
-Successfully released lock of 25626 on Object: 6
-Successfully released lock of 25626 on Object: 252
-THREAD n:2 , iteration:19
 THREAD n:1 , iteration:19
-Successfully released lock of 46144 on Object: 637
-Successfully released lock of 106575 on Object: 413
-Successfully released lock of 46144 on Object: 486
-Successfully released lock of 106575 on Object: 6
-Successfully released lock of 46144 on Object: 523
-Successfully released lock of 106575 on Object: 6
-Successfully released lock of 46144 on Object: 841
-Successfully released lock of 106575 on Object: 252
 THREAD n:1 , iteration:20
-THREAD n:2 , iteration:20
-Successfully released lock of 111766 on Object: 637
-Successfully released lock of 111766 on Object: 486
-Successfully released lock of 46852 on Object: 413
-Successfully released lock of 111766 on Object: 523
-Successfully released lock of 46852 on Object: 6
-Successfully released lock of 111766 on Object: 841
-Successfully released lock of 46852 on Object: 6
-Successfully released lock of 46852 on Object: 252
+THREAD n:2 , iteration:16
 THREAD n:1 , iteration:21
-THREAD n:2 , iteration:21
-Successfully released lock of 105411 on Object: 637
-Successfully released lock of 8449 on Object: 413
-Successfully released lock of 105411 on Object: 486
-Successfully released lock of 8449 on Object: 6
-Successfully released lock of 105411 on Object: 523
-Successfully released lock of 8449 on Object: 6
-Successfully released lock of 105411 on Object: 841
-Successfully released lock of 8449 on Object: 252
-THREAD n:2 , iteration:22
 THREAD n:1 , iteration:22
-Successfully released lock of 25689 on Object: 413
-Successfully released lock of 106283 on Object: 637
-Successfully released lock of 25689 on Object: 6
-Successfully released lock of 106283 on Object: 486
-Successfully released lock of 25689 on Object: 6
-Successfully released lock of 106283 on Object: 523
-Successfully released lock of 25689 on Object: 252
-Successfully released lock of 106283 on Object: 841
+THREAD n:2 , iteration:17
 THREAD n:1 , iteration:23
-THREAD n:2 , iteration:23
-Successfully released lock of 46202 on Object: 413
-Successfully released lock of 112531 on Object: 637
-Successfully released lock of 46202 on Object: 6
-Successfully released lock of 112531 on Object: 486
-Successfully released lock of 46202 on Object: 6
-Successfully released lock of 112531 on Object: 523
-Successfully released lock of 46202 on Object: 252
-Successfully released lock of 112531 on Object: 841
-THREAD n:2 , iteration:24
 THREAD n:1 , iteration:24
-Successfully released lock of 47115 on Object: 637
-Successfully released lock of 105286 on Object: 413
-Successfully released lock of 47115 on Object: 486
-Successfully released lock of 105286 on Object: 6
-Successfully released lock of 47115 on Object: 523
-Successfully released lock of 105286 on Object: 6
-Successfully released lock of 47115 on Object: 841
-Successfully released lock of 105286 on Object: 252
+THREAD n:2 , iteration:18
 THREAD n:1 , iteration:25
-THREAD n:2 , iteration:25
-Successfully released lock of 7647 on Object: 637
-Successfully released lock of 25346 on Object: 413
-Successfully released lock of 7647 on Object: 486
-Successfully released lock of 25346 on Object: 6
-Successfully released lock of 7647 on Object: 523
-Successfully released lock of 25346 on Object: 6
-Successfully released lock of 7647 on Object: 841
-Successfully released lock of 25346 on Object: 252
-THREAD n:2 , iteration:26
+THREAD n:2 , iteration:19
 THREAD n:1 , iteration:26
-Successfully released lock of 111831 on Object: 637
-Successfully released lock of 106955 on Object: 413
-Successfully released lock of 111831 on Object: 486
-Successfully released lock of 111831 on Object: 523
-Successfully released lock of 111831 on Object: 841
-Successfully released lock of 106955 on Object: 6
-Successfully released lock of 106955 on Object: 6
-Successfully released lock of 106955 on Object: 252
+THREAD n:2 , iteration:20
 THREAD n:1 , iteration:27
-THREAD n:2 , iteration:27
-Successfully released lock of 46155 on Object: 637
-Successfully released lock of 46155 on Object: 486
-Successfully released lock of 46155 on Object: 523
-Successfully released lock of 46155 on Object: 841
-Successfully released lock of 47172 on Object: 413
-Successfully released lock of 47172 on Object: 6
-Successfully released lock of 47172 on Object: 6
-Successfully released lock of 47172 on Object: 252
-THREAD n:2 , iteration:28
+THREAD n:2 , iteration:21
 THREAD n:1 , iteration:28
-Successfully released lock of 8415 on Object: 637
-Successfully released lock of 105180 on Object: 413
-Successfully released lock of 8415 on Object: 486
-Successfully released lock of 8415 on Object: 523
-Successfully released lock of 8415 on Object: 841
-Successfully released lock of 105180 on Object: 6
-Successfully released lock of 105180 on Object: 6
-Successfully released lock of 105180 on Object: 252
+THREAD n:2 , iteration:22
 THREAD n:1 , iteration:29
-THREAD n:2 , iteration:29
-Successfully released lock of 25162 on Object: 637
-Successfully released lock of 25162 on Object: 486
-Successfully released lock of 25162 on Object: 523
-Successfully released lock of 25162 on Object: 841
-Successfully released lock of 111797 on Object: 413
-Successfully released lock of 111797 on Object: 6
-Successfully released lock of 111797 on Object: 6
-Successfully released lock of 111797 on Object: 252
+THREAD n:2 , iteration:23
 THREAD n:1 , iteration:30
-THREAD n:2 , iteration:30
-Successfully released lock of 45585 on Object: 637
-Successfully released lock of 45585 on Object: 486
-Successfully released lock of 45585 on Object: 523
-Successfully released lock of 45585 on Object: 841
-Successfully released lock of 106547 on Object: 413
-Successfully released lock of 106547 on Object: 6
-Successfully released lock of 106547 on Object: 6
-Successfully released lock of 106547 on Object: 252
-THREAD n:2 , iteration:31
+THREAD n:2 , iteration:24
+THREAD n:2 , iteration:25
+THREAD n:2 , iteration:26
+THREAD n:2 , iteration:27
+THREAD n:2 , iteration:28
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:2 , iteration:29
 THREAD n:1 , iteration:31
-Successfully released lock of 46916 on Object: 413
-Successfully released lock of 46916 on Object: 6
-Successfully released lock of 46916 on Object: 6
-Successfully released lock of 46916 on Object: 252
-Successfully released lock of 8548 on Object: 637
-Successfully released lock of 8548 on Object: 486
-Successfully released lock of 8548 on Object: 523
-Successfully released lock of 8548 on Object: 841
-THREAD n:2 , iteration:32
+THREAD n:2 , iteration:30
 THREAD n:1 , iteration:32
-Successfully released lock of 104928 on Object: 637
-Successfully released lock of 104928 on Object: 486
-Successfully released lock of 104928 on Object: 523
-Successfully released lock of 104928 on Object: 841
-Successfully released lock of 112350 on Object: 413
-Successfully released lock of 112350 on Object: 6
-Successfully released lock of 112350 on Object: 6
-Successfully released lock of 112350 on Object: 252
-THREAD n:2 , iteration:33
+THREAD n:2 , iteration:31
 THREAD n:1 , iteration:33
-Successfully released lock of 25562 on Object: 413
-Successfully released lock of 25562 on Object: 6
-Successfully released lock of 25562 on Object: 6
-Successfully released lock of 25562 on Object: 252
-Successfully released lock of 107061 on Object: 637
-Successfully released lock of 107061 on Object: 486
-Successfully released lock of 107061 on Object: 523
-Successfully released lock of 107061 on Object: 841
+THREAD n:2 , iteration:32
 THREAD n:1 , iteration:34
-Successfully released lock of 25392 on Object: 413
-Successfully released lock of 25392 on Object: 6
-Successfully released lock of 25392 on Object: 6
-Successfully released lock of 25392 on Object: 252
+THREAD n:2 , iteration:33
 THREAD n:1 , iteration:35
 THREAD n:2 , iteration:34
-Successfully released lock of 25225 on Object: 413
-Successfully released lock of 25225 on Object: 6
-Successfully released lock of 25225 on Object: 6
-Successfully released lock of 25225 on Object: 252
-THREAD n:1 , iteration:36
-Successfully released lock of 106900 on Object: 637
-Successfully released lock of 106900 on Object: 486
-Successfully released lock of 106900 on Object: 523
-Successfully released lock of 106900 on Object: 841
 THREAD n:2 , iteration:35
-Successfully released lock of 25071 on Object: 413
-Successfully released lock of 25071 on Object: 6
-Successfully released lock of 25071 on Object: 6
-Successfully released lock of 25071 on Object: 252
-THREAD n:1 , iteration:37
-Successfully released lock of 46002 on Object: 637
-Successfully released lock of 46002 on Object: 486
-Successfully released lock of 46002 on Object: 523
-Successfully released lock of 46002 on Object: 841
+THREAD n:1 , iteration:36
 THREAD n:2 , iteration:36
-Successfully released lock of 106216 on Object: 413
-Successfully released lock of 106216 on Object: 6
-Successfully released lock of 106216 on Object: 6
-Successfully released lock of 106216 on Object: 252
-THREAD n:1 , iteration:38
-Successfully released lock of 25316 on Object: 637
-Successfully released lock of 45808 on Object: 413
-Successfully released lock of 45808 on Object: 6
-Successfully released lock of 45808 on Object: 6
-Successfully released lock of 45808 on Object: 252
-Successfully released lock of 25316 on Object: 486
-Successfully released lock of 25316 on Object: 523
-Successfully released lock of 25316 on Object: 841
-THREAD n:1 , iteration:39
+THREAD n:1 , iteration:37
 THREAD n:2 , iteration:37
-Successfully released lock of 106672 on Object: 413
-Successfully released lock of 106672 on Object: 6
-Successfully released lock of 106672 on Object: 6
-Successfully released lock of 106672 on Object: 252
-THREAD n:1 , iteration:40
-Successfully released lock of 45939 on Object: 637
-Successfully released lock of 45939 on Object: 486
-Successfully released lock of 45939 on Object: 523
-Successfully released lock of 45939 on Object: 841
+THREAD n:1 , iteration:38
 THREAD n:2 , iteration:38
-Successfully released lock of 7772 on Object: 413
-Successfully released lock of 7772 on Object: 6
-Successfully released lock of 7772 on Object: 6
-Successfully released lock of 7772 on Object: 252
-THREAD n:1 , iteration:41
-Successfully released lock of 106939 on Object: 637
-Successfully released lock of 106939 on Object: 486
-Successfully released lock of 106939 on Object: 523
-Successfully released lock of 106939 on Object: 841
+THREAD n:1 , iteration:39
+THREAD n:1 , iteration:40
 THREAD n:2 , iteration:39
-Successfully released lock of 7945 on Object: 637
-Successfully released lock of 7945 on Object: 486
-Successfully released lock of 7945 on Object: 523
-Successfully released lock of 7945 on Object: 841
-Successfully released lock of 46222 on Object: 413
-Successfully released lock of 46222 on Object: 6
-Successfully released lock of 46222 on Object: 6
-Successfully released lock of 46222 on Object: 252
-THREAD n:1 , iteration:42
-Successfully released lock of 105424 on Object: 413
-Successfully released lock of 105424 on Object: 6
-Successfully released lock of 105424 on Object: 6
-Successfully released lock of 105424 on Object: 252
-THREAD n:1 , iteration:43
-Successfully released lock of 46679 on Object: 413
-Successfully released lock of 46679 on Object: 6
-Successfully released lock of 46679 on Object: 6
-Successfully released lock of 46679 on Object: 252
-THREAD n:1 , iteration:44
-Successfully released lock of 25146 on Object: 413
-Successfully released lock of 25146 on Object: 6
-Successfully released lock of 25146 on Object: 6
-Successfully released lock of 25146 on Object: 252
-THREAD n:1 , iteration:45
-Successfully released lock of 106564 on Object: 413
-Successfully released lock of 106564 on Object: 6
-Successfully released lock of 106564 on Object: 6
-Successfully released lock of 106564 on Object: 252
-THREAD n:1 , iteration:46
+THREAD n:1 , iteration:41
 THREAD n:2 , iteration:40
-Successfully released lock of 8174 on Object: 413
-Successfully released lock of 8174 on Object: 6
-Successfully released lock of 8174 on Object: 6
-Successfully released lock of 8174 on Object: 252
-Successfully released lock of 112262 on Object: 637
-Successfully released lock of 112262 on Object: 486
-Successfully released lock of 112262 on Object: 523
-Successfully released lock of 112262 on Object: 841
-THREAD n:1 , iteration:47
 THREAD n:2 , iteration:41
-Successfully released lock of 45881 on Object: 413
-Successfully released lock of 45881 on Object: 6
-Successfully released lock of 45881 on Object: 6
-Successfully released lock of 45881 on Object: 252
-THREAD n:1 , iteration:48
-Successfully released lock of 47216 on Object: 413
-Successfully released lock of 47216 on Object: 6
-Successfully released lock of 47216 on Object: 6
-Successfully released lock of 47216 on Object: 252
-Successfully released lock of 8410 on Object: 637
-Successfully released lock of 8410 on Object: 486
-Successfully released lock of 8410 on Object: 523
-Successfully released lock of 8410 on Object: 841
-THREAD n:1 , iteration:49
+THREAD n:1 , iteration:42
 THREAD n:2 , iteration:42
-Successfully released lock of 46741 on Object: 413
-Successfully released lock of 46741 on Object: 6
-Successfully released lock of 46741 on Object: 6
-Successfully released lock of 46741 on Object: 252
-Successfully released lock of 25252 on Object: 637
-Successfully released lock of 25252 on Object: 486
-Successfully released lock of 25252 on Object: 523
-Successfully released lock of 25252 on Object: 841
+THREAD n:1 , iteration:43
+THREAD n:1 , iteration:44
+THREAD n:1 , iteration:45
+THREAD n:1 , iteration:46
+THREAD n:1 , iteration:47
+THREAD n:1 , iteration:48
 THREAD n:2 , iteration:43
-THREAD n:1 , iteration:50
-Successfully released lock of 46520 on Object: 413
-Successfully released lock of 46520 on Object: 6
-Successfully released lock of 46520 on Object: 6
-Successfully released lock of 46520 on Object: 252
-Successfully released lock of 25517 on Object: 637
-Successfully released lock of 25517 on Object: 486
-Successfully released lock of 25517 on Object: 523
-Successfully released lock of 25517 on Object: 841
-THREAD n:1 , iteration:51
+THREAD n:1 , iteration:49
 THREAD n:2 , iteration:44
-Successfully released lock of 46743 on Object: 637
-Successfully released lock of 46743 on Object: 486
-Successfully released lock of 46743 on Object: 523
-Successfully released lock of 46743 on Object: 841
-Successfully released lock of 112128 on Object: 413
-Successfully released lock of 112128 on Object: 6
-Successfully released lock of 112128 on Object: 6
-Successfully released lock of 112128 on Object: 252
 THREAD n:2 , iteration:45
-THREAD n:1 , iteration:52
-Successfully released lock of 105493 on Object: 413
-*****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 7880 on Object: 637
-Successfully released lock of 105493 on Object: 6
-Successfully released lock of 7880 on Object: 486
-Successfully released lock of 105493 on Object: 6
-Successfully released lock of 7880 on Object: 523
-Successfully released lock of 105493 on Object: 252
-Successfully released lock of 7880 on Object: 841
-THREAD n:1 , iteration:53
+THREAD n:1 , iteration:50
+THREAD n:1 , iteration:51
 THREAD n:2 , iteration:46
-Successfully released lock of 46238 on Object: 637
-Successfully released lock of 106393 on Object: 413
-Successfully released lock of 46238 on Object: 486
-Successfully released lock of 106393 on Object: 6
-Successfully released lock of 46238 on Object: 523
-Successfully released lock of 106393 on Object: 6
-Successfully released lock of 46238 on Object: 841
-Successfully released lock of 106393 on Object: 252
-THREAD n:1 , iteration:54
+THREAD n:1 , iteration:52
 THREAD n:2 , iteration:47
-Successfully released lock of 25867 on Object: 637
-Successfully released lock of 46942 on Object: 413
-Successfully released lock of 25867 on Object: 486
-Successfully released lock of 46942 on Object: 6
-Successfully released lock of 25867 on Object: 523
-Successfully released lock of 46942 on Object: 6
-Successfully released lock of 25867 on Object: 841
-Successfully released lock of 46942 on Object: 252
+THREAD n:1 , iteration:53
 THREAD n:2 , iteration:48
-THREAD n:1 , iteration:55
-Successfully released lock of 112143 on Object: 637
-Successfully released lock of 112143 on Object: 486
-Successfully released lock of 104982 on Object: 413
-Successfully released lock of 112143 on Object: 523
-Successfully released lock of 104982 on Object: 6
-Successfully released lock of 112143 on Object: 841
-Successfully released lock of 104982 on Object: 6
-Successfully released lock of 104982 on Object: 252
 THREAD n:2 , iteration:49
-THREAD n:1 , iteration:56
-Successfully released lock of 7690 on Object: 637
-Successfully released lock of 7690 on Object: 486
-Successfully released lock of 7690 on Object: 523
-Successfully released lock of 7690 on Object: 841
-Successfully released lock of 45803 on Object: 413
-Successfully released lock of 45803 on Object: 6
-Successfully released lock of 45803 on Object: 6
-Successfully released lock of 45803 on Object: 252
-THREAD n:1 , iteration:57
+THREAD n:1 , iteration:54
 THREAD n:2 , iteration:50
-Successfully released lock of 8021 on Object: 413
-Successfully released lock of 8021 on Object: 6
-Successfully released lock of 8021 on Object: 6
-Successfully released lock of 8021 on Object: 252
-THREAD n:1 , iteration:58
-Successfully released lock of 46314 on Object: 637
-Successfully released lock of 46314 on Object: 486
-Successfully released lock of 46314 on Object: 523
-Successfully released lock of 46314 on Object: 841
+THREAD n:1 , iteration:55
 THREAD n:2 , iteration:51
-Successfully released lock of 8305 on Object: 413
-Successfully released lock of 8305 on Object: 6
-Successfully released lock of 8305 on Object: 6
-Successfully released lock of 8305 on Object: 252
-THREAD n:1 , iteration:59
-Successfully released lock of 106790 on Object: 637
-Successfully released lock of 106790 on Object: 486
-Successfully released lock of 106790 on Object: 523
-Successfully released lock of 106790 on Object: 841
+THREAD n:1 , iteration:56
 THREAD n:2 , iteration:52
-Successfully released lock of 46048 on Object: 413
-Successfully released lock of 46048 on Object: 6
-Successfully released lock of 46048 on Object: 6
-Successfully released lock of 46048 on Object: 252
-THREAD n:1 , iteration:60
-Successfully released lock of 8127 on Object: 637
-Successfully released lock of 8127 on Object: 486
-Successfully released lock of 8127 on Object: 523
-Successfully released lock of 8127 on Object: 841
+THREAD n:1 , iteration:57
 THREAD n:2 , iteration:53
-Successfully released lock of 106848 on Object: 413
-Successfully released lock of 106848 on Object: 6
-Successfully released lock of 106848 on Object: 6
-Successfully released lock of 106848 on Object: 252
-THREAD n:1 , iteration:61
-Successfully released lock of 45973 on Object: 637
-Successfully released lock of 45973 on Object: 486
-Successfully released lock of 45973 on Object: 523
-Successfully released lock of 45973 on Object: 841
+THREAD n:1 , iteration:58
 THREAD n:2 , iteration:54
-Successfully released lock of 7692 on Object: 413
-Successfully released lock of 7692 on Object: 6
-Successfully released lock of 7692 on Object: 6
-Successfully released lock of 7692 on Object: 252
-Successfully released lock of 106750 on Object: 637
-Successfully released lock of 106750 on Object: 486
-Successfully released lock of 106750 on Object: 523
-Successfully released lock of 106750 on Object: 841
-THREAD n:1 , iteration:62
 THREAD n:2 , iteration:55
-Successfully released lock of 105582 on Object: 637
-Successfully released lock of 8461 on Object: 413
-Successfully released lock of 105582 on Object: 486
-Successfully released lock of 8461 on Object: 6
-Successfully released lock of 105582 on Object: 523
-Successfully released lock of 8461 on Object: 6
-Successfully released lock of 105582 on Object: 841
-Successfully released lock of 8461 on Object: 252
 THREAD n:2 , iteration:56
-THREAD n:1 , iteration:63
-Successfully released lock of 46956 on Object: 413
-Successfully released lock of 25810 on Object: 637
-Successfully released lock of 46956 on Object: 6
-Successfully released lock of 25810 on Object: 486
-Successfully released lock of 46956 on Object: 6
-Successfully released lock of 25810 on Object: 523
-Successfully released lock of 46956 on Object: 252
-Successfully released lock of 25810 on Object: 841
-THREAD n:1 , iteration:64
 THREAD n:2 , iteration:57
-Successfully released lock of 45607 on Object: 637
-Successfully released lock of 47320 on Object: 413
-Successfully released lock of 45607 on Object: 486
-Successfully released lock of 47320 on Object: 6
-Successfully released lock of 47320 on Object: 6
-Successfully released lock of 45607 on Object: 523
-Successfully released lock of 47320 on Object: 252
-Successfully released lock of 45607 on Object: 841
 THREAD n:2 , iteration:58
-THREAD n:1 , iteration:65
-Successfully released lock of 107007 on Object: 413
-Successfully released lock of 46398 on Object: 637
-Successfully released lock of 107007 on Object: 6
-Successfully released lock of 46398 on Object: 486
-Successfully released lock of 107007 on Object: 6
-Successfully released lock of 107007 on Object: 252
-Successfully released lock of 46398 on Object: 523
-Successfully released lock of 46398 on Object: 841
-THREAD n:1 , iteration:66
 THREAD n:2 , iteration:59
-Successfully released lock of 46692 on Object: 637
-Successfully released lock of 7849 on Object: 413
-Successfully released lock of 7849 on Object: 6
-Successfully released lock of 46692 on Object: 486
-Successfully released lock of 7849 on Object: 6
-Successfully released lock of 46692 on Object: 523
-Successfully released lock of 7849 on Object: 252
-Successfully released lock of 46692 on Object: 841
 THREAD n:2 , iteration:60
-THREAD n:1 , iteration:67
-Successfully released lock of 112570 on Object: 637
-Successfully released lock of 46910 on Object: 413
-Successfully released lock of 112570 on Object: 486
-Successfully released lock of 46910 on Object: 6
-Successfully released lock of 112570 on Object: 523
-Successfully released lock of 46910 on Object: 6
-Successfully released lock of 112570 on Object: 841
-Successfully released lock of 46910 on Object: 252
-THREAD n:1 , iteration:68
 THREAD n:2 , iteration:61
-Successfully released lock of 112349 on Object: 637
-Successfully released lock of 112349 on Object: 486
-Successfully released lock of 112349 on Object: 523
-Successfully released lock of 105689 on Object: 413
-Successfully released lock of 112349 on Object: 841
-Successfully released lock of 105689 on Object: 6
-Successfully released lock of 105689 on Object: 6
-Successfully released lock of 105689 on Object: 252
-THREAD n:1 , iteration:69
 THREAD n:2 , iteration:62
-Successfully released lock of 25198 on Object: 413
-Successfully released lock of 25198 on Object: 6
-Successfully released lock of 111776 on Object: 637
-Successfully released lock of 25198 on Object: 6
-Successfully released lock of 111776 on Object: 486
-Successfully released lock of 25198 on Object: 252
-Successfully released lock of 111776 on Object: 523
-Successfully released lock of 111776 on Object: 841
-THREAD n:1 , iteration:70
+THREAD n:1 , iteration:59
 THREAD n:2 , iteration:63
-Successfully released lock of 47267 on Object: 637
-Successfully released lock of 45459 on Object: 413
-Successfully released lock of 45459 on Object: 6
-Successfully released lock of 45459 on Object: 6
-Successfully released lock of 45459 on Object: 252
-Successfully released lock of 47267 on Object: 486
-Successfully released lock of 47267 on Object: 523
-Successfully released lock of 47267 on Object: 841
-THREAD n:1 , iteration:71
+THREAD n:1 , iteration:60
 THREAD n:2 , iteration:64
-Successfully released lock of 106450 on Object: 413
-Successfully released lock of 105474 on Object: 637
-Successfully released lock of 106450 on Object: 6
-Successfully released lock of 106450 on Object: 6
-Successfully released lock of 105474 on Object: 486
-Successfully released lock of 106450 on Object: 252
-Successfully released lock of 105474 on Object: 523
-THREAD n:1 , iteration:72
-Successfully released lock of 105474 on Object: 841
+THREAD n:1 , iteration:61
 THREAD n:2 , iteration:65
-Successfully released lock of 7870 on Object: 413
-Successfully released lock of 7870 on Object: 6
-Successfully released lock of 7870 on Object: 6
-Successfully released lock of 7870 on Object: 252
-Successfully released lock of 25890 on Object: 637
-Successfully released lock of 25890 on Object: 486
-Successfully released lock of 25890 on Object: 523
-Successfully released lock of 25890 on Object: 841
+THREAD n:1 , iteration:62
 THREAD n:2 , iteration:66
-Successfully released lock of 111726 on Object: 637
-Successfully released lock of 111726 on Object: 486
-Successfully released lock of 111726 on Object: 523
-Successfully released lock of 111726 on Object: 841
-THREAD n:1 , iteration:73
+THREAD n:1 , iteration:63
 THREAD n:2 , iteration:67
-Successfully released lock of 46739 on Object: 637
-Successfully released lock of 46739 on Object: 486
-Successfully released lock of 46739 on Object: 523
-Successfully released lock of 46739 on Object: 841
-Successfully released lock of 7621 on Object: 413
-Successfully released lock of 7621 on Object: 6
-Successfully released lock of 7621 on Object: 6
-Successfully released lock of 7621 on Object: 252
+THREAD n:1 , iteration:64
 THREAD n:2 , iteration:68
-THREAD n:1 , iteration:74
-Successfully released lock of 8602 on Object: 413
-Successfully released lock of 8602 on Object: 6
-Successfully released lock of 8602 on Object: 6
-Successfully released lock of 8602 on Object: 252
-Successfully released lock of 46745 on Object: 637
-Successfully released lock of 46745 on Object: 486
-Successfully released lock of 46745 on Object: 523
-Successfully released lock of 46745 on Object: 841
-THREAD n:1 , iteration:75
+THREAD n:1 , iteration:65
 THREAD n:2 , iteration:69
-Successfully released lock of 47008 on Object: 413
-Successfully released lock of 47008 on Object: 6
-Successfully released lock of 47008 on Object: 6
-Successfully released lock of 47008 on Object: 252
-Successfully released lock of 7699 on Object: 637
-Successfully released lock of 7699 on Object: 486
-Successfully released lock of 7699 on Object: 523
-Successfully released lock of 7699 on Object: 841
+THREAD n:1 , iteration:66
 THREAD n:2 , iteration:70
-THREAD n:1 , iteration:76
-Successfully released lock of 7710 on Object: 637
-Successfully released lock of 7710 on Object: 486
-Successfully released lock of 7710 on Object: 523
-Successfully released lock of 7710 on Object: 841
-Successfully released lock of 47135 on Object: 413
-Successfully released lock of 47135 on Object: 6
-Successfully released lock of 47135 on Object: 6
-Successfully released lock of 47135 on Object: 252
+THREAD n:1 , iteration:67
 THREAD n:2 , iteration:71
-THREAD n:1 , iteration:77
-Successfully released lock of 7891 on Object: 637
-Successfully released lock of 7891 on Object: 486
-Successfully released lock of 7891 on Object: 523
-Successfully released lock of 7891 on Object: 841
+THREAD n:1 , iteration:68
 THREAD n:2 , iteration:72
-Successfully released lock of 104897 on Object: 413
-Successfully released lock of 104897 on Object: 6
-Successfully released lock of 104897 on Object: 6
-Successfully released lock of 104897 on Object: 252
-THREAD n:1 , iteration:78
-Successfully released lock of 7885 on Object: 637
-Successfully released lock of 7885 on Object: 486
-Successfully released lock of 7885 on Object: 523
-Successfully released lock of 7885 on Object: 841
-Successfully released lock of 25886 on Object: 413
-Successfully released lock of 25886 on Object: 6
-Successfully released lock of 25886 on Object: 6
-Successfully released lock of 25886 on Object: 252
+THREAD n:1 , iteration:69
 THREAD n:2 , iteration:73
-THREAD n:1 , iteration:79
-Successfully released lock of 46999 on Object: 637
-Successfully released lock of 46999 on Object: 486
-Successfully released lock of 46999 on Object: 523
-Successfully released lock of 46999 on Object: 841
-Successfully released lock of 105697 on Object: 413
-Successfully released lock of 105697 on Object: 6
-Successfully released lock of 105697 on Object: 6
-Successfully released lock of 105697 on Object: 252
+THREAD n:1 , iteration:70
 THREAD n:2 , iteration:74
-THREAD n:1 , iteration:80
-Successfully released lock of 105593 on Object: 637
-Successfully released lock of 105593 on Object: 486
-Successfully released lock of 105593 on Object: 523
-Successfully released lock of 105593 on Object: 841
+THREAD n:1 , iteration:71
 THREAD n:2 , iteration:75
-Successfully released lock of 45611 on Object: 413
-Successfully released lock of 45611 on Object: 6
-Successfully released lock of 45611 on Object: 6
-Successfully released lock of 45611 on Object: 252
-THREAD n:1 , iteration:81
-Successfully released lock of 8473 on Object: 413
-Successfully released lock of 8473 on Object: 6
-Successfully released lock of 8473 on Object: 6
-Successfully released lock of 8473 on Object: 252
-THREAD n:1 , iteration:82
-Successfully released lock of 107030 on Object: 413
-Successfully released lock of 107030 on Object: 6
-Successfully released lock of 107030 on Object: 6
-Successfully released lock of 107030 on Object: 252
-THREAD n:1 , iteration:83
-Successfully released lock of 104854 on Object: 413
-Successfully released lock of 104854 on Object: 6
-Successfully released lock of 104854 on Object: 6
-Successfully released lock of 104854 on Object: 252
-THREAD n:1 , iteration:84
-Successfully released lock of 25489 on Object: 413
-Successfully released lock of 25489 on Object: 6
-Successfully released lock of 25489 on Object: 6
-Successfully released lock of 25489 on Object: 252
-THREAD n:1 , iteration:85
-Successfully released lock of 45689 on Object: 413
-Successfully released lock of 45689 on Object: 6
-Successfully released lock of 45689 on Object: 6
-Successfully released lock of 45689 on Object: 252
-THREAD n:1 , iteration:86
-Successfully released lock of 8345 on Object: 413
-Successfully released lock of 8345 on Object: 6
-Successfully released lock of 8345 on Object: 6
-Successfully released lock of 8345 on Object: 252
-THREAD n:1 , iteration:87
-Successfully released lock of 106742 on Object: 413
-Successfully released lock of 106742 on Object: 6
-Successfully released lock of 106742 on Object: 6
-Successfully released lock of 106742 on Object: 252
-THREAD n:1 , iteration:88
-Successfully released lock of 105192 on Object: 413
-Successfully released lock of 105192 on Object: 6
-Successfully released lock of 105192 on Object: 6
-Successfully released lock of 105192 on Object: 252
-THREAD n:1 , iteration:89
-*****I am the Graph Manager: the map I see is:{}
-Successfully released lock of 25540 on Object: 413
-Successfully released lock of 25540 on Object: 6
-Successfully released lock of 25540 on Object: 6
-Successfully released lock of 25540 on Object: 252
-Successfully released lock of 46662 on Object: 637
-Successfully released lock of 46662 on Object: 486
-Successfully released lock of 46662 on Object: 523
-Successfully released lock of 46662 on Object: 841
-THREAD n:1 , iteration:90
+THREAD n:1 , iteration:72
 THREAD n:2 , iteration:76
-Successfully released lock of 112165 on Object: 413
-Successfully released lock of 112165 on Object: 6
-Successfully released lock of 112165 on Object: 6
-Successfully released lock of 112165 on Object: 252
-THREAD n:1 , iteration:91
-Successfully released lock of 8014 on Object: 413
-Successfully released lock of 8014 on Object: 6
-Successfully released lock of 8014 on Object: 6
-Successfully released lock of 8014 on Object: 252
-THREAD n:1 , iteration:92
-Successfully released lock of 105639 on Object: 413
-Successfully released lock of 105639 on Object: 6
-Successfully released lock of 105639 on Object: 6
-Successfully released lock of 105639 on Object: 252
-THREAD n:1 , iteration:93
-Successfully released lock of 25274 on Object: 413
-Successfully released lock of 25274 on Object: 6
-Successfully released lock of 25274 on Object: 6
-Successfully released lock of 25274 on Object: 252
-THREAD n:1 , iteration:94
-Successfully released lock of 47229 on Object: 413
-Successfully released lock of 47229 on Object: 6
-Successfully released lock of 47229 on Object: 6
-Successfully released lock of 47229 on Object: 252
-THREAD n:1 , iteration:95
-Successfully released lock of 111938 on Object: 413
-Successfully released lock of 111938 on Object: 6
-Successfully released lock of 111938 on Object: 6
-Successfully released lock of 111938 on Object: 252
-THREAD n:1 , iteration:96
-Successfully released lock of 46108 on Object: 637
-Successfully released lock of 46108 on Object: 486
-Successfully released lock of 46108 on Object: 523
-Successfully released lock of 46108 on Object: 841
+THREAD n:1 , iteration:73
 THREAD n:2 , iteration:77
-Successfully released lock of 112253 on Object: 413
-Successfully released lock of 112253 on Object: 6
-Successfully released lock of 112253 on Object: 6
-Successfully released lock of 112253 on Object: 252
-THREAD n:1 , iteration:97
-Successfully released lock of 46200 on Object: 637
-Successfully released lock of 46200 on Object: 486
-Successfully released lock of 46200 on Object: 523
-Successfully released lock of 46200 on Object: 841
-Successfully released lock of 105149 on Object: 413
-Successfully released lock of 105149 on Object: 6
-Successfully released lock of 105149 on Object: 6
-Successfully released lock of 105149 on Object: 252
+THREAD n:1 , iteration:74
 THREAD n:2 , iteration:78
-THREAD n:1 , iteration:98
-Successfully released lock of 106537 on Object: 413
-Successfully released lock of 106537 on Object: 6
-Successfully released lock of 106537 on Object: 6
-Successfully released lock of 106537 on Object: 252
-Successfully released lock of 25327 on Object: 637
-Successfully released lock of 25327 on Object: 486
-Successfully released lock of 25327 on Object: 523
-Successfully released lock of 25327 on Object: 841
+THREAD n:1 , iteration:75
 THREAD n:2 , iteration:79
-THREAD n:1 , iteration:99
-Successfully released lock of 46513 on Object: 637
-Successfully released lock of 46513 on Object: 486
-Successfully released lock of 46513 on Object: 523
-Successfully released lock of 46513 on Object: 841
 THREAD n:2 , iteration:80
-Successfully released lock of 8277 on Object: 413
-Successfully released lock of 8277 on Object: 6
-Successfully released lock of 8277 on Object: 6
-Successfully released lock of 8277 on Object: 252
-Successfully released lock of 111971 on Object: 637
-Successfully released lock of 111971 on Object: 486
-Successfully released lock of 111971 on Object: 523
-Successfully released lock of 111971 on Object: 841
+THREAD n:1 , iteration:76
+THREAD n:1 , iteration:77
 THREAD n:2 , iteration:81
-Successfully released lock of 7898 on Object: 637
-Successfully released lock of 7898 on Object: 486
-Successfully released lock of 7898 on Object: 523
-Successfully released lock of 7898 on Object: 841
 THREAD n:2 , iteration:82
-Successfully released lock of 106336 on Object: 637
-Successfully released lock of 106336 on Object: 486
-Successfully released lock of 106336 on Object: 523
-Successfully released lock of 106336 on Object: 841
+THREAD n:1 , iteration:78
+THREAD n:1 , iteration:79
 THREAD n:2 , iteration:83
-Successfully released lock of 25331 on Object: 637
-Successfully released lock of 25331 on Object: 486
-Successfully released lock of 25331 on Object: 523
-Successfully released lock of 25331 on Object: 841
 THREAD n:2 , iteration:84
-Successfully released lock of 105698 on Object: 637
-Successfully released lock of 105698 on Object: 486
-Successfully released lock of 105698 on Object: 523
-Successfully released lock of 105698 on Object: 841
+THREAD n:1 , iteration:80
+THREAD n:1 , iteration:81
 THREAD n:2 , iteration:85
-Successfully released lock of 45562 on Object: 637
-Successfully released lock of 45562 on Object: 486
-Successfully released lock of 45562 on Object: 523
-Successfully released lock of 45562 on Object: 841
+THREAD n:1 , iteration:82
 THREAD n:2 , iteration:86
-Successfully released lock of 112336 on Object: 637
-Successfully released lock of 112336 on Object: 486
-Successfully released lock of 112336 on Object: 523
-Successfully released lock of 112336 on Object: 841
+THREAD n:1 , iteration:83
 THREAD n:2 , iteration:87
-Successfully released lock of 112063 on Object: 637
-Successfully released lock of 112063 on Object: 486
-Successfully released lock of 112063 on Object: 523
-Successfully released lock of 112063 on Object: 841
+THREAD n:1 , iteration:84
 THREAD n:2 , iteration:88
-Successfully released lock of 8495 on Object: 637
-Successfully released lock of 8495 on Object: 486
-Successfully released lock of 8495 on Object: 523
-Successfully released lock of 8495 on Object: 841
+THREAD n:1 , iteration:85
 THREAD n:2 , iteration:89
-Successfully released lock of 106376 on Object: 637
-Successfully released lock of 106376 on Object: 486
-Successfully released lock of 106376 on Object: 523
-Successfully released lock of 106376 on Object: 841
+THREAD n:1 , iteration:86
 THREAD n:2 , iteration:90
-Successfully released lock of 25638 on Object: 637
-Successfully released lock of 25638 on Object: 486
-Successfully released lock of 25638 on Object: 523
-Successfully released lock of 25638 on Object: 841
 THREAD n:2 , iteration:91
-Successfully released lock of 105185 on Object: 637
-Successfully released lock of 105185 on Object: 486
-Successfully released lock of 105185 on Object: 523
-Successfully released lock of 105185 on Object: 841
+THREAD n:1 , iteration:87
+THREAD n:1 , iteration:88
 THREAD n:2 , iteration:92
-Successfully released lock of 46298 on Object: 637
-Successfully released lock of 46298 on Object: 486
-Successfully released lock of 46298 on Object: 523
-Successfully released lock of 46298 on Object: 841
 THREAD n:2 , iteration:93
-Successfully released lock of 111846 on Object: 637
-Successfully released lock of 111846 on Object: 486
-Successfully released lock of 111846 on Object: 523
-Successfully released lock of 111846 on Object: 841
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:1 , iteration:89
+THREAD n:1 , iteration:90
+THREAD n:1 , iteration:91
+THREAD n:1 , iteration:92
+THREAD n:1 , iteration:93
+THREAD n:1 , iteration:94
+THREAD n:1 , iteration:95
 THREAD n:2 , iteration:94
-Successfully released lock of 7951 on Object: 637
-Successfully released lock of 7951 on Object: 486
-Successfully released lock of 7951 on Object: 523
-Successfully released lock of 7951 on Object: 841
+THREAD n:1 , iteration:96
+THREAD n:1 , iteration:97
 THREAD n:2 , iteration:95
-Successfully released lock of 106237 on Object: 637
-Successfully released lock of 106237 on Object: 486
-Successfully released lock of 106237 on Object: 523
-Successfully released lock of 106237 on Object: 841
+THREAD n:1 , iteration:98
 THREAD n:2 , iteration:96
-Successfully released lock of 25617 on Object: 637
-Successfully released lock of 25617 on Object: 486
-Successfully released lock of 25617 on Object: 523
-Successfully released lock of 25617 on Object: 841
 THREAD n:2 , iteration:97
-Successfully released lock of 105358 on Object: 637
-Successfully released lock of 105358 on Object: 486
-Successfully released lock of 105358 on Object: 523
-Successfully released lock of 105358 on Object: 841
+THREAD n:1 , iteration:99
+THREAD n:1 , iteration:100
 THREAD n:2 , iteration:98
-Successfully released lock of 46078 on Object: 637
-Successfully released lock of 46078 on Object: 486
-Successfully released lock of 46078 on Object: 523
-Successfully released lock of 46078 on Object: 841
+THREAD n:1 , iteration:101
 THREAD n:2 , iteration:99
-Successfully released lock of 112657 on Object: 637
-Successfully released lock of 112657 on Object: 486
-Successfully released lock of 112657 on Object: 523
-Successfully released lock of 112657 on Object: 841
-Successfully released lock of 2658 on Object: 33
-Successfully released lock of 2658 on Object: 6
-Successfully released lock of 2658 on Object: 486
-Successfully released lock of 2658 on Object: 104
-Successfully released lock of 2658 on Object: 841
-Successfully released lock of 2658 on Object: 521
-Successfully released lock of 2658 on Object: 523
-Successfully released lock of 2658 on Object: 587
-Successfully released lock of 2658 on Object: 524
-Successfully released lock of 2658 on Object: 46
-Successfully released lock of 2658 on Object: 686
-Successfully released lock of 2658 on Object: 655
-Successfully released lock of 2658 on Object: 924
-Successfully released lock of 2658 on Object: 252
-Successfully released lock of 2658 on Object: 413
-Successfully released lock of 2658 on Object: 637
-Successfully released lock of 2658 on Object: 766
-Successfully released lock of 2658 on Object: 286
-Successfully released lock of 2658 on Object: 959
-Successfully released lock of 2658 on Object: 607
+THREAD n:2 , iteration:100
+THREAD n:1 , iteration:102
+THREAD n:2 , iteration:101
+THREAD n:1 , iteration:103
+THREAD n:2 , iteration:102
+THREAD n:1 , iteration:104
+THREAD n:2 , iteration:103
+THREAD n:2 , iteration:104
+THREAD n:1 , iteration:105
+THREAD n:2 , iteration:105
+THREAD n:1 , iteration:106
+THREAD n:2 , iteration:106
+THREAD n:1 , iteration:107
+THREAD n:1 , iteration:108
+THREAD n:2 , iteration:107
+THREAD n:1 , iteration:109
+THREAD n:2 , iteration:108
+THREAD n:1 , iteration:110
+THREAD n:2 , iteration:109
+THREAD n:1 , iteration:111
+THREAD n:2 , iteration:110
+THREAD n:1 , iteration:112
+THREAD n:2 , iteration:111
+THREAD n:1 , iteration:113
+THREAD n:2 , iteration:112
+THREAD n:1 , iteration:114
+THREAD n:2 , iteration:113
+THREAD n:1 , iteration:115
+THREAD n:2 , iteration:114
+THREAD n:1 , iteration:116
+THREAD n:2 , iteration:115
+THREAD n:1 , iteration:117
+THREAD n:2 , iteration:116
+THREAD n:2 , iteration:117
+THREAD n:1 , iteration:118
+THREAD n:2 , iteration:118
+THREAD n:1 , iteration:119
+THREAD n:2 , iteration:119
+THREAD n:1 , iteration:120
+THREAD n:2 , iteration:120
+THREAD n:2 , iteration:121
+THREAD n:2 , iteration:122
+THREAD n:2 , iteration:123
+THREAD n:1 , iteration:121
+THREAD n:1 , iteration:122
+THREAD n:2 , iteration:124
+THREAD n:1 , iteration:123
+THREAD n:1 , iteration:124
+THREAD n:2 , iteration:125
+THREAD n:2 , iteration:126
+THREAD n:1 , iteration:125
+THREAD n:2 , iteration:127
+THREAD n:1 , iteration:126
+THREAD n:1 , iteration:127
+THREAD n:2 , iteration:128
+THREAD n:2 , iteration:129
+THREAD n:1 , iteration:128
+THREAD n:2 , iteration:130
+THREAD n:1 , iteration:129
+THREAD n:1 , iteration:130
+THREAD n:2 , iteration:131
+THREAD n:1 , iteration:131
+THREAD n:2 , iteration:132
+THREAD n:1 , iteration:132
+THREAD n:2 , iteration:133
+THREAD n:2 , iteration:134
+THREAD n:1 , iteration:133
+THREAD n:2 , iteration:135
+THREAD n:1 , iteration:134
+THREAD n:2 , iteration:136
+THREAD n:1 , iteration:135
+THREAD n:2 , iteration:137
+THREAD n:1 , iteration:136
+THREAD n:2 , iteration:138
+THREAD n:1 , iteration:137
+THREAD n:2 , iteration:139
+THREAD n:1 , iteration:138
+THREAD n:1 , iteration:139
+THREAD n:2 , iteration:140
+THREAD n:1 , iteration:140
+THREAD n:2 , iteration:141
+THREAD n:2 , iteration:142
+THREAD n:1 , iteration:141
+THREAD n:1 , iteration:142
+THREAD n:1 , iteration:143
+THREAD n:2 , iteration:143
+THREAD n:1 , iteration:144
+THREAD n:2 , iteration:144
+THREAD n:2 , iteration:145
+THREAD n:1 , iteration:145
+THREAD n:2 , iteration:146
+THREAD n:1 , iteration:146
+THREAD n:2 , iteration:147
+THREAD n:1 , iteration:147
+THREAD n:2 , iteration:148
+THREAD n:2 , iteration:149
+THREAD n:2 , iteration:150
+THREAD n:2 , iteration:151
+THREAD n:1 , iteration:148
+THREAD n:1 , iteration:149
+THREAD n:1 , iteration:150
+THREAD n:2 , iteration:152
+THREAD n:1 , iteration:151
+THREAD n:2 , iteration:153
+THREAD n:2 , iteration:154
+THREAD n:2 , iteration:155
+THREAD n:2 , iteration:156
+THREAD n:2 , iteration:157
+THREAD n:2 , iteration:158
+THREAD n:2 , iteration:159
+THREAD n:2 , iteration:160
+THREAD n:2 , iteration:161
+THREAD n:2 , iteration:162
+THREAD n:2 , iteration:163
+THREAD n:2 , iteration:164
+THREAD n:2 , iteration:165
+THREAD n:2 , iteration:166
+THREAD n:2 , iteration:167
+THREAD n:2 , iteration:168
+THREAD n:2 , iteration:169
+THREAD n:2 , iteration:170
+THREAD n:2 , iteration:171
+THREAD n:2 , iteration:172
+THREAD n:2 , iteration:173
+THREAD n:2 , iteration:174
+THREAD n:2 , iteration:175
+THREAD n:2 , iteration:176
+THREAD n:2 , iteration:177
+THREAD n:2 , iteration:178
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:1 , iteration:152
+THREAD n:1 , iteration:153
+THREAD n:1 , iteration:154
+THREAD n:1 , iteration:155
+THREAD n:1 , iteration:156
+THREAD n:1 , iteration:157
+THREAD n:2 , iteration:179
+THREAD n:1 , iteration:158
+THREAD n:2 , iteration:180
+THREAD n:1 , iteration:159
+THREAD n:2 , iteration:181
+THREAD n:1 , iteration:160
+THREAD n:1 , iteration:161
+THREAD n:2 , iteration:182
+THREAD n:1 , iteration:162
+THREAD n:2 , iteration:183
+THREAD n:2 , iteration:184
+THREAD n:1 , iteration:163
+THREAD n:1 , iteration:164
+THREAD n:2 , iteration:185
+THREAD n:1 , iteration:165
+THREAD n:2 , iteration:186
+THREAD n:1 , iteration:166
+THREAD n:1 , iteration:167
+THREAD n:2 , iteration:187
+THREAD n:1 , iteration:168
+THREAD n:2 , iteration:188
+THREAD n:1 , iteration:169
+THREAD n:2 , iteration:189
+THREAD n:1 , iteration:170
+THREAD n:2 , iteration:190
+THREAD n:1 , iteration:171
+THREAD n:2 , iteration:191
+THREAD n:1 , iteration:172
+THREAD n:2 , iteration:192
+THREAD n:1 , iteration:173
+THREAD n:2 , iteration:193
+THREAD n:1 , iteration:174
+THREAD n:1 , iteration:175
+THREAD n:2 , iteration:194
+THREAD n:1 , iteration:176
+THREAD n:2 , iteration:195
+THREAD n:1 , iteration:177
+THREAD n:2 , iteration:196
+THREAD n:1 , iteration:178
+THREAD n:2 , iteration:197
+THREAD n:1 , iteration:179
+THREAD n:2 , iteration:198
+THREAD n:2 , iteration:199
+THREAD n:1 , iteration:180
+THREAD n:2 , iteration:200
+THREAD n:1 , iteration:181
+THREAD n:2 , iteration:201
+THREAD n:1 , iteration:182
+THREAD n:1 , iteration:183
+THREAD n:2 , iteration:202
+THREAD n:1 , iteration:184
+THREAD n:2 , iteration:203
+THREAD n:2 , iteration:204
+THREAD n:1 , iteration:185
+THREAD n:1 , iteration:186
+THREAD n:2 , iteration:205
+THREAD n:2 , iteration:206
+THREAD n:1 , iteration:187
+THREAD n:1 , iteration:188
+THREAD n:2 , iteration:207
+THREAD n:2 , iteration:208
+THREAD n:1 , iteration:189
+THREAD n:2 , iteration:209
+THREAD n:2 , iteration:210
+THREAD n:2 , iteration:211
+THREAD n:2 , iteration:212
+THREAD n:2 , iteration:213
+THREAD n:2 , iteration:214
+THREAD n:1 , iteration:190
+THREAD n:1 , iteration:191
+THREAD n:2 , iteration:215
+THREAD n:1 , iteration:192
+THREAD n:2 , iteration:216
+THREAD n:1 , iteration:193
+THREAD n:2 , iteration:217
+THREAD n:1 , iteration:194
+THREAD n:2 , iteration:218
+THREAD n:1 , iteration:195
+THREAD n:2 , iteration:219
+THREAD n:1 , iteration:196
+THREAD n:1 , iteration:197
+THREAD n:1 , iteration:198
+THREAD n:2 , iteration:220
+THREAD n:1 , iteration:199
+THREAD n:2 , iteration:221
+THREAD n:1 , iteration:200
+THREAD n:2 , iteration:222
+THREAD n:1 , iteration:201
+THREAD n:1 , iteration:202
+THREAD n:2 , iteration:223
+THREAD n:1 , iteration:203
+THREAD n:2 , iteration:224
+THREAD n:2 , iteration:225
+THREAD n:1 , iteration:204
+THREAD n:2 , iteration:226
+THREAD n:1 , iteration:205
+THREAD n:1 , iteration:206
+THREAD n:2 , iteration:227
+THREAD n:1 , iteration:207
+THREAD n:2 , iteration:228
+THREAD n:2 , iteration:229
+THREAD n:1 , iteration:208
+THREAD n:2 , iteration:230
+THREAD n:1 , iteration:209
+THREAD n:1 , iteration:210
+THREAD n:2 , iteration:231
+THREAD n:1 , iteration:211
+THREAD n:2 , iteration:232
+THREAD n:2 , iteration:233
+THREAD n:1 , iteration:212
+THREAD n:2 , iteration:234
+THREAD n:1 , iteration:213
+THREAD n:1 , iteration:214
+THREAD n:2 , iteration:235
+THREAD n:2 , iteration:236
+THREAD n:1 , iteration:215
+THREAD n:1 , iteration:216
+THREAD n:2 , iteration:237
+THREAD n:2 , iteration:238
+THREAD n:1 , iteration:217
+THREAD n:2 , iteration:239
+THREAD n:1 , iteration:218
+THREAD n:2 , iteration:240
+THREAD n:1 , iteration:219
+THREAD n:1 , iteration:220
+THREAD n:2 , iteration:241
+THREAD n:1 , iteration:221
+THREAD n:2 , iteration:242
+THREAD n:2 , iteration:243
+THREAD n:1 , iteration:222
+THREAD n:1 , iteration:223
+THREAD n:2 , iteration:244
+THREAD n:1 , iteration:224
+THREAD n:2 , iteration:245
+THREAD n:1 , iteration:225
+THREAD n:2 , iteration:246
+THREAD n:1 , iteration:226
+THREAD n:2 , iteration:247
+THREAD n:1 , iteration:227
+THREAD n:2 , iteration:248
+THREAD n:1 , iteration:228
+THREAD n:2 , iteration:249
+THREAD n:1 , iteration:229
+THREAD n:2 , iteration:250
+THREAD n:2 , iteration:251
+THREAD n:2 , iteration:252
+THREAD n:2 , iteration:253
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:1 , iteration:230
+THREAD n:2 , iteration:254
+THREAD n:2 , iteration:255
+THREAD n:1 , iteration:231
+THREAD n:2 , iteration:256
+THREAD n:1 , iteration:232
+THREAD n:2 , iteration:257
+THREAD n:1 , iteration:233
+THREAD n:1 , iteration:234
+THREAD n:2 , iteration:258
+THREAD n:1 , iteration:235
+THREAD n:2 , iteration:259
+THREAD n:2 , iteration:260
+THREAD n:1 , iteration:236
+THREAD n:2 , iteration:261
+THREAD n:1 , iteration:237
+THREAD n:2 , iteration:262
+THREAD n:1 , iteration:238
+THREAD n:2 , iteration:263
+THREAD n:1 , iteration:239
+THREAD n:1 , iteration:240
+THREAD n:2 , iteration:264
+THREAD n:2 , iteration:265
+THREAD n:2 , iteration:266
+THREAD n:1 , iteration:241
+THREAD n:2 , iteration:267
+THREAD n:1 , iteration:242
+THREAD n:2 , iteration:268
+THREAD n:1 , iteration:243
+THREAD n:1 , iteration:244
+THREAD n:2 , iteration:269
+THREAD n:1 , iteration:245
+THREAD n:2 , iteration:270
+THREAD n:1 , iteration:246
+THREAD n:2 , iteration:271
+THREAD n:1 , iteration:247
+THREAD n:2 , iteration:272
+THREAD n:1 , iteration:248
+THREAD n:2 , iteration:273
+THREAD n:2 , iteration:274
+THREAD n:1 , iteration:249
+THREAD n:2 , iteration:275
+THREAD n:1 , iteration:250
+THREAD n:2 , iteration:276
+THREAD n:1 , iteration:251
+THREAD n:2 , iteration:277
+THREAD n:1 , iteration:252
+THREAD n:2 , iteration:278
+THREAD n:2 , iteration:279
+THREAD n:2 , iteration:280
+THREAD n:2 , iteration:281
+THREAD n:2 , iteration:282
+THREAD n:2 , iteration:283
+THREAD n:2 , iteration:284
+THREAD n:2 , iteration:285
+THREAD n:2 , iteration:286
+THREAD n:1 , iteration:253
+THREAD n:2 , iteration:287
+THREAD n:2 , iteration:288
+THREAD n:1 , iteration:254
+THREAD n:2 , iteration:289
+THREAD n:1 , iteration:255
+THREAD n:1 , iteration:256
+THREAD n:1 , iteration:257
+THREAD n:1 , iteration:258
+THREAD n:1 , iteration:259
+THREAD n:1 , iteration:260
+THREAD n:1 , iteration:261
+THREAD n:1 , iteration:262
+THREAD n:1 , iteration:263
+THREAD n:1 , iteration:264
+THREAD n:1 , iteration:265
+THREAD n:1 , iteration:266
+THREAD n:1 , iteration:267
+THREAD n:1 , iteration:268
+THREAD n:1 , iteration:269
+THREAD n:1 , iteration:270
+THREAD n:1 , iteration:271
+THREAD n:1 , iteration:272
+THREAD n:1 , iteration:273
+THREAD n:1 , iteration:274
+THREAD n:1 , iteration:275
+THREAD n:1 , iteration:276
+THREAD n:1 , iteration:277
+THREAD n:1 , iteration:278
+THREAD n:1 , iteration:279
+THREAD n:1 , iteration:280
+THREAD n:1 , iteration:281
+THREAD n:1 , iteration:282
+THREAD n:1 , iteration:283
+THREAD n:1 , iteration:284
+THREAD n:1 , iteration:285
+THREAD n:1 , iteration:286
+THREAD n:2 , iteration:290
+THREAD n:2 , iteration:291
+THREAD n:2 , iteration:292
+THREAD n:2 , iteration:293
+THREAD n:2 , iteration:294
+THREAD n:2 , iteration:295
+THREAD n:2 , iteration:296
+THREAD n:2 , iteration:297
+THREAD n:2 , iteration:298
+THREAD n:2 , iteration:299
+THREAD n:2 , iteration:300
+THREAD n:2 , iteration:301
+THREAD n:2 , iteration:302
+THREAD n:2 , iteration:303
+THREAD n:2 , iteration:304
+THREAD n:2 , iteration:305
+THREAD n:2 , iteration:306
+THREAD n:2 , iteration:307
+THREAD n:2 , iteration:308
+THREAD n:2 , iteration:309
+THREAD n:2 , iteration:310
+THREAD n:2 , iteration:311
+THREAD n:2 , iteration:312
+THREAD n:2 , iteration:313
+THREAD n:2 , iteration:314
+THREAD n:2 , iteration:315
+THREAD n:2 , iteration:316
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:2 , iteration:317
+THREAD n:2 , iteration:318
+THREAD n:2 , iteration:319
+THREAD n:1 , iteration:287
+THREAD n:2 , iteration:320
+THREAD n:2 , iteration:321
+THREAD n:1 , iteration:288
+THREAD n:1 , iteration:289
+THREAD n:2 , iteration:322
+THREAD n:2 , iteration:323
+THREAD n:1 , iteration:290
+THREAD n:1 , iteration:291
+THREAD n:2 , iteration:324
+THREAD n:1 , iteration:292
+THREAD n:2 , iteration:325
+THREAD n:1 , iteration:293
+THREAD n:2 , iteration:326
+THREAD n:1 , iteration:294
+THREAD n:2 , iteration:327
+THREAD n:1 , iteration:295
+THREAD n:1 , iteration:296
+THREAD n:1 , iteration:297
+THREAD n:1 , iteration:298
+THREAD n:1 , iteration:299
+THREAD n:1 , iteration:300
+THREAD n:2 , iteration:328
+THREAD n:1 , iteration:301
+THREAD n:2 , iteration:329
+THREAD n:1 , iteration:302
+THREAD n:2 , iteration:330
+THREAD n:1 , iteration:303
+THREAD n:2 , iteration:331
+THREAD n:1 , iteration:304
+THREAD n:1 , iteration:305
+THREAD n:2 , iteration:332
+THREAD n:2 , iteration:333
+THREAD n:1 , iteration:306
+THREAD n:2 , iteration:334
+THREAD n:1 , iteration:307
+THREAD n:2 , iteration:335
+THREAD n:1 , iteration:308
+THREAD n:2 , iteration:336
+THREAD n:1 , iteration:309
+THREAD n:2 , iteration:337
+THREAD n:1 , iteration:310
+THREAD n:2 , iteration:338
+THREAD n:1 , iteration:311
+THREAD n:1 , iteration:312
+THREAD n:1 , iteration:313
+THREAD n:1 , iteration:314
+THREAD n:1 , iteration:315
+THREAD n:1 , iteration:316
+THREAD n:1 , iteration:317
+THREAD n:1 , iteration:318
+THREAD n:1 , iteration:319
+THREAD n:1 , iteration:320
+THREAD n:1 , iteration:321
+THREAD n:1 , iteration:322
+THREAD n:1 , iteration:323
+THREAD n:1 , iteration:324
+THREAD n:1 , iteration:325
+THREAD n:1 , iteration:326
+THREAD n:1 , iteration:327
+THREAD n:1 , iteration:328
+THREAD n:1 , iteration:329
+THREAD n:1 , iteration:330
+THREAD n:1 , iteration:331
+THREAD n:2 , iteration:339
+THREAD n:2 , iteration:340
+THREAD n:2 , iteration:341
+THREAD n:2 , iteration:342
+THREAD n:2 , iteration:343
+THREAD n:2 , iteration:344
+THREAD n:2 , iteration:345
+THREAD n:2 , iteration:346
+THREAD n:2 , iteration:347
+THREAD n:2 , iteration:348
+THREAD n:2 , iteration:349
+THREAD n:2 , iteration:350
+THREAD n:2 , iteration:351
+THREAD n:2 , iteration:352
+THREAD n:2 , iteration:353
+THREAD n:2 , iteration:354
+THREAD n:2 , iteration:355
+THREAD n:1 , iteration:332
+THREAD n:2 , iteration:356
+THREAD n:2 , iteration:357
+THREAD n:1 , iteration:333
+THREAD n:1 , iteration:334
+THREAD n:2 , iteration:358
+THREAD n:1 , iteration:335
+THREAD n:2 , iteration:359
+THREAD n:1 , iteration:336
+THREAD n:2 , iteration:360
+THREAD n:1 , iteration:337
+THREAD n:2 , iteration:361
+THREAD n:2 , iteration:362
+THREAD n:2 , iteration:363
+THREAD n:1 , iteration:338
+THREAD n:2 , iteration:364
+THREAD n:1 , iteration:339
+THREAD n:2 , iteration:365
+THREAD n:1 , iteration:340
+THREAD n:1 , iteration:341
+THREAD n:2 , iteration:366
+THREAD n:2 , iteration:367
+THREAD n:1 , iteration:342
+THREAD n:1 , iteration:343
+THREAD n:2 , iteration:368
+THREAD n:2 , iteration:369
+THREAD n:1 , iteration:344
+THREAD n:1 , iteration:345
+THREAD n:2 , iteration:370
+THREAD n:2 , iteration:371
+THREAD n:2 , iteration:372
+THREAD n:1 , iteration:346
+THREAD n:2 , iteration:373
+THREAD n:1 , iteration:347
+THREAD n:2 , iteration:374
+THREAD n:1 , iteration:348
+THREAD n:1 , iteration:349
+THREAD n:2 , iteration:375
+THREAD n:1 , iteration:350
+THREAD n:1 , iteration:351
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:1 , iteration:352
+THREAD n:1 , iteration:353
+THREAD n:1 , iteration:354
+THREAD n:1 , iteration:355
+THREAD n:1 , iteration:356
+THREAD n:1 , iteration:357
+THREAD n:1 , iteration:358
+THREAD n:1 , iteration:359
+THREAD n:1 , iteration:360
+THREAD n:1 , iteration:361
+THREAD n:1 , iteration:362
+THREAD n:1 , iteration:363
+THREAD n:1 , iteration:364
+THREAD n:1 , iteration:365
+THREAD n:1 , iteration:366
+THREAD n:1 , iteration:367
+THREAD n:1 , iteration:368
+THREAD n:1 , iteration:369
+THREAD n:2 , iteration:376
+THREAD n:1 , iteration:370
+THREAD n:2 , iteration:377
+THREAD n:2 , iteration:378
+THREAD n:2 , iteration:379
+THREAD n:2 , iteration:380
+THREAD n:2 , iteration:381
+THREAD n:2 , iteration:382
+THREAD n:2 , iteration:383
+THREAD n:2 , iteration:384
+THREAD n:2 , iteration:385
+THREAD n:2 , iteration:386
+THREAD n:2 , iteration:387
+THREAD n:2 , iteration:388
+THREAD n:2 , iteration:389
+THREAD n:2 , iteration:390
+THREAD n:2 , iteration:391
+THREAD n:2 , iteration:392
+THREAD n:2 , iteration:393
+THREAD n:2 , iteration:394
+THREAD n:2 , iteration:395
+THREAD n:2 , iteration:396
+THREAD n:2 , iteration:397
+THREAD n:2 , iteration:398
+THREAD n:2 , iteration:399
+THREAD n:2 , iteration:400
+THREAD n:2 , iteration:401
+THREAD n:2 , iteration:402
+THREAD n:2 , iteration:403
+THREAD n:2 , iteration:404
+THREAD n:2 , iteration:405
+THREAD n:2 , iteration:406
+THREAD n:2 , iteration:407
+THREAD n:2 , iteration:408
+THREAD n:1 , iteration:371
+THREAD n:1 , iteration:372
+THREAD n:1 , iteration:373
+THREAD n:1 , iteration:374
+THREAD n:1 , iteration:375
+THREAD n:1 , iteration:376
+THREAD n:1 , iteration:377
+THREAD n:1 , iteration:378
+THREAD n:1 , iteration:379
+THREAD n:1 , iteration:380
+THREAD n:1 , iteration:381
+THREAD n:1 , iteration:382
+THREAD n:1 , iteration:383
+THREAD n:1 , iteration:384
+THREAD n:1 , iteration:385
+THREAD n:1 , iteration:386
+THREAD n:1 , iteration:387
+THREAD n:2 , iteration:409
+THREAD n:1 , iteration:388
+THREAD n:2 , iteration:410
+THREAD n:1 , iteration:389
+THREAD n:2 , iteration:411
+THREAD n:2 , iteration:412
+THREAD n:1 , iteration:390
+THREAD n:1 , iteration:391
+THREAD n:1 , iteration:392
+THREAD n:1 , iteration:393
+THREAD n:1 , iteration:394
+THREAD n:1 , iteration:395
+THREAD n:1 , iteration:396
+THREAD n:1 , iteration:397
+THREAD n:1 , iteration:398
+THREAD n:1 , iteration:399
+THREAD n:1 , iteration:400
+THREAD n:1 , iteration:401
+THREAD n:1 , iteration:402
+THREAD n:1 , iteration:403
+THREAD n:1 , iteration:404
+THREAD n:1 , iteration:405
+THREAD n:1 , iteration:406
+THREAD n:1 , iteration:407
+THREAD n:1 , iteration:408
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:2 , iteration:413
+THREAD n:2 , iteration:414
+THREAD n:2 , iteration:415
+THREAD n:1 , iteration:409
+THREAD n:1 , iteration:410
+THREAD n:1 , iteration:411
+THREAD n:1 , iteration:412
+THREAD n:1 , iteration:413
+THREAD n:1 , iteration:414
+THREAD n:1 , iteration:415
+THREAD n:1 , iteration:416
+THREAD n:1 , iteration:417
+THREAD n:1 , iteration:418
+THREAD n:1 , iteration:419
+THREAD n:1 , iteration:420
+THREAD n:2 , iteration:416
+THREAD n:1 , iteration:421
+THREAD n:2 , iteration:417
+THREAD n:1 , iteration:422
+THREAD n:2 , iteration:418
+THREAD n:1 , iteration:423
+THREAD n:2 , iteration:419
+THREAD n:1 , iteration:424
+THREAD n:2 , iteration:420
+THREAD n:1 , iteration:425
+THREAD n:2 , iteration:421
+THREAD n:1 , iteration:426
+THREAD n:2 , iteration:422
+THREAD n:2 , iteration:423
+THREAD n:1 , iteration:427
+THREAD n:2 , iteration:424
+THREAD n:2 , iteration:425
+THREAD n:2 , iteration:426
+THREAD n:2 , iteration:427
+THREAD n:1 , iteration:428
+THREAD n:1 , iteration:429
+THREAD n:2 , iteration:428
+THREAD n:1 , iteration:430
+THREAD n:2 , iteration:429
+THREAD n:1 , iteration:431
+THREAD n:2 , iteration:430
+THREAD n:2 , iteration:431
+THREAD n:1 , iteration:432
+THREAD n:1 , iteration:433
+THREAD n:2 , iteration:432
+THREAD n:2 , iteration:433
+THREAD n:1 , iteration:434
+THREAD n:2 , iteration:434
+THREAD n:1 , iteration:435
+THREAD n:2 , iteration:435
+THREAD n:2 , iteration:436
+THREAD n:1 , iteration:436
+THREAD n:2 , iteration:437
+THREAD n:2 , iteration:438
+THREAD n:2 , iteration:439
+THREAD n:2 , iteration:440
+THREAD n:2 , iteration:441
+THREAD n:2 , iteration:442
+THREAD n:2 , iteration:443
+THREAD n:2 , iteration:444
+THREAD n:2 , iteration:445
+THREAD n:2 , iteration:446
+THREAD n:2 , iteration:447
+THREAD n:2 , iteration:448
+THREAD n:2 , iteration:449
+THREAD n:2 , iteration:450
+THREAD n:2 , iteration:451
+THREAD n:2 , iteration:452
+THREAD n:1 , iteration:437
+THREAD n:1 , iteration:438
+THREAD n:1 , iteration:439
+THREAD n:1 , iteration:440
+THREAD n:1 , iteration:441
+THREAD n:1 , iteration:442
+THREAD n:1 , iteration:443
+THREAD n:1 , iteration:444
+THREAD n:1 , iteration:445
+THREAD n:1 , iteration:446
+THREAD n:1 , iteration:447
+THREAD n:1 , iteration:448
+THREAD n:1 , iteration:449
+THREAD n:1 , iteration:450
+THREAD n:1 , iteration:451
+THREAD n:1 , iteration:452
+THREAD n:1 , iteration:453
+THREAD n:1 , iteration:454
+THREAD n:1 , iteration:455
+THREAD n:1 , iteration:456
+THREAD n:1 , iteration:457
+THREAD n:1 , iteration:458
+THREAD n:1 , iteration:459
+THREAD n:2 , iteration:453
+THREAD n:1 , iteration:460
+THREAD n:1 , iteration:461
+THREAD n:2 , iteration:454
+THREAD n:1 , iteration:462
+THREAD n:2 , iteration:455
+THREAD n:1 , iteration:463
+THREAD n:2 , iteration:456
+*****I am the Graph Manager: the map I see is:{}
+THREAD n:2 , iteration:457
+THREAD n:1 , iteration:464
+THREAD n:2 , iteration:458
+THREAD n:2 , iteration:459
+THREAD n:1 , iteration:465
+THREAD n:2 , iteration:460
+THREAD n:2 , iteration:461
+THREAD n:1 , iteration:466
+THREAD n:2 , iteration:462
+THREAD n:1 , iteration:467
+THREAD n:2 , iteration:463
+THREAD n:1 , iteration:468
+THREAD n:2 , iteration:464
+THREAD n:1 , iteration:469
+THREAD n:2 , iteration:465
+THREAD n:1 , iteration:470
+THREAD n:1 , iteration:471
+THREAD n:2 , iteration:466
+THREAD n:2 , iteration:467
+THREAD n:1 , iteration:472
+THREAD n:1 , iteration:473
+THREAD n:2 , iteration:468
+THREAD n:2 , iteration:469
+THREAD n:2 , iteration:470
+THREAD n:1 , iteration:474
+THREAD n:2 , iteration:471
+THREAD n:1 , iteration:475
+THREAD n:2 , iteration:472
+THREAD n:1 , iteration:476
+THREAD n:1 , iteration:477
+THREAD n:1 , iteration:478
+THREAD n:1 , iteration:479
+THREAD n:2 , iteration:473
+THREAD n:2 , iteration:474
+THREAD n:1 , iteration:480
+THREAD n:2 , iteration:475
+THREAD n:1 , iteration:481
+THREAD n:1 , iteration:482
+THREAD n:2 , iteration:476
+THREAD n:1 , iteration:483
+THREAD n:2 , iteration:477
+THREAD n:2 , iteration:478
+THREAD n:1 , iteration:484
+THREAD n:2 , iteration:479
+THREAD n:1 , iteration:485
+THREAD n:1 , iteration:486
+THREAD n:2 , iteration:480
+THREAD n:1 , iteration:487
+THREAD n:2 , iteration:481
+THREAD n:1 , iteration:488
+THREAD n:2 , iteration:482
+THREAD n:1 , iteration:489
+THREAD n:2 , iteration:483
+THREAD n:1 , iteration:490
+THREAD n:2 , iteration:484
+THREAD n:2 , iteration:485
+THREAD n:1 , iteration:491
+THREAD n:1 , iteration:492
+THREAD n:2 , iteration:486
+THREAD n:1 , iteration:493
+THREAD n:2 , iteration:487
+THREAD n:2 , iteration:488
+THREAD n:1 , iteration:494
+THREAD n:2 , iteration:489
+THREAD n:1 , iteration:495
+THREAD n:1 , iteration:496
+THREAD n:2 , iteration:490
+THREAD n:2 , iteration:491
+THREAD n:1 , iteration:497
+THREAD n:2 , iteration:492
+THREAD n:1 , iteration:498
+THREAD n:1 , iteration:499
+THREAD n:2 , iteration:493
+THREAD n:2 , iteration:494
+THREAD n:2 , iteration:495
+THREAD n:2 , iteration:496
+THREAD n:2 , iteration:497
+THREAD n:2 , iteration:498
+THREAD n:2 , iteration:499

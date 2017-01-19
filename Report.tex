@@ -511,7 +511,30 @@ In \verb|testConcurrentAdd1Add2()|:\\
 Moreover, the reliability of detecting and solving deadlocks is verified in the test class \verb|WaitingGraphTests|. (In \verb|testFlagTransactions()| we lock objects in such a way to cause a cycle, $T_1 \rightarrow T_2 \rightarrow T_3 \rightarrow T_1  $, and then we assert that the WaitingGraphManager must have flagged at least one of the 3 transactions for abortion.)\\
 ~\\
 
+\subsection{Experiments}
 
+\subsection{Question 5}
+
+\textit{Design, describe the setup for, and execute an experiment that shows how well your
+implementation of the }CustomerTransactionManager\textit{ service behaves as concurrency in the
+number of clients is increased. You will need to argue for a basic workload mix involving calls from the
+clients accessing the service, including distribution of operations and data touched. Depending on the
+workload, you may wish to also scale the corresponding data sizes with increasing number of clients.
+Given a mix of operations from clients, you should report how the throughput of the service scales as
+more clients are added. Remember to thoroughly document your setup. In particular, mention the
+following aspects in your answer:}\\
+• Setup: \textit{Document the hardware, data size and distribution, and workload characteristics you
+have used to make your measurements. In addition, describe your measurement procedure, e.g.,
+procedure to generate workload calls, use of timers, and numbers of repetitions, along with short
+arguments for your decisions. Also make sure to document your hardware configuration and how
+you expect this configuration to affect the scalability results you obtain.}\\
+• Results:\textit{ According to your setup, show a graph with your throughput measurements for the
+CustomerTransactionManager service on the y-axis and the numbers of clients on the xaxis,
+while maintaining the workload mix you argued for in your setup and any other parameters
+fixed. How does the observed throughput scale with the number of clients? Describe the trends
+observed and any other effects. Explain why you observe these trends and how much that matches
+your expectations.
+}\\
 
 
 
