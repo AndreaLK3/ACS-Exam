@@ -11,23 +11,20 @@ public class WorkerRunResult {
 	private int totalRuns; // total number of interactions run 
 	private long elapsedTimeInNanoSecs; // total time taken to run all
 										// interactions
-	private int successfulFrequentBookStoreInteractionRuns; // number of
+	private int successfulFrequentInteractionRuns; // number of
 															// successful
-															// frequent book
-															// store interaction
+															// frequent interaction
 															// runs
-	private int totalFrequentBookStoreInteractionRuns; // total number of
-														// bookstore interaction
-														// runs
+	private int totalFrequentInteractionRuns; // total number of frequent interaction runs
 
 	public WorkerRunResult(int successfulInteractions, long elapsedTimeInNanoSecs,
-			int totalRuns, int successfulFrequentBookStoreInteractionRuns,
-			int totalFrequentBookStoreInteractionRuns) {
+			int totalRuns, int successfulFrequentInteractionRuns,
+			int totalFrequentInteractionRuns) {
 		this.setSuccessfulInteractions(successfulInteractions);
 		this.setElapsedTimeInNanoSecs(elapsedTimeInNanoSecs);
 		this.setTotalRuns(totalRuns);
-		this.setSuccessfulFrequentBookStoreInteractionRuns(successfulFrequentBookStoreInteractionRuns);
-		this.setTotalFrequentBookStoreInteractionRuns(totalFrequentBookStoreInteractionRuns);
+		this.setSuccessfulFrequentBookStoreInteractionRuns(successfulFrequentInteractionRuns);
+		this.setTotalFrequentInteractionRuns(totalFrequentInteractionRuns);
 	}
 
 	public int getTotalRuns() {
@@ -55,21 +52,29 @@ public class WorkerRunResult {
 	}
 
 	public int getSuccessfulFrequentBookStoreInteractionRuns() {
-		return successfulFrequentBookStoreInteractionRuns;
+		return successfulFrequentInteractionRuns;
 	}
 
 	public void setSuccessfulFrequentBookStoreInteractionRuns(
 			int successfulFrequentBookStoreInteractionRuns) {
-		this.successfulFrequentBookStoreInteractionRuns = successfulFrequentBookStoreInteractionRuns;
+		this.successfulFrequentInteractionRuns = successfulFrequentBookStoreInteractionRuns;
 	}
 
 	public int getTotalFrequentBookStoreInteractionRuns() {
-		return totalFrequentBookStoreInteractionRuns;
+		return totalFrequentInteractionRuns;
 	}
 
-	public void setTotalFrequentBookStoreInteractionRuns(
+	public void setTotalFrequentInteractionRuns(
 			int totalFrequentBookStoreInteractionRuns) {
-		this.totalFrequentBookStoreInteractionRuns = totalFrequentBookStoreInteractionRuns;
+		this.totalFrequentInteractionRuns = totalFrequentBookStoreInteractionRuns;
+	}
+
+	public int getSuccessfulFrequentInteractionRuns() {
+		return successfulFrequentInteractionRuns;
+	}
+
+	public int getTotalFrequentInteractionRuns() {
+		return totalFrequentInteractionRuns;
 	}
 
 }

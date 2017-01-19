@@ -537,9 +537,14 @@ your expectations.
 }\\
 I used the class \verb|ElementsGenerator| to create random customers and purchases. I imported several classes from Assignment 4 (\verb|ACertainWorkload|, \verb|Worker|, \verb|WorkloadConfiguration|) and adapted them to this task.\\
 \textbf{Setup:}\\
-
+\textbf{Hardware:}\\
+Machine: Hewlett-Packard Pavilion Laptop 2170 \\
+Processor: AMD A6-5200 APU - 2.00 GHz\\
+RAM: 12.0 GB Single-Channel DDR3 @ 798MHz\\
+System type: Windows 8.1 64-bit\\
+Secondary storage: hard-disk 465GB Hitachi HGST \\
 ~\\
-My workload considers 3 kinds of interactions:
+My \textbf{workload} considers 3 kinds of interactions:
 \begin{itemize}
 \item $65%$ : \textit{FrequentPurchase} interactions:\\
 the sales employees have contacted the system to update 3 customers, buying 20 items each. The features of the purchases (itemID, orderID, quantity, price) are random integer numbers from 1 to 10000.
@@ -548,15 +553,8 @@ the sales employees have contacted the system to update 3 customers, buying 20 i
 \item $20%$ : \textit{RegionsLookUp} interactions:\\
 the request retrievs the List<RegionTotal> for the specified regionIDs.
 \end{itemize}
-
-
-
-
-
-
-
-
-
+I planned on measuring the throughput of successful interactions, for each kind, scaling the number of clients.\\
+Unfortunately, I encountered a problem in the communication with the CTM, and I do not have had the time to fix it.\\
 
 
 \end{document}

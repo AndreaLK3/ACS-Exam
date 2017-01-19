@@ -89,7 +89,7 @@ public class ElementsGenerator {
 			Customer c = new Customer(cId, cReg);
 			setOfCustomers.add(c);
 		}
-		return setOfCustomers;
+		return new HashSet<>(setOfCustomers);
 	}
 	
 	/**Given a set of customers, creates a set of item purchases.

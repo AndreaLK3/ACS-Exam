@@ -172,7 +172,7 @@ public class CertainWorkload {
 		double aggregateThroughput = 0;
 
 		for (WorkerRunResult wResult : workerRunResults) {
-			int succCustomerInts = wResult.getSuccessfulFrequentBookStoreInteractionRuns();
+			int succCustomerInts = wResult.getSuccessfulInteractions();
 			long timeInNs = wResult.getElapsedTimeInNanoSecs();
 			double timeInS = timeInNs / Math.pow(10, 9);
 			totTimeInS += timeInS;

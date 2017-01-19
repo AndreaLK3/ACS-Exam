@@ -1,21 +1,408 @@
-2017-01-19 22:24:17.402:INFO::Thread-4: Logging initialized @1716ms
-2017-01-19 22:24:17.659:INFO:oejs.Server:Thread-1: jetty-9.3.14.v20161028
-2017-01-19 22:24:17.659:INFO:oejs.Server:Thread-5: jetty-9.3.14.v20161028
-2017-01-19 22:24:17.659:INFO:oejs.Server:Thread-2: jetty-9.3.14.v20161028
-2017-01-19 22:24:17.675:INFO:oejs.Server:Thread-4: jetty-9.3.14.v20161028
-2017-01-19 22:24:17.675:INFO:oejs.Server:Thread-3: jetty-9.3.14.v20161028
+2017-01-19 22:33:31.972:INFO::Thread-3: Logging initialized @1429ms
+2017-01-19 22:33:32.189:INFO:oejs.Server:Thread-5: jetty-9.3.14.v20161028
+2017-01-19 22:33:32.189:INFO:oejs.Server:Thread-1: jetty-9.3.14.v20161028
+2017-01-19 22:33:32.189:INFO:oejs.Server:Thread-4: jetty-9.3.14.v20161028
+2017-01-19 22:33:32.189:INFO:oejs.Server:Thread-3: jetty-9.3.14.v20161028
+2017-01-19 22:33:32.189:INFO:oejs.Server:Thread-2: jetty-9.3.14.v20161028
 *****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
-2017-01-19 22:24:18.478:INFO:oejs.AbstractConnector:Thread-4: Started ServerConnector@b06a697{HTTP/1.1,[http/1.1]}{0.0.0.0:8085}
-2017-01-19 22:24:18.478:INFO:oejs.AbstractConnector:Thread-1: Started ServerConnector@4965608f{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
-2017-01-19 22:24:18.478:INFO:oejs.Server:Thread-4: Started @2803ms
-2017-01-19 22:24:18.478:INFO:oejs.Server:Thread-1: Started @2803ms
-2017-01-19 22:24:18.478:INFO:oejs.AbstractConnector:Thread-3: Started ServerConnector@26b51718{HTTP/1.1,[http/1.1]}{0.0.0.0:8084}
-2017-01-19 22:24:18.487:INFO:oejs.Server:Thread-3: Started @2804ms
-2017-01-19 22:24:18.487:INFO:oejs.AbstractConnector:Thread-2: Started ServerConnector@43077e5d{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
-2017-01-19 22:24:18.488:INFO:oejs.Server:Thread-2: Started @2805ms
-2017-01-19 22:24:18.489:INFO:oejs.AbstractConnector:Thread-5: Started ServerConnector@3fa45c66{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}
-2017-01-19 22:24:18.489:INFO:oejs.Server:Thread-5: Started @2818ms
+2017-01-19 22:33:33.076:INFO:oejs.AbstractConnector:Thread-4: Started ServerConnector@52bc3b2c{HTTP/1.1,[http/1.1]}{0.0.0.0:8085}
+2017-01-19 22:33:33.076:INFO:oejs.AbstractConnector:Thread-3: Started ServerConnector@3e270e17{HTTP/1.1,[http/1.1]}{0.0.0.0:8084}
+2017-01-19 22:33:33.076:INFO:oejs.AbstractConnector:Thread-1: Started ServerConnector@1ddc37a4{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2017-01-19 22:33:33.092:INFO:oejs.Server:Thread-4: Started @2557ms
+2017-01-19 22:33:33.092:INFO:oejs.Server:Thread-1: Started @2558ms
+2017-01-19 22:33:33.092:INFO:oejs.Server:Thread-3: Started @2557ms
+2017-01-19 22:33:33.092:INFO:oejs.AbstractConnector:Thread-5: Started ServerConnector@2a3df0f1{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}
+2017-01-19 22:33:33.094:INFO:oejs.Server:Thread-5: Started @2559ms
+2017-01-19 22:33:33.094:INFO:oejs.AbstractConnector:Thread-2: Started ServerConnector@619b2f27{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+2017-01-19 22:33:33.094:INFO:oejs.Server:Thread-2: Started @2572ms
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+Exception in thread "main" com.acertaininventorymanager.utils.InventoryManagerException: ERR_CLIENT_REQUEST_EXCEPTION
+	at com.acertaininventorymanager.utils.InventoryUtility.performHttpExchange(InventoryUtility.java:196)
+	at com.acertaininventorymanager.client.ClientHTTPProxy.addCustomers(ClientHTTPProxy.java:133)
+	at com.acertaininventorymanager.client.workloads.CertainWorkload.initializeCustomers(CertainWorkload.java:216)
+	at com.acertaininventorymanager.client.workloads.CertainWorkload.main(CertainWorkload.java:101)
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused: no further information
+	at org.eclipse.jetty.client.util.FutureResponseListener.getResult(FutureResponseListener.java:118)
+	at org.eclipse.jetty.client.util.FutureResponseListener.get(FutureResponseListener.java:101)
+	at org.eclipse.jetty.client.HttpRequest.send(HttpRequest.java:652)
+	at com.acertaininventorymanager.utils.InventoryUtility.performHttpExchange(InventoryUtility.java:190)
+	... 3 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.eclipse.jetty.io.SelectorManager.finishConnect(SelectorManager.java:355)
+	at org.eclipse.jetty.io.ManagedSelector.processConnect(ManagedSelector.java:352)
+	at org.eclipse.jetty.io.ManagedSelector.access$900(ManagedSelector.java:56)
+	at org.eclipse.jetty.io.ManagedSelector$SelectorProducer.processSelected(ManagedSelector.java:289)
+	at org.eclipse.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:181)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:249)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.execute(ExecuteProduceConsume.java:100)
+	at org.eclipse.jetty.io.ManagedSelector.run(ManagedSelector.java:147)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
