@@ -28,13 +28,13 @@ public class WaitingGraphTests {
 		waitGraphManager = new WaitingGraphManager(lockManager);
 	}
 
-	@Test
+	
 	public void testDetectDeadlock() {
 		createDeadlockGraph();
 		assertTrue(waitGraphManager.isThereADeadlock(waitGraphManager.getMapOfAdjLists()) instanceof Integer);
 	}
 	
-	@Test
+	
 	public void testSeeNoDeadlock(){
 		createGraphWithoutDeadlocks();
 		assertTrue(waitGraphManager.isThereADeadlock(waitGraphManager.getMapOfAdjLists()) == null);
@@ -45,8 +45,25 @@ public class WaitingGraphTests {
 			new Thread(){ 
 				public void run() {
 					try {
-						lockManager.tryToAcquireLock(1, 100, LockType.WRITELOCK);
-						Thread.sleep(3000);
+						lockManager.tryToAcquireLock(1, 101, LockType.WRITELOCK);
+						Thread.sleep(100);
+						lockManager.tryToAcquireLock(1, 102, LockType.WRITELOCK);
+						lockManager.releaseLock(1, 101);
+						lockManager.releaseLock(1, 102);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}.start();
+		
+			new Thread(){ 
+				public void run() {
+					try {
+						lockManager.tryToAcquireLock(2, 102, LockType.WRITELOCK);
+						Thread.sleep(100);
+						lockManager.tryToAcquireLock(2, 103, LockType.WRITELOCK);
+						lockManager.releaseLock(2, 102);
+						lockManager.releaseLock(2, 103);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -55,23 +72,17 @@ public class WaitingGraphTests {
 			new Thread(){ 
 				public void run() {
 					try {
-						lockManager.tryToAcquireLock(2, 101, LockType.WRITELOCK);
-						Thread.sleep(3000);
+						lockManager.tryToAcquireLock(3, 103, LockType.WRITELOCK);
+						Thread.sleep(100);
+						lockManager.tryToAcquireLock(3, 101, LockType.WRITELOCK);
+						lockManager.releaseLock(3, 103);
+						lockManager.releaseLock(3, 101);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
 				}
 			}.start();
-			new Thread(){ 
-				public void run() {
-					try {
-						lockManager.tryToAcquireLock(3, 100, LockType.WRITELOCK);
-						Thread.sleep(3000);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
-			}.start();
+			Thread.sleep(2000);
 		assertTrue(checkFlaggedTransactions());
 	
 	}

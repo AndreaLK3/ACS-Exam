@@ -41,9 +41,9 @@ public class MyLock {
 	}
 	
 	@Override
-	public String toString(){
-		return "Lock: ObjectID: " +objectId + " - status: " + lockStatus +
-				" - Holders: " + holders;
+	public synchronized String toString(){
+		return "[Lock: ObjectID: " +objectId + " - status: " + lockStatus +
+				" - Holders: " + holders+"]";
 	}
 
 }

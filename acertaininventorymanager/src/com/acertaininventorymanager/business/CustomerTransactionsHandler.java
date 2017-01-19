@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import com.acertaininventorymanager.client.CtmClientHTTPProxy;
 import com.acertaininventorymanager.client.InvManagerClientConstants;
@@ -25,7 +26,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	
 	private HashMap<Integer,Customer> customers = new HashMap<>();
 	private final int numOfItemDataManagers;
-	private HashMap<Integer, ItemDataManager> IDMs = new HashMap<>();
+	private ConcurrentHashMap<Integer, ItemDataManager> IDMs = new ConcurrentHashMap<>();
 	private Strict2PLManager lockManager;
 	
 	
@@ -59,7 +60,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 			throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
 		
 		Integer xactId = Thread.currentThread().hashCode() / 16384 + randGen.nextInt(ID_RANDOMBOUND);
-		Set<ItemPurchase> ordersAlreadyProcessed = new HashSet<>();
+		Set<ItemPurchase> ordersProcessed = new HashSet<>();
 		Set<Integer> lockedIDMs = new HashSet<>();
 		
 		for (ItemPurchase itP : itemPurchases){
@@ -70,50 +71,69 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 			//process each itemPurchase
 			for (ItemPurchase itP : itemPurchases){
 				Integer idmNumber = hashingFunction(itP)+1;
-				lockManager.tryToAcquireLock(xactId, -idmNumber, LockType.WRITELOCK);
-				lockedIDMs.add(-idmNumber);
+				//lockedIDMs.add(-idmNumber);
+				//lockManager.tryToAcquireLock(xactId, -idmNumber, LockType.WRITELOCK);
 				ItemDataManager theIdm = IDMs.get(idmNumber);
 				theIdm.addItemPurchase(itP);
 			
 				Integer cId = itP.getCustomerId();
-			
+				
+				ordersProcessed.add(itP); //toUndoSet for customers and purchases
 				lockManager.tryToAcquireLock(xactId, cId, LockType.WRITELOCK);
 				
 				Customer theCustomer = customers.get(cId);
 				long oldTotal = theCustomer.getValueBought();
 				theCustomer.setValueBought(oldTotal + itP.getUnitPrice()*itP.getQuantity());
-				//once an itemPurchase has been registered, it is added to the ordersAlreadyProcessed set;
-				//in case there is a deadlock and the transaction aborts, we will rollback those.
-				ordersAlreadyProcessed.add(itP); 
+ 
 			}
 			
-			releaseLocks(xactId, itemPurchases, lockedIDMs);			
+			releaseLocks(xactId, itemPurchases);			
 				
 				
 		} catch (AbortedTransactionException e) {
-		
-			//TODO: rollback, to ensure all-or-nothing atomicity
-			for (ItemPurchase itP : ordersAlreadyProcessed){
+			//rollback, to ensure consistency and all-or-nothing atomicity
+			for (ItemPurchase itP : ordersProcessed){
 				Integer idmNumber = hashingFunction(itP)+1;
 				ItemDataManager theIdm = IDMs.get(idmNumber);
 				
 				Integer customerID = itP.getCustomerId(); Integer orderID = itP.getOrderId();
 				Integer itemID = itP.getItemId();
-				theIdm.removeItemPurchase(customerID, orderID, itemID);
+				
+				try {
+					theIdm.removeItemPurchase(customerID, orderID, itemID);
+				} catch (InexistentItemPurchaseException exc)
+				{
+					// this purchase was not registered in the IDM. Rollback unnecessary
+				}
 			
 				Customer theCustomer = customers.get(customerID);
 				long oldTotal = theCustomer.getValueBought();
 				theCustomer.setValueBought(oldTotal - itP.getUnitPrice()*itP.getQuantity());
 			
 			}
-			releaseLocks(xactId, ordersAlreadyProcessed, lockedIDMs);
-			
+			releaseLocks(xactId, itemPurchases);
+			lockManager.removeTransactionFromAbortedList(xactId);
 		}
 			
 		
 	}
 	
 	
+
+
+	private void releaseLocks(Integer xactId, Set<ItemPurchase> itemPurchases) {
+		for (ItemPurchase itP : itemPurchases){
+			Integer customerId = itP.getCustomerId();
+			lockManager.releaseLock(xactId, customerId);
+		}
+	}
+	
+	private void releaseLocks(Integer xactId, List<Integer> cIds) {
+		for (Integer objectId : cIds){
+			lockManager.releaseLock(xactId, objectId);
+		}
+		
+	}
 
 
 	private synchronized void validateItemPurchase(ItemPurchase itemPurchase)
@@ -198,10 +218,11 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 				
 			}
 			
-			releaseLocks(xactId, cIds, null);
+			releaseLocks(xactId, cIds);
 		}
 		catch(AbortedTransactionException e){
-			releaseLocks(xactId, cIds, null);
+			releaseLocks(xactId, cIds);
+			lockManager.removeTransactionFromAbortedList(xactId);
 			//try again
 			getTotalsForRegions(regionIds);
 		}
@@ -215,6 +236,9 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	}
 	
 	
+	
+
+
 	/**The method performs the following validation checks: 
 	 * 1) The region IDs given are positive integers; and 
 	 * 2) Each region ID matches at least one customer.	 * */
@@ -314,7 +338,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	}
 
 	/**For testing purposes.*/
-	public HashMap<Integer, ItemDataManager> getIDMs() {
+	public ConcurrentHashMap<Integer, ItemDataManager> getIDMs() {
 		return IDMs;
 	}
 	
@@ -326,30 +350,7 @@ public class CustomerTransactionsHandler implements CustomerTransactionManager {
 	}
 	
 	
-	
-	private void releaseLocks(Integer xactId, Set<ItemPurchase> itemPurchases, Set<Integer> IDMids){
-		//release phase
-		if (IDMids!=null){
-			for (Integer idm : IDMids){
-				lockManager.releaseLock(xactId, idm);
-			}
-		}
-		for (ItemPurchase itP : itemPurchases){
-			Integer customerId = itP.getCustomerId();
-			lockManager.releaseLock(xactId, customerId);
-		}
-	}
-	
-	private void releaseLocks(Integer xactId, List<Integer> cIds, Set<Integer> IDMids){
-		if (IDMids!=null){
-			for (Integer idm : IDMids){
-				lockManager.releaseLock(xactId, idm);
-			}
-		}
-		for (Integer cId : cIds){
-			lockManager.releaseLock(xactId, cId);
-		}
-	}
+
 
 
 

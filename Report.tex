@@ -124,6 +124,7 @@ Phase I/O cost: N(M/N)=M I/Os. \quad Phase I/O time: M/N I/Os.\\
 ~\\
 Total I/O cost = 2M I/Os. \quad \quad Total I/O time = 2(M/N) I/Os.\\
 
+\clearpage
 \section{Question 2: ARIES Recovery}
 
 \subsection{2.1 The transaction table}
@@ -241,7 +242,7 @@ toUndo = \{4\};
   \end{tabular}
 \end{center}
 
-
+\clearpage
 \section{Question 3: Replication}
 
 We have to define a distributed system that works with multiple clients and follows the Synchronous Replication model ReadAny-WriteAll.\\
@@ -457,8 +458,8 @@ workload the service is exposed to and why you believe other alternatives you co
 locking vs. optimistic approach) would be better or worse than your choice.\\
 }
 ~\\
-To ensure before-or-after atomicity at the CustomerTransactionManager layer, I used a Strict 2PL protocol with deadlock detection. I implemented it using the classes Strict2PLManager, MyLock and WaitingGraphManager.\\
-The customers and the IDMs are stored in 2 \verb|HashMap|s in the CustomerTransactionHandler. When a transaction is executed (eg. when a thread invokes \verb|processOrders|), I proceed this way:
+To ensure before-or-after atomicity at the CustomerTransactionManager layer, I used a Strict 2PL protocol with deadlock detection for the \verb|customer|s, and a simple ConcurrentHashMap for the \verb|ItemDataManager|s. I implemented Strict 2PL with the classes Strict2PLManager, MyLock and WaitingGraphManager.\\
+The customers are stored in a \verb|HashMap| in the CustomerTransactionHandler. When a transaction is executed (eg. when a thread invokes \verb|processOrders|), I proceed this way:
 \begin{itemize}
 \item when I process each element (eg. each ItemPurchase), I try to acquire the appropriate lock on the customer, as well as on the IDM associated with the purchase. I am invoking, in \verb|Strict2PLManager|, the function \\\verb|tryToAcquireLock(Integer xactId, Integer objectId, LockType lockType)|
 \item The aforementioned method executes all appropriate evaluations (shared vs. exclusive lock, is this transaction already holding the lock?, etc.), and if there are no deadlocks the method eventually returns.
@@ -469,12 +470,12 @@ The transactions holding the lock on an object are stored in the \verb|MyLock| c
 When $T_i$ has to wait for the lock on an object, we add a number of edges to the waiting graph stored in \verb|WaitingGraphManager|.\\
 Periodically, another thread checks the graph for cycles. If some is found, one node/transaction is flagged as "to be aborted" in the Strict2PLManager. An \verb|AbortedTransactionException| is thrown.\\
 The CustomerTransactionManager has registered the orders that have been already processed. When a transaction has been aborted, it rolls back all the modifications that were made on the IDMs and Customers, and finally it releases all the locks it holds (eliminating the deadlock).\\
-\clearpage
+~\\
 Observations:
 \begin{itemize}
-\item Different threads can access different ItemDataManagers, but 1 IDM can be accessed by a single thread at a time, and it stays locked and associated with that thread for the whole duration of the transaction. Given that the \verb|addPurchase| and \verb|removePurchase| operations have to lock the entire internal list to modify it, I deemed the loss in concurrency an acceptable trade-off, to be able to implement the Strict2PL protocol.
+\item Using Strict 2PL, different threads can access different ItemDataManagers, but 1 IDM can be accessed by a single thread at a time, and it stays locked and associated with that thread for the whole duration of the transaction. Given that the \verb|addPurchase| and \verb|removePurchase| operations have to lock the entire internal list to modify it, I initially deemed the loss in concurrency an acceptable trade-off, to be able to implement the Strict2PL protocol.
+\item Nevertheless, through extensive testing and logging I observed that this makes the transactions more prone to deadlocks and subsequent aborts. Since the number of IDMs is generally small (eg.5), if we have a considerable number of purchases (eg.10 or more) then each transaction ends up using all IDMs. If 2 transactions get hold of different IDMs, then it is likely that one of them will have to be aborted, and the surviving transaction is still likely to encounter conflicts with the other incoming transactions, until one manages to get hold of all IDMs. Therefore, I decided to simply use a ConcurrentHashMap for IDMs, and keep them out of the locking protocol.
 \item Optimistic concurrency control would have 2 drawbacks: first, when a single transaction is in the Validation phase, no other transaction is allowed to commit (otherwise we could have value conflicts). Moreover, we would have to write in a private working space and then transfer all the objects a transaction modifies. Depending on the number of ItemPurchases, we may have to operate with a great number of customers, and that also increases the probability of intersection of different Writng Sets.
-\item I find the parallelism achieved on the \verb|Customer|s set satisfactory. 2 \verb|getRegionTotals| invocations, querying different regions, can access different customers in parallel. \\I recognize that \verb|processOrders| could be improved, if I released the lock on the IDMs and the customers as soon as I am not operating on them, but this would be 2PL, not Strict2PL, and I would have to face cascading aborts.
 \end{itemize}
 
 \clearpage
@@ -490,6 +491,25 @@ CustomerTransactionManager?\\
 \textit{ - How did you test before-or-after atomicity of operations at the}
 CustomerTransactionManager\textit{? Recall that you must document how your tests verify that
 anomalies do not occur (e.g., dirty reads or dirty writes).}\\
+~\\
+I tested all-or-nothing atomicity in the test class \verb|RPCtests|.\\
+In the Initialization phase, I start the CTM and IDMs servers, and I add a random set of pre-registered customers to the CTM.\\
+Test n.1, \verb|testProcessOrders()|, simply checks the basic functionality of the CustomerTransactionManager:\\
+ - We pick a customer at random, and we create a purchase of nOfUnits * unitPrice.\\
+ - After the purchase, the totalValueBought for the region of the customer must have increased of nOfUnits * unitPrice.\\
+Test n.2, \verb|testProcessInvalidOrders()|, checks the property of all-or-nothing atomicity:\\
+ - We try to process a number of ItemPurchases, some of which contain invalid parameters.\\
+ - Afterwards, the totals for the regions must be unchanged. \\
+(This is due to the fact that the transaction first validates the input, throwing an exception in case of error, and starts modifying the database only in the next phase). \\ 
+~\\
+I tested all-or-nothing atomicity in the test class \verb|AtomicityTests|.\\
+In the Initialization phase, we define 2 sets of ItemPurchases, with fixed unit prices and item quantities.\\
+In \verb|testConcurrentAdd1Add2()|:\\
+ - We start 2 client threads, that add to the database the 2 fixed sets of ItemPurchases concurrently.
+ - At the end, we may have had a number of aborted transactions. Therefore, we do not require equality between the total value  added to the database and the value of the purchases. Nevertheless, we state that (newTotalValue - oldTotalValue) must be a multiple of the PurchaseValue. (We do not know how many transactions have aborted, but this way we know that the concurrent addition of purchases caused no errors and left the database in a consistent state).\\
+~\\
+Moreover, the reliability of detecting and solving deadlocks is verified in the test class \verb|WaitingGraphTests|. (In \verb|testFlagTransactions()| we lock objects in such a way to cause a cycle, $T_1 \rightarrow T_2 \rightarrow T_3 \rightarrow T_1  $, and then we assert that the WaitingGraphManager must have flagged at least one of the 3 transactions for abortion.)\\
+~\\
 
 
 

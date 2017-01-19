@@ -185,21 +185,39 @@ public class RPCtests {
 	}
 	
 	/**This negative test checks the validation phase of the CTM.
-	 * If an integer < 0 is given as parameter, the NonPositiveIntegerException should occur.**/
+	 * If an integer < 0 is given as parameter, the NonPositiveIntegerException should occur.
+	 * @throws InventoryManagerException 
+	 * @throws EmptyRegionException 
+	 * @throws NonPositiveIntegerException **/
 	@Test
-	public void testProcessInvalidOrders() {
-				
+	public void testProcessInvalidOrders() throws NonPositiveIntegerException, EmptyRegionException, InventoryManagerException {
+		
+		List<RegionTotal> oldRegionTotals = new ArrayList<>();
+		try {
+			oldRegionTotals = ctm.getTotalsForRegions(REGIONS);
+		} catch (InventoryManagerException e) {
+			e.printStackTrace();
+			fail();
+		}
+		
 		Customer aCustomer = customers.stream().findAny().get();
 		ItemPurchase purchase1 = new ItemPurchase(2,-45, 2, 2, 2);
-
+		int cRegID = aCustomer.getRegionId();
 		Set<ItemPurchase> itPurchases = new HashSet<>(Arrays.asList(purchase1));
 		
 		try {
 			ctm.processOrders(itPurchases);
 			fail();
+			
 		} catch (InventoryManagerException e) {
 			assertTrue(e instanceof NonPositiveIntegerException);
+			List<RegionTotal> newRegionTotals = ctm.getTotalsForRegions(REGIONS);
+			RegionTotal oldTotal = getRegionTotal(cRegID, oldRegionTotals);
+			RegionTotal newTotal = getRegionTotal(cRegID, newRegionTotals);
+			
+			assert(newTotal.getTotalValueBought()==oldTotal.getTotalValueBought());
 		}
+		
 		
 	}
 	

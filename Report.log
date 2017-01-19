@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  19 JAN 2017 00:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  19 JAN 2017 17:23
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -752,273 +752,306 @@ Overfull \hbox (26.48857pt too wide) in paragraph at lines 109--109
  tu-ples in its main mem-ory se-quen-tially, 
  []
 
-[2] [3]
-Overfull \hbox (1.84012pt too wide) in paragraph at lines 208--208
+[2] [3
+
+]
+Overfull \hbox (1.84012pt too wide) in paragraph at lines 209--209
 \T1/futs/m/n/10.95 The pageLSN is the LSN of the last ac-tion for that page tha
 t was writ-ten in sec-ondary stor-age.  
  []
 
-
-Overfull \hbox (23.52116pt too wide) in paragraph at lines 248--249
+[4] [5]
+Overfull \hbox (23.52116pt too wide) in paragraph at lines 249--250
 []\T1/futs/m/n/10.95 Multiple copies of the database are stored at dif-fer-ent 
 sites. Since this is Syn-chronous Repli-ca-tion, 
  []
 
 
-Overfull \hbox (22.36049pt too wide) in paragraph at lines 250--250
+Overfull \hbox (22.36049pt too wide) in paragraph at lines 251--251
 []\T1/futs/m/n/10.95 The al-go-rithm I chose to solve this task re-sem-bles the
  PAXOS al-go-rithm. The pro-cesses/machines 
  []
 
-[4]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 262.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 263.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [5]
-Overfull \hbox (6.60397pt too wide) in paragraph at lines 325--325
+) [6
+
+]
+Overfull \hbox (6.60397pt too wide) in paragraph at lines 326--326
 []    \T1/pcr/m/n/10.95 send (originalClient, {"answerToReading",valueToSendBac
 k})  
  []
 
-[6]
-Overfull \hbox (30.11295pt too wide) in paragraph at lines 338--338
+[7]
+Overfull \hbox (30.11295pt too wide) in paragraph at lines 339--339
 []\T1/futs/m/n/10.95 Note: the "queue" is not re-stricted to re-mov-ing its hea
 d el-e-ment. As it is writ-ten in the pseu-docode, 
  []
 
 
-Overfull \hbox (9.71321pt too wide) in paragraph at lines 338--338
+Overfull \hbox (9.71321pt too wide) in paragraph at lines 339--339
 \T1/futs/m/n/10.95 if the read-ing re-quests R1, R2, R3 ar-rive in se-quence, a
 nd (for in-stance due to some con-nec-tion 
  []
 
-[7]
-Overfull \hbox (39.47533pt too wide) in paragraph at lines 354--354
+[8]
+Overfull \hbox (39.47533pt too wide) in paragraph at lines 355--355
 \T1/futs/m/it/10.95 Describe your over-all im-ple-men-ta-tion of the Cus-tomer-
 Trans-ac-tion-Man-ager and the Item-Data-Man-ager 
  []
 
 
-Overfull \hbox (75.24458pt too wide) in paragraph at lines 356--356
+Overfull \hbox (75.24458pt too wide) in paragraph at lines 357--357
 []\T1/futs/m/n/10.95 The in-ter-face []\T1/cmtt/m/n/10.95 CustomerTransactionMa
 nager \T1/futs/m/n/10.95 is im-ple-mented in the class []\T1/cmtt/m/n/10.95 Cus
 tomerTransactionsHandler\T1/futs/m/n/10.95 .  
  []
 
-<PackageStructure.png, id=32, 2409.7528pt x 1649.41219pt>
+<PackageStructure.png, id=35, 2409.7528pt x 1649.41219pt>
 File: PackageStructure.png Graphic file (type png)
 
 <use PackageStructure.png>
-Package pdftex.def Info: PackageStructure.png used on input line 364.
+Package pdftex.def Info: PackageStructure.png used on input line 365.
 (pdftex.def)             Requested size: 460.08365pt x 314.90166pt.
 
-Overfull \hbox (13.88991pt too wide) in paragraph at lines 368--369
+Overfull \hbox (13.88991pt too wide) in paragraph at lines 369--370
 []\T1/futs/m/it/10.95 What RPC se-man-tics are im-ple-mented be-tween clients a
 nd the []\T1/cmtt/m/n/10.95 CustomerTransactionManager\T1/futs/m/it/10.95 ? 
  []
 
 
-Overfull \hbox (9.11807pt too wide) in paragraph at lines 368--369
+Overfull \hbox (9.11807pt too wide) in paragraph at lines 369--370
 \T1/futs/m/it/10.95 What about be-tween the []\T1/cmtt/m/n/10.95 CustomerTransa
 ctionManager \T1/futs/m/it/10.95 and the []\T1/cmtt/m/n/10.95 ItemDataManager\T
 1/futs/m/it/10.95 ? Ex-plain. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
  
  []
 
-[8
+[9
 
  <./PackageStructure.png>]
-Overfull \hbox (11.20946pt too wide) in paragraph at lines 379--379
+Overfull \hbox (11.20946pt too wide) in paragraph at lines 380--380
 []\T1/futs/m/n/10.95 About the RPC be-tween the []\T1/cmtt/m/n/10.95 CustomerTr
 ansactionManager \T1/futs/m/n/10.95 layer and the []\T1/cmtt/m/n/10.95 ItemData
 Manager\T1/futs/m/n/10.95 s:  
  []
 
 
-Overfull \hbox (7.89743pt too wide) in paragraph at lines 380--380
+Overfull \hbox (7.89743pt too wide) in paragraph at lines 381--381
 []\T1/futs/m/n/10.95 In its con-struc-tor, the in-ter-me-di-ate layer ([]\T1/cm
 tt/m/n/10.95 CustomerTransactionsHandler\T1/futs/m/n/10.95 ) cre-ates a num-ber
  
  []
 
 
-Overfull \hbox (50.93625pt too wide) in paragraph at lines 380--380
+Overfull \hbox (50.93625pt too wide) in paragraph at lines 381--381
 \T1/futs/m/n/10.95 of []\T1/cmtt/m/n/10.95 CtmClientHTTPProxy\T1/futs/m/n/10.95
  , that im-ple-ment the []\T1/cmtt/m/n/10.95 ItemDataManager \T1/futs/m/n/10.95
  in-ter-face. In the Con-cur-ren-tHashMap, 
  []
 
-<RPC.png, id=36, 2481.27pt x 1185.67969pt>
+<RPC.png, id=39, 2481.27pt x 1185.67969pt>
 File: RPC.png Graphic file (type png)
  <use RPC.png>
-Package pdftex.def Info: RPC.png used on input line 385.
+Package pdftex.def Info: RPC.png used on input line 386.
 (pdftex.def)             Requested size: 418.25555pt x 199.86223pt.
 
-Overfull \hbox (17.96953pt too wide) in paragraph at lines 388--391
+Overfull \hbox (17.96953pt too wide) in paragraph at lines 389--392
 []\T1/futs/m/it/10.95 How are fail-ures of \T1/futs/m/n/10.95 Item-Data-Man-age
 r \T1/futs/m/it/10.95 in-stances con-tained at the \T1/futs/m/n/10.95 Cus-tomer
 -Trans-ac-tion-Man-ager\T1/futs/m/it/10.95 ? 
  []
 
-[9 <./RPC.png>]
-Overfull \hbox (16.84166pt too wide) in paragraph at lines 393--393
+[10 <./RPC.png>]
+Overfull \hbox (16.84166pt too wide) in paragraph at lines 394--394
 []\T1/futs/m/n/10.95 The fail-ures we can de-tect and con-tain are fail-stop. W
 e as-sume that when an Item-Data-Man-ager 
  []
 
 
-Overfull \hbox (19.55118pt too wide) in paragraph at lines 394--394
+Overfull \hbox (19.55118pt too wide) in paragraph at lines 395--395
 []\T1/futs/m/n/10.95 We catch the fail-ure in the in-ter-me-di-ate layer, in []
 \T1/cmtt/m/n/10.95 CtmClientHTTPProxy\T1/futs/m/n/10.95 . In the re-mote pro-ce
 -dure 
  []
 
 
-Overfull \hbox (33.75871pt too wide) in paragraph at lines 394--394
+Overfull \hbox (33.75871pt too wide) in paragraph at lines 395--395
 \T1/futs/m/n/10.95 calls (ad-dItem-Pur-chase and re-moveIt-em-Pur-chase), when 
 we ex-e-cute []\T1/cmtt/m/n/10.95 performHTTPexchange(...)\T1/futs/m/n/10.95 , 
 
  []
 
 
-Overfull \hbox (8.47588pt too wide) in paragraph at lines 402--405
+Overfull \hbox (8.47588pt too wide) in paragraph at lines 403--406
 \T1/futs/m/n/10.95 Item-Data-Man-ager \T1/futs/m/it/10.95 to uti-lize a two-lev
 el mem-ory with dura-bil-ity pro-vided by a re-cov-ery pro-to-col 
  []
 
 
-Overfull \hbox (5.20197pt too wide) in paragraph at lines 402--405
+Overfull \hbox (5.20197pt too wide) in paragraph at lines 403--406
 \T1/futs/m/it/10.95 such as ARIES at each com-po-nent. Would there be a need th
 en to im-ple-ment a com-mit pro-to-col 
  []
 
 
-Overfull \hbox (6.48299pt too wide) in paragraph at lines 410--410
+Overfull \hbox (6.48299pt too wide) in paragraph at lines 411--411
 \T1/futs/m/n/10.95 De-pend-ing on the out-come of the vote, the Su-per-vi-sor o
 r-ders the sites to do-Com-mit/doAbort.  
  []
 
-[10]
-Overfull \hbox (13.75381pt too wide) in paragraph at lines 429--429
+[11]
+Overfull \hbox (13.75381pt too wide) in paragraph at lines 430--430
 []\T1/futs/m/it/10.95 - Ar-gue for the cor-rect-ness of your method; to do so, 
 show how your method is log-i-cally equiv-a-lent 
  []
 
 
-Overfull \hbox (28.71901pt too wide) in paragraph at lines 432--432
+Overfull \hbox (28.71901pt too wide) in paragraph at lines 433--433
 \T1/futs/m/n/10.95 global lock: a shared lock for read-ing op-er-a-tions (in th
 e util-ity func-tion []\T1/cmtt/m/n/10.95 findItemPurchase(...)\T1/futs/m/n/10.
 95 ), 
  []
 
 
-Overfull \hbox (6.4501pt too wide) in paragraph at lines 437--437
+Overfull \hbox (6.4501pt too wide) in paragraph at lines 438--438
 []\T1/futs/m/n/10.95 In or-der to do this with-out cre-at-ing in-con-sis-ten-ci
 es, the List must be locked in the mean-while. 
- []
-
-[11
-
-]
-Overfull \hbox (0.44957pt too wide) in paragraph at lines 444--446
-\T1/futs/m/it/10.95 De-scribe how you en-sured before-or-after atom-ic-ity of t
-hese op-er-a-tions. In par-tic-u-lar, men-tion 
- []
-
-
-Overfull \hbox (13.75381pt too wide) in paragraph at lines 458--458
-[]\T1/futs/m/it/10.95 - Ar-gue for the cor-rect-ness of your method; to do so, 
-show how your method is log-i-cally equiv-a-lent 
- []
-
-
-Overfull \hbox (22.4042pt too wide) in paragraph at lines 458--458
-[]\T1/futs/m/it/10.95 - Ar-gue for whether or not you need to con-sider the is-
-sue of reads on pred-i-cates vs. multi-gran-u-lar-ity 
- []
-
-
-Overfull \hbox (23.3569pt too wide) in paragraph at lines 460--460
-\T1/futs/m/n/10.95 Strict 2PL pro-to-col with dead-lock de-tec-tion. I im-ple-m
-ented it us-ing the classes Strict2PLManager, 
- []
-
-
-Overfull \hbox (9.84474pt too wide) in paragraph at lines 463--463
-\T1/futs/m/n/10.95 lock on the cus-tomer, as well as on the IDM as-so-ci-ated w
-ith the pur-chase. I am in-vok-ing, 
- []
-
-
-Overfull \hbox (1.50092pt too wide) in paragraph at lines 464--465
-[]\T1/futs/m/n/10.95 The afore-men-tioned method ex-e-cutes all ap-pro-pri-ate 
-eval-u-a-tions (shared vs. ex-clu-sive 
- []
-
-
-Overfull \hbox (13.69904pt too wide) in paragraph at lines 470--470
-[]\T1/futs/m/n/10.95 Periodically, an-other thread checks the graph for cy-cles
-. If some is found, one node/transaction 
- []
-
-
-Overfull \hbox (10.2279pt too wide) in paragraph at lines 471--471
-[]\T1/futs/m/n/10.95 The Cus-tomer-Trans-ac-tion-Man-ager has reg-is-tered the 
-or-ders that have been al-ready pro-cessed. 
- []
-
-
-Overfull \hbox (18.06802pt too wide) in paragraph at lines 471--471
-\T1/futs/m/n/10.95 When a trans-ac-tion has been aborted, it re-leases all the 
-locks it holds (elim-i-nat-ing the dead-lock), 
  []
 
 [12
 
 ]
-Overfull \hbox (25.07611pt too wide) in paragraph at lines 475--476
-\T1/futs/m/n/10.95 op-er-a-tions have to lock the en-tire in-ter-nal list to mo
-d-ify it, I deemed the loss in con-cur-rency 
+Overfull \hbox (0.44957pt too wide) in paragraph at lines 445--447
+\T1/futs/m/it/10.95 De-scribe how you en-sured before-or-after atom-ic-ity of t
+hese op-er-a-tions. In par-tic-u-lar, men-tion 
  []
 
 
-Overfull \hbox (9.68059pt too wide) in paragraph at lines 476--477
-[]\T1/futs/m/n/10.95 Optimistic con-cur-rency con-trol would have 2 draw-backs:
- first, when a sin-gle trans-ac-tion 
+Overfull \hbox (13.75381pt too wide) in paragraph at lines 459--459
+[]\T1/futs/m/it/10.95 - Ar-gue for the cor-rect-ness of your method; to do so, 
+show how your method is log-i-cally equiv-a-lent 
  []
 
 
-Overfull \hbox (11.25734pt too wide) in paragraph at lines 476--477
-\T1/futs/m/n/10.95 space and then trans-fer all the ob-jects a trans-ac-tion mo
-d-i-fies. De-pend-ing on the num-ber 
+Overfull \hbox (22.4042pt too wide) in paragraph at lines 459--459
+[]\T1/futs/m/it/10.95 - Ar-gue for whether or not you need to con-sider the is-
+sue of reads on pred-i-cates vs. multi-gran-u-lar-ity 
+ []
+
+
+Overfull \hbox (23.3569pt too wide) in paragraph at lines 461--461
+\T1/futs/m/n/10.95 Strict 2PL pro-to-col with dead-lock de-tec-tion. I im-ple-m
+ented it us-ing the classes Strict2PLManager, 
+ []
+
+
+Overfull \hbox (9.84474pt too wide) in paragraph at lines 464--464
+\T1/futs/m/n/10.95 lock on the cus-tomer, as well as on the IDM as-so-ci-ated w
+ith the pur-chase. I am in-vok-ing, 
+ []
+
+
+Overfull \hbox (1.50092pt too wide) in paragraph at lines 465--466
+[]\T1/futs/m/n/10.95 The afore-men-tioned method ex-e-cutes all ap-pro-pri-ate 
+eval-u-a-tions (shared vs. ex-clu-sive 
+ []
+
+
+Overfull \hbox (13.69904pt too wide) in paragraph at lines 471--471
+[]\T1/futs/m/n/10.95 Periodically, an-other thread checks the graph for cy-cles
+. If some is found, one node/transaction 
+ []
+
+
+Overfull \hbox (10.2279pt too wide) in paragraph at lines 472--472
+[]\T1/futs/m/n/10.95 The Cus-tomer-Trans-ac-tion-Man-ager has reg-is-tered the 
+or-ders that have been al-ready pro-cessed. 
  []
 
 [13
 
 ]
-Overfull \hbox (24.74751pt too wide) in paragraph at lines 486--488
+Overfull \hbox (9.68059pt too wide) in paragraph at lines 478--479
+[]\T1/futs/m/n/10.95 Optimistic con-cur-rency con-trol would have 2 draw-backs:
+ first, when a sin-gle trans-ac-tion 
+ []
+
+
+Overfull \hbox (11.25734pt too wide) in paragraph at lines 478--479
+\T1/futs/m/n/10.95 space and then trans-fer all the ob-jects a trans-ac-tion mo
+d-i-fies. De-pend-ing on the num-ber 
+ []
+
+[14]
+Overfull \hbox (24.74751pt too wide) in paragraph at lines 487--489
 \T1/futs/m/it/10.95 Describe your high-level strat-egy to test your im-ple-men-
 ta-tion of the \T1/futs/m/n/10.95 Cus-tomer-Trans-ac-tion-Man-ager. 
  []
 
 
-Overfull \hbox (7.99417pt too wide) in paragraph at lines 488--489
+Overfull \hbox (7.99417pt too wide) in paragraph at lines 489--490
 []\T1/futs/m/it/10.95 - How did you test all-or-nothing atom-ic-ity of op-er-a-
 tions at the \T1/futs/m/n/10.95 Cus-tomer-Trans-ac-tion-Man-ager?  
  []
 
 
-Overfull \hbox (11.1696pt too wide) in paragraph at lines 490--492
+Overfull \hbox (11.1696pt too wide) in paragraph at lines 491--493
 [] \T1/futs/m/it/10.95 - How did you test before-or-after atom-ic-ity of op-er-
 a-tions at the \T1/futs/m/n/10.95 Cus-tomer-Trans-ac-tion-Man-ager\T1/futs/m/it
 /10.95 ? 
  []
 
-[14
+
+Overfull \hbox (74.0466pt too wide) in paragraph at lines 497--497
+[]\T1/futs/m/n/10.95 Test n.1, []\T1/cmtt/m/n/10.95 testProcessOrders()\T1/futs
+/m/n/10.95 , sim-ply checks the ba-sic func-tion-al-ity of the Cus-tomer-Trans-
+ac-tion-Man-ager:  
+ []
+
+
+Overfull \hbox (5.10327pt too wide) in paragraph at lines 499--499
+[]\T1/futs/m/n/10.95 - Af-ter the pur-chase, the to-tal-Val-ue-Bought for the r
+e-gion of the cus-tomer must have in-creased 
+ []
+
+
+Overfull \hbox (23.35686pt too wide) in paragraph at lines 508--509
+[]\T1/futs/m/n/10.95 - We start 2 client threads, that add to the database the 
+2 fixed sets of Item-Pur-chases con-cur-rently. 
+ []
+
+
+Overfull \hbox (6.26393pt too wide) in paragraph at lines 508--509
+\T1/futs/m/n/10.95 - At the end, we may have had a num-ber of aborted trans-ac-
+tions. There-fore, we do not re-quire 
+ []
+
+
+Overfull \hbox (35.63179pt too wide) in paragraph at lines 508--509
+\T1/futs/m/n/10.95 equal-ity be-tween the to-tal value added to the database an
+d the value of the pur-chases. Nev-er-the-less, 
+ []
+
+
+Overfull \hbox (1.29268pt too wide) in paragraph at lines 508--509
+\T1/futs/m/n/10.95 do not know how many trans-ac-tions have aborted, but this w
+ay we know that the con-cur-rent 
+ []
+
+
+Overfull \hbox (73.14035pt too wide) in paragraph at lines 511--511
+[]\T1/futs/m/n/10.95 Moreover, the re-li-a-bil-ity of de-tect-ing and solv-ing 
+dead-locks is ver-i-fied in the test class [] \T1/cmtt/m/n/10.95 WaitingGraphTe
+sts\T1/futs/m/n/10.95 . 
+ []
+
+[15
 
 ] (Report.aux) ) 
 Here is how much of TeX's memory you used:
@@ -1038,9 +1071,9 @@ ublic/fourier/fourier-ms.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/uto
 pia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Report.pdf (14 pages, 353437 bytes).
+Output written on Report.pdf (15 pages, 356841 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 202 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

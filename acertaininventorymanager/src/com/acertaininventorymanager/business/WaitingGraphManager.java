@@ -34,7 +34,8 @@ public class WaitingGraphManager {
 		
 		for (Integer v : vs){
 			List<Integer> adjListOfU = mapOfAdjLists.get(u);
-			adjListOfU.add(v);
+			if (! adjListOfU.contains(v))
+				adjListOfU.add(v);
 		}
 
 	}
@@ -66,15 +67,15 @@ public class WaitingGraphManager {
 		while (deadlockNode==null){
 			try {
 				Thread.sleep(500);
-				deadlockNode = isThereADeadlock(mapOfAdjLists);
+				deadlockNode = isThereADeadlock(getMapOfAdjLists());
 				
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("*****I am the graph manager:  I am flagging as toBeAborted the transaction: " + deadlockNode);
 		theLockManager.flagTransactionAsAborted(deadlockNode);
-		
-		
+		exploreAndSolveDeadlocks();
 	}
 
 
@@ -82,8 +83,10 @@ public class WaitingGraphManager {
 	 * it invokes other functions to search the graph for cycles.
 	 * Returns the starting node in a cycle, or null if no cycle is found.*/
 	public Integer isThereADeadlock(ConcurrentHashMap<Integer, List<Integer>> graph) {
-
+		
 		ConcurrentHashMap<Integer, List<Integer>> graphToSearch = new ConcurrentHashMap<>(graph);
+		
+		System.out.println("*****I am the Graph Manager: the map I see is:" + graphToSearch);
 		
 		Set<Integer> startingNodes = graphToSearch.keySet();
 		
@@ -103,9 +106,13 @@ public class WaitingGraphManager {
 	private synchronized List<Integer> explorePath(Integer target, Integer currentStart, List<Integer> reachableNodes,
 										Integer graphSize, ConcurrentHashMap<Integer, List<Integer>> graph){
 		
-		if (reachableNodes.contains(target) || graphSize==0){
-			return reachableNodes;
+		int counter = 0;
+		for (Integer node : reachableNodes){
+			if (node == target)
+				counter++;
 		}
+		if (counter>=2)
+				return reachableNodes;
 		
 		graphSize--;
 

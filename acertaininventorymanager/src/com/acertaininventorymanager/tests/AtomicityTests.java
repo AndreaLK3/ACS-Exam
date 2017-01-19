@@ -31,7 +31,7 @@ public class AtomicityTests {
 
 	public final static Random randGen = new Random();
 	public final static int NUM_OF_IDM=5;
-	public final static int RANDOMINT_BOUND = 10000;
+	public final static int RANDOMINT_BOUND = 1000;
 	public final static int NUM_OF_CUSTOMERS = 20;
 	public final static Set<Integer> REGIONS = new HashSet<Integer>(Arrays.asList(1, 2, 3));
 	public final static int ITERATIONS = 100;
@@ -39,7 +39,8 @@ public class AtomicityTests {
 	private static ClientHTTPProxy client;
 	private static CustomerTransactionManager ctm;
 	private static Set<Customer> customers;
-	private static int[] itemIds = {2026,2027,2028,2029};
+	private static int[] itemIds1 = {2026,2027,2028,2029};
+	private static int[] itemIds2 = {1890,1891,1892,1893};
 	private static int fixedUnitPrice = 15, fixedQuantity = 7;
 	private static Set<ItemPurchase> fixedPurchases1, fixedPurchases2;
 
@@ -87,7 +88,7 @@ public class AtomicityTests {
 	private static void initializePurchasesForConcurrentAddRemoval(){
 		fixedPurchases1 = new HashSet<>();
 		fixedPurchases2 = new HashSet<>();
-		for (int itemId : itemIds){
+		for (int itemId : itemIds1){
 			int orderId = RPCtests.randGen.nextInt(RANDOMINT_BOUND)+1;
 			Customer[] theCustomers = customers.toArray(new Customer[0]);
 			int customerId =  theCustomers[randGen.nextInt(theCustomers.length)].getCustomerId();
@@ -95,7 +96,7 @@ public class AtomicityTests {
 			int unitPrice = fixedUnitPrice;
 			fixedPurchases1.add(new ItemPurchase(orderId, customerId, itemId, quantity, unitPrice));
 		}
-		for (int itemId : itemIds){
+		for (int itemId : itemIds2){
 			int orderId = RPCtests.randGen.nextInt(RANDOMINT_BOUND)+1;
 			Customer[] theCustomers = customers.toArray(new Customer[0]);
 			int customerId =  theCustomers[randGen.nextInt(theCustomers.length)].getCustomerId();
@@ -142,6 +143,7 @@ public class AtomicityTests {
 			public void run() {
 			for (int i=0; i<ITERATIONS; i++){
 				try {
+					System.out.println("THREAD n:1 , iteration:" + i);
 					client.processOrders(fixedPurchases1);
 				} catch (InventoryManagerException e) {
 					e.printStackTrace();
@@ -156,6 +158,7 @@ public class AtomicityTests {
 			public void run() {
 				for (int i=0; i<ITERATIONS; i++){
 					try {
+						System.out.println("THREAD n:2 , iteration:" + i);
 						client.processOrders(fixedPurchases2);
 					} catch (InventoryManagerException e) {
 						e.printStackTrace();
@@ -184,7 +187,7 @@ public class AtomicityTests {
 			fail();
 		}
 				
-		int dueDifference = itemIds.length * fixedQuantity * fixedUnitPrice * ITERATIONS * 2;
+		int dueDifference = itemIds1.length * fixedQuantity * fixedUnitPrice;
 		
 		assertTrue ( (newSum - oldSum) % dueDifference == 0 );
 			

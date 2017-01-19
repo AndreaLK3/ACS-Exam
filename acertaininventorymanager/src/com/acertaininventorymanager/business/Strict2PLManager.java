@@ -1,6 +1,7 @@
 package com.acertaininventorymanager.business;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
@@ -49,21 +50,20 @@ public class Strict2PLManager {
 						
 						//if the transaction already holds this object, it must not wait for itself
 						if (! holdersOfThisObject.contains(xactId)){
-							System.out.print("xactId: " + xactId);
-							System.out.print(" . holders of this object:");
-							for (Integer holder : holdersOfThisObject ){
-								System.out.print(holder +" , ");
-							}
-							System.out.println("____________");
 							
 							waitGraphManager.addEdges(xactId, holdersOfThisObject);
 							
-							//now, we wait for 0.01 seconds and then we try again
+							//now, we wait for 0.05 seconds and then we try again
 							if (! abortedXactIds.contains(xactId)) {
 								try {
-									Thread.sleep(10);
-									System.out.println("Waiting for lock to get freed on the objectId:"+objectId);
-									System.out.println(locksTable);
+									Thread.sleep(50);
+									System.out.println("Locks table:");
+									for (Integer objID : locksTable.keySet()){
+										MyLock objLock = locksTable.get(objID);
+										if (objLock.getLockStatus()==LockType.WRITELOCK)
+											System.out.print(objLock);
+									}
+									System.out.println("\n");
 								} catch (InterruptedException e) {
 									e.printStackTrace();
 								}
@@ -87,15 +87,20 @@ public class Strict2PLManager {
 			
 			if (objectLock.getHolders().size()==0){
 				objectLock.setLockStatus(LockType.FREE);
-			}//otherwise, we don't change anything	
+			}//otherwise, we don't change the status	
 			
-			System.out.println("Successfully released lock on Object: " + objectId);
+			System.out.println("Successfully released lock of " + xactId + " on Object: " + objectId);
 		}
 	}
 		
 	
 	public void flagTransactionAsAborted(int xactId){
-		abortedXactIds.add(xactId);
+		if (! abortedXactIds.contains(xactId))
+			abortedXactIds.add(xactId);
+	}
+	
+	public void removeTransactionFromAbortedList(int xactId){
+		abortedXactIds.remove(xactId);
 	}
 
 
@@ -104,5 +109,16 @@ public class Strict2PLManager {
 		return abortedXactIds;
 	}
 
+	
+	/**Looks up the locksTable to reconstruct the information of the transaction table:
+	 * which transactions hold the object. Then, we check if the current transaction
+	 * is waiting for an object that is already held by someone else, and we add the edge to the
+	 * WaitingGraphManager. */
+	private void lookUpTransactionTable(Integer xactID, Integer objectID){
+		Set<Integer> tIDs = locksTable.keySet();
+		Set<Integer> tIdsHoldingSameObject = new HashSet<>();
+		
+		
+	}
 
 }

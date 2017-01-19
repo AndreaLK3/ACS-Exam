@@ -35,6 +35,7 @@ public class ItemDataHandler implements ItemDataManager {
 		
 		ItemPurchase itemPurchase = findItemPurchase(orderId, customerId, itemId);
 		if (itemPurchase==null){
+			System.out.println("INEXISTENT ITEM PURCHASE");
 			throw new InexistentItemPurchaseException();
 		}
 		else {

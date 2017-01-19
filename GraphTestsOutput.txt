@@ -1,0 +1,287 @@
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{1=[2], 2=[3], 3=[1]}
+*****I am the graph manager:  I am flagging as toBeAborted the transaction: 1
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+com.acertaininventorymanager.utils.AbortedTransactionException
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:68)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:65)
+	at com.acertaininventorymanager.tests.WaitingGraphTests$1.run(WaitingGraphTests.java:50)
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+*****I am the Graph Manager: the map I see is:{}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+*****I am the Graph Manager: the map I see is:{}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+*****I am the Graph Manager: the map I see is:{}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
+{101=Lock: ObjectID: 101 - status: WRITELOCK - Holders: [1], 102=Lock: ObjectID: 102 - status: WRITELOCK - Holders: [2], 103=Lock: ObjectID: 103 - status: WRITELOCK - Holders: [3]}
