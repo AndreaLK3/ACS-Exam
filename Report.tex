@@ -535,6 +535,21 @@ fixed. How does the observed throughput scale with the number of clients? Descri
 observed and any other effects. Explain why you observe these trends and how much that matches
 your expectations.
 }\\
+I used the class \verb|ElementsGenerator| to create random customers and purchases. I imported several classes from Assignment 4 (\verb|ACertainWorkload|, \verb|Worker|, \verb|WorkloadConfiguration|) and adapted them to this task.\\
+\textbf{Setup:}\\
+
+~\\
+My workload considers 3 kinds of interactions:
+\begin{itemize}
+\item $65%$ : \textit{FrequentPurchase} interactions:\\
+the sales employees have contacted the system to update 3 customers, buying 20 items each. The features of the purchases (itemID, orderID, quantity, price) are random integer numbers from 1 to 10000.
+\item $15%$ : \textit{RarePurchase} interactions:\\
+50 customers have bought 200 items each.
+\item $20%$ : \textit{RegionsLookUp} interactions:\\
+the request retrievs the List<RegionTotal> for the specified regionIDs.
+\end{itemize}
+
+
 
 
 

@@ -10,9 +10,17 @@ import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
  */
 public class WorkloadConfiguration {
 	
+	private int numOfCustomersFrequent = 3;
+	private int numOfItemsFrequent = 20;
+	
+	private int numOfCustomersRare = 50;
+	private int numOfItemsRare = 200;
+	
+	private int randomIntBound = 10000;
+	
 	private int warmUpRuns = 50;
 	private int numActualRuns = 100;
-	private float percentRarePurchaseInteraction = 10f;
+	private float percentRarePurchaseInteraction = 15f;
 	private float percentFrequentPurchaseInteraction = 65f;
 	//15% of the interactions will be region lookups
 	private ElementsGenerator bookSetGenerator = null;
@@ -71,6 +79,29 @@ public class WorkloadConfiguration {
 
 	public CustomerTransactionManager getCtm() {
 		return ctm;
+	}
+
+
+	public int getRandomIntBound() {
+		return randomIntBound;
+	}
+
+
+
+	public Integer getNumOfCustomersFrequent() {
+		return numOfCustomersFrequent;
+	}
+	
+	public Integer getNumOfItemsFrequent() {
+		return numOfItemsFrequent;
+	}
+	
+	public Integer getNumOfCustomersRare() {
+		return numOfCustomersRare;
+	}
+	
+	public Integer getNumOfItemsRare() {
+		return numOfItemsRare;
 	}
 
 

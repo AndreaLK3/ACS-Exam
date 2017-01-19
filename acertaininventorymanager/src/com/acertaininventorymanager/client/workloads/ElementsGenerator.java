@@ -1,6 +1,9 @@
 package com.acertaininventorymanager.client.workloads;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
@@ -13,8 +16,7 @@ import com.acertaininventorymanager.business.ItemPurchase;
 public class ElementsGenerator {
 
 	public static Random randGen = new Random();
-	public final static int ANUMBEROFCOPIES = 30;
-	public final static int ISBNRANGE = 10000;
+
 	public final static int RANDOMINT_BOUND = 10000;
 
 	public ElementsGenerator() {
@@ -108,6 +110,36 @@ public class ElementsGenerator {
 		}
 		return setOfPurchases;
 	}
+	
+	
+
+	/**Overloaded method: 
+	 * Given a set customer ids (Integer), creates a set of item purchases.
+	 * The customerID belongs to one of the customers, while the purchase features
+	 * (orderID, itemID, quantity, unit price) are chosen at random.*/
+	public static Set<ItemPurchase> createSetOfItemPurchases(Set<Integer> customerIDs, Integer numOfCustomers, Integer itemsPerCustomer){
+		Set<ItemPurchase> setOfPurchases = new HashSet<>();
+		List<Integer> customerIDsToUse;
+		
+		List<Integer> listOfCustomerIDs = new ArrayList<>();
+		listOfCustomerIDs.addAll(customerIDs);
+		Collections.shuffle(listOfCustomerIDs);
+		customerIDsToUse = listOfCustomerIDs.subList(0, numOfCustomers-1);
+		
+		
+		for (Integer customerID : customerIDsToUse){
+			for (int i=1; i<=itemsPerCustomer; i++){
+				int orderID = randGen.nextInt(RANDOMINT_BOUND)+1;
+				int itemID = randGen.nextInt(RANDOMINT_BOUND)+1;
+				int quantity = randGen.nextInt(RANDOMINT_BOUND)+1;
+				int price = randGen.nextInt(RANDOMINT_BOUND)+1;
+				
+				setOfPurchases.add(new ItemPurchase(orderID, customerID, itemID, quantity, price));
+			}
+		}
+		return setOfPurchases;
+	}
+	
 	
 	
 }

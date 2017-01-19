@@ -41,8 +41,11 @@ import jdk.nashorn.internal.runtime.regexp.joni.Config;
  */
 public class CertainWorkload {
 
+	private static final int numOfRegisteredCustomers = 100;
 	private static final int NUM_OF_IDM = 5;
 	private static final int NUM_OF_REGIONS = 10;
+	private static Set<Customer> customers ;
+	
 	public static Random ourRandGen = new Random();
 	public static List<Double> listOfThroughputs = new ArrayList<>();
 	public static List<Double> listOfLatencies = new ArrayList<>();
@@ -101,7 +104,7 @@ public class CertainWorkload {
 
 			for (int i = 0; i < numConcurrentWorkloadThreads; i++) {
 				WorkloadConfiguration config = new WorkloadConfiguration(ctm);
-				Worker workerTask = new Worker(config, ctm, customerIDs);
+				Worker workerTask = new Worker(config, ctm, customerIDs, NUM_OF_REGIONS);
 				// Keep the futures to wait for the result from the thread
 				runResults.add(exec.submit(workerTask));
 			}
@@ -204,12 +207,12 @@ public class CertainWorkload {
 
 	
 	public static Set<Integer> initializeCustomers(ClientHTTPProxy ctm) throws NonPositiveIntegerException, EmptyRegionException, InventoryManagerException{
-		Integer numOfCustomers = 100;
+	
 		Set<Integer> regions = new HashSet<Integer>();
 		for (int i = 1; i<=NUM_OF_REGIONS; i++){
 			regions.add(i);
 		}
-		Set<Customer> customers = ElementsGenerator.createSetOfCustomers(numOfCustomers, regions);
+		customers = ElementsGenerator.createSetOfCustomers(numOfRegisteredCustomers, regions);
 		ctm.addCustomers(customers);
 		Set<Integer> customerIDs = new HashSet<Integer>();
 		for(Customer c : customers){
@@ -285,4 +288,10 @@ public class CertainWorkload {
 			}
 		}
 	}
+
+	public int getNumOfRegisteredCustomers() {
+		return numOfRegisteredCustomers;
+	}
+
+
 }

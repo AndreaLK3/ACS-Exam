@@ -75,5 +75,8 @@ public class InventoryResponse {
 	 */
 	public void setException(InventoryManagerException exception) {
 		this.exception = exception;
+		exception.fillInStackTrace();
+		exception.printStackTrace();
+		System.out.println(exception.getCause());
 	}
 }

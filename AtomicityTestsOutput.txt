@@ -1,22 +1,23 @@
-2017-01-19 17:46:21.553:INFO::main: Logging initialized @2373ms
-2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-10: jetty-9.3.14.v20161028
-2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-12: jetty-9.3.14.v20161028
-2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-11: jetty-9.3.14.v20161028
-2017-01-19 17:46:22.626:INFO:oejs.Server:Thread-13: jetty-9.3.14.v20161028
-2017-01-19 17:46:22.615:INFO:oejs.Server:Thread-9: jetty-9.3.14.v20161028
-2017-01-19 17:46:22.644:INFO:oejs.Server:Thread-8: jetty-9.3.14.v20161028
-2017-01-19 17:46:22.769:INFO:oejs.AbstractConnector:Thread-8: Started ServerConnector@23e53e4e{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-8: Started @3600ms
-2017-01-19 17:46:22.769:INFO:oejs.AbstractConnector:Thread-10: Started ServerConnector@2711062b{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
-2017-01-19 17:46:22.769:INFO:oejs.AbstractConnector:Thread-9: Started ServerConnector@28675fc5{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
-2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-9: Started @3601ms
-2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-10: Started @3601ms
-2017-01-19 17:46:22.784:INFO:oejs.AbstractConnector:Thread-12: Started ServerConnector@604cd2ea{HTTP/1.1,[http/1.1]}{0.0.0.0:8085}
-2017-01-19 17:46:22.784:INFO:oejs.Server:Thread-12: Started @3608ms
-2017-01-19 17:46:22.784:INFO:oejs.AbstractConnector:Thread-13: Started ServerConnector@7b0d4217{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}
-2017-01-19 17:46:22.800:INFO:oejs.Server:Thread-13: Started @3614ms
-2017-01-19 17:46:22.800:INFO:oejs.AbstractConnector:Thread-11: Started ServerConnector@24d7278e{HTTP/1.1,[http/1.1]}{0.0.0.0:8084}
-2017-01-19 17:46:22.800:INFO:oejs.Server:Thread-11: Started @3619ms
+2017-01-19 21:42:41.575:INFO::main: Logging initialized @2187ms
+2017-01-19 21:42:42.915:INFO:oejs.Server:Thread-12: jetty-9.3.14.v20161028
+2017-01-19 21:42:42.927:INFO:oejs.Server:Thread-13: jetty-9.3.14.v20161028
+2017-01-19 21:42:42.915:INFO:oejs.Server:Thread-9: jetty-9.3.14.v20161028
+2017-01-19 21:42:42.915:INFO:oejs.Server:Thread-11: jetty-9.3.14.v20161028
+2017-01-19 21:42:43.008:INFO:oejs.Server:Thread-10: jetty-9.3.14.v20161028
+2017-01-19 21:42:43.086:INFO:oejs.Server:Thread-8: jetty-9.3.14.v20161028
+2017-01-19 21:42:43.117:INFO:oejs.AbstractConnector:Thread-9: Started ServerConnector@224f2b75{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2017-01-19 21:42:43.133:INFO:oejs.Server:Thread-9: Started @3748ms
+2017-01-19 21:42:43.133:INFO:oejs.AbstractConnector:Thread-12: Started ServerConnector@2a32c2da{HTTP/1.1,[http/1.1]}{0.0.0.0:8085}
+2017-01-19 21:42:43.148:INFO:oejs.Server:Thread-12: Started @3763ms
+2017-01-19 21:42:43.148:INFO:oejs.AbstractConnector:Thread-13: Started ServerConnector@2ffeb107{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}
+2017-01-19 21:42:43.164:INFO:oejs.Server:Thread-13: Started @3778ms
+2017-01-19 21:42:43.164:INFO:oejs.AbstractConnector:Thread-10: Started ServerConnector@2d121851{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+2017-01-19 21:42:43.164:INFO:oejs.Server:Thread-10: Started @3780ms
+2017-01-19 21:42:43.226:INFO:oejs.AbstractConnector:Thread-11: Started ServerConnector@2b1a095f{HTTP/1.1,[http/1.1]}{0.0.0.0:8084}
+2017-01-19 21:42:43.226:INFO:oejs.Server:Thread-11: Started @3847ms
+2017-01-19 21:42:43.226:INFO:oejs.AbstractConnector:Thread-8: Started ServerConnector@1bd48cbb{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+2017-01-19 21:42:43.226:INFO:oejs.Server:Thread-8: Started @3850ms
+*****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
 *****I am the Graph Manager: the map I see is:{}
@@ -44,537 +45,672 @@ THREAD n:1 , iteration:0
 THREAD n:2 , iteration:0
 THREAD n:1 , iteration:1
 THREAD n:2 , iteration:1
+THREAD n:2 , iteration:2
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57510]]
+
+THREAD n:2 , iteration:3
 THREAD n:1 , iteration:2
+THREAD n:2 , iteration:4
+THREAD n:2 , iteration:5
+THREAD n:2 , iteration:6
+THREAD n:2 , iteration:7
+THREAD n:2 , iteration:8
+THREAD n:2 , iteration:9
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [28104]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [8247]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [28104]]
+
+THREAD n:2 , iteration:10
 THREAD n:1 , iteration:3
 THREAD n:1 , iteration:4
-THREAD n:1 , iteration:5
-THREAD n:2 , iteration:2
-THREAD n:1 , iteration:6
-THREAD n:2 , iteration:3
-THREAD n:1 , iteration:7
-THREAD n:2 , iteration:4
-THREAD n:1 , iteration:8
-THREAD n:2 , iteration:5
-THREAD n:1 , iteration:9
-THREAD n:2 , iteration:6
-THREAD n:1 , iteration:10
-THREAD n:2 , iteration:7
-THREAD n:1 , iteration:11
-THREAD n:2 , iteration:8
-THREAD n:1 , iteration:12
-THREAD n:2 , iteration:9
-THREAD n:1 , iteration:13
-THREAD n:2 , iteration:10
-THREAD n:1 , iteration:14
 THREAD n:2 , iteration:11
-THREAD n:1 , iteration:15
+THREAD n:1 , iteration:5
+THREAD n:1 , iteration:6
+THREAD n:1 , iteration:7
+THREAD n:1 , iteration:8
+Locks table:
+
+
+THREAD n:1 , iteration:9
 THREAD n:2 , iteration:12
-THREAD n:1 , iteration:16
 THREAD n:2 , iteration:13
-THREAD n:1 , iteration:17
 THREAD n:2 , iteration:14
+*****I am the Graph Manager: the map I see is:{26146=[]}
 THREAD n:2 , iteration:15
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26146]]
+
+THREAD n:2 , iteration:16
+THREAD n:1 , iteration:10
+THREAD n:1 , iteration:11
+THREAD n:1 , iteration:12
+THREAD n:1 , iteration:13
+THREAD n:1 , iteration:14
+Locks table:
+
+
+THREAD n:2 , iteration:17
+THREAD n:2 , iteration:18
+THREAD n:2 , iteration:19
+THREAD n:2 , iteration:20
+THREAD n:2 , iteration:21
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [28263]]
+
+THREAD n:2 , iteration:22
+THREAD n:1 , iteration:15
+THREAD n:1 , iteration:16
+THREAD n:1 , iteration:17
 THREAD n:1 , iteration:18
 THREAD n:1 , iteration:19
+Locks table:
+
+
 THREAD n:1 , iteration:20
-THREAD n:2 , iteration:16
+THREAD n:2 , iteration:23
 THREAD n:1 , iteration:21
 THREAD n:1 , iteration:22
-THREAD n:2 , iteration:17
 THREAD n:1 , iteration:23
 THREAD n:1 , iteration:24
-THREAD n:2 , iteration:18
+Locks table:
+
+
 THREAD n:1 , iteration:25
-THREAD n:2 , iteration:19
-THREAD n:1 , iteration:26
-THREAD n:2 , iteration:20
-THREAD n:1 , iteration:27
-THREAD n:2 , iteration:21
-THREAD n:1 , iteration:28
-THREAD n:2 , iteration:22
-THREAD n:1 , iteration:29
-THREAD n:2 , iteration:23
-THREAD n:1 , iteration:30
 THREAD n:2 , iteration:24
+THREAD n:1 , iteration:26
+THREAD n:1 , iteration:27
+THREAD n:1 , iteration:28
+THREAD n:1 , iteration:29
+Locks table:
+
+
+THREAD n:1 , iteration:30
 THREAD n:2 , iteration:25
+THREAD n:1 , iteration:31
 THREAD n:2 , iteration:26
 THREAD n:2 , iteration:27
 THREAD n:2 , iteration:28
-*****I am the Graph Manager: the map I see is:{}
 THREAD n:2 , iteration:29
-THREAD n:1 , iteration:31
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [120346]]
+
 THREAD n:2 , iteration:30
 THREAD n:1 , iteration:32
 THREAD n:2 , iteration:31
-THREAD n:1 , iteration:33
 THREAD n:2 , iteration:32
-THREAD n:1 , iteration:34
 THREAD n:2 , iteration:33
-THREAD n:1 , iteration:35
 THREAD n:2 , iteration:34
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [57934]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1091]]
+
 THREAD n:2 , iteration:35
-THREAD n:1 , iteration:36
+*****I am the Graph Manager: the map I see is:{1091=[]}
 THREAD n:2 , iteration:36
-THREAD n:1 , iteration:37
 THREAD n:2 , iteration:37
-THREAD n:1 , iteration:38
 THREAD n:2 , iteration:38
-THREAD n:1 , iteration:39
-THREAD n:1 , iteration:40
 THREAD n:2 , iteration:39
-THREAD n:1 , iteration:41
 THREAD n:2 , iteration:40
 THREAD n:2 , iteration:41
-THREAD n:1 , iteration:42
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1091]]
+
 THREAD n:2 , iteration:42
-THREAD n:1 , iteration:43
-THREAD n:1 , iteration:44
-THREAD n:1 , iteration:45
-THREAD n:1 , iteration:46
-THREAD n:1 , iteration:47
-THREAD n:1 , iteration:48
 THREAD n:2 , iteration:43
-THREAD n:1 , iteration:49
 THREAD n:2 , iteration:44
 THREAD n:2 , iteration:45
-THREAD n:1 , iteration:50
-THREAD n:1 , iteration:51
-THREAD n:2 , iteration:46
-THREAD n:1 , iteration:52
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [7934]][Lock: ObjectID: 973 - status: FREE - Holders: []][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1091]]THREAD n:2 , iteration:46
+
+
+THREAD n:1 , iteration:33
+THREAD n:1 , iteration:34
+THREAD n:1 , iteration:35
+THREAD n:1 , iteration:36
+Locks table:
+
+
+THREAD n:1 , iteration:37
 THREAD n:2 , iteration:47
-THREAD n:1 , iteration:53
 THREAD n:2 , iteration:48
 THREAD n:2 , iteration:49
-THREAD n:1 , iteration:54
 THREAD n:2 , iteration:50
-THREAD n:1 , iteration:55
 THREAD n:2 , iteration:51
-THREAD n:1 , iteration:56
 THREAD n:2 , iteration:52
-THREAD n:1 , iteration:57
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [7905]]
+
 THREAD n:2 , iteration:53
-THREAD n:1 , iteration:58
 THREAD n:2 , iteration:54
 THREAD n:2 , iteration:55
 THREAD n:2 , iteration:56
 THREAD n:2 , iteration:57
 THREAD n:2 , iteration:58
+Locks table:
 THREAD n:2 , iteration:59
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [7905]]
+
+THREAD n:1 , iteration:38
+THREAD n:1 , iteration:39
+THREAD n:1 , iteration:40
+THREAD n:1 , iteration:41
+THREAD n:1 , iteration:42
+THREAD n:1 , iteration:43
+THREAD n:1 , iteration:44
+Locks table:
+
+
 THREAD n:2 , iteration:60
 THREAD n:2 , iteration:61
 THREAD n:2 , iteration:62
-THREAD n:1 , iteration:59
 THREAD n:2 , iteration:63
-THREAD n:1 , iteration:60
 THREAD n:2 , iteration:64
-THREAD n:1 , iteration:61
 THREAD n:2 , iteration:65
-THREAD n:1 , iteration:62
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [119644]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [8184]]
+
 THREAD n:2 , iteration:66
-THREAD n:1 , iteration:63
 THREAD n:2 , iteration:67
-THREAD n:1 , iteration:64
 THREAD n:2 , iteration:68
-THREAD n:1 , iteration:65
 THREAD n:2 , iteration:69
-THREAD n:1 , iteration:66
 THREAD n:2 , iteration:70
-THREAD n:1 , iteration:67
 THREAD n:2 , iteration:71
-THREAD n:1 , iteration:68
+*****I am the Graph Manager: the map I see is:{8184=[]}
 THREAD n:2 , iteration:72
-THREAD n:1 , iteration:69
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [8184]]
+
+THREAD n:1 , iteration:45
+THREAD n:1 , iteration:46
+THREAD n:1 , iteration:47
+THREAD n:1 , iteration:48
+THREAD n:1 , iteration:49
+Locks table:
+
+
+THREAD n:1 , iteration:50
 THREAD n:2 , iteration:73
-THREAD n:1 , iteration:70
 THREAD n:2 , iteration:74
-THREAD n:1 , iteration:71
 THREAD n:2 , iteration:75
-THREAD n:1 , iteration:72
 THREAD n:2 , iteration:76
-THREAD n:1 , iteration:73
 THREAD n:2 , iteration:77
-THREAD n:1 , iteration:74
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [54537]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [8414]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [54537]]
+
 THREAD n:2 , iteration:78
-THREAD n:1 , iteration:75
 THREAD n:2 , iteration:79
 THREAD n:2 , iteration:80
-THREAD n:1 , iteration:76
-THREAD n:1 , iteration:77
 THREAD n:2 , iteration:81
 THREAD n:2 , iteration:82
-THREAD n:1 , iteration:78
-THREAD n:1 , iteration:79
 THREAD n:2 , iteration:83
 THREAD n:2 , iteration:84
-THREAD n:1 , iteration:80
-THREAD n:1 , iteration:81
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [119623]][Lock: ObjectID: 973 - status: WRITELOCK - Holders: [119623]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [8414]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [119623]]
+
 THREAD n:2 , iteration:85
-THREAD n:1 , iteration:82
+THREAD n:1 , iteration:51
+THREAD n:1 , iteration:52
+THREAD n:1 , iteration:53
+THREAD n:1 , iteration:54
+THREAD n:1 , iteration:55
+THREAD n:1 , iteration:56
+THREAD n:1 , iteration:57
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [897]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [897]]
+
+THREAD n:1 , iteration:58
+THREAD n:1 , iteration:59
+THREAD n:1 , iteration:60
+THREAD n:1 , iteration:61
+THREAD n:1 , iteration:62
+THREAD n:1 , iteration:63
+THREAD n:1 , iteration:64
+THREAD n:1 , iteration:65
+THREAD n:1 , iteration:66
+Locks table:
+
+
 THREAD n:2 , iteration:86
-THREAD n:1 , iteration:83
 THREAD n:2 , iteration:87
-THREAD n:1 , iteration:84
 THREAD n:2 , iteration:88
-THREAD n:1 , iteration:85
 THREAD n:2 , iteration:89
-THREAD n:1 , iteration:86
 THREAD n:2 , iteration:90
 THREAD n:2 , iteration:91
-THREAD n:1 , iteration:87
-THREAD n:1 , iteration:88
 THREAD n:2 , iteration:92
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [28775]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26127]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [28775]]
+
 THREAD n:2 , iteration:93
-*****I am the Graph Manager: the map I see is:{}
+THREAD n:2 , iteration:94
+THREAD n:2 , iteration:95
+THREAD n:2 , iteration:96
+THREAD n:2 , iteration:97
+THREAD n:2 , iteration:98
+THREAD n:2 , iteration:99
+Locks table:
+THREAD n:2 , iteration:100
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26127]]
+
+THREAD n:1 , iteration:67
+THREAD n:1 , iteration:68
+THREAD n:1 , iteration:69
+THREAD n:1 , iteration:70
+*****I am the Graph Manager: the map I see is:{7886=[]}
+THREAD n:1 , iteration:71
+THREAD n:1 , iteration:72
+THREAD n:1 , iteration:73
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [26930]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26930]]
+
+THREAD n:1 , iteration:74
+THREAD n:1 , iteration:75
+THREAD n:1 , iteration:76
+THREAD n:1 , iteration:77
+THREAD n:1 , iteration:78
+Locks table:
+THREAD n:1 , iteration:79
+
+
+THREAD n:2 , iteration:101
+THREAD n:2 , iteration:102
+THREAD n:2 , iteration:103
+THREAD n:2 , iteration:104
+THREAD n:2 , iteration:105
+THREAD n:2 , iteration:106
+THREAD n:2 , iteration:107
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [1509]][Lock: ObjectID: 973 - status: WRITELOCK - Holders: [1509]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26695]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [1509]]
+
+THREAD n:2 , iteration:108
+THREAD n:2 , iteration:109
+THREAD n:2 , iteration:110
+THREAD n:2 , iteration:111
+THREAD n:2 , iteration:112
+THREAD n:2 , iteration:113
+THREAD n:2 , iteration:114
+THREAD n:2 , iteration:115
+THREAD n:2 , iteration:116
+THREAD n:2 , iteration:117
+THREAD n:2 , iteration:118
+THREAD n:2 , iteration:119
+THREAD n:2 , iteration:120
+Locks table:
+THREAD n:2 , iteration:121
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26695]]
+
+THREAD n:1 , iteration:80
+THREAD n:1 , iteration:81
+THREAD n:1 , iteration:82
+THREAD n:1 , iteration:83
+THREAD n:1 , iteration:84
+THREAD n:1 , iteration:85
+THREAD n:1 , iteration:86
+Locks table:
+
+
+THREAD n:1 , iteration:87
+THREAD n:2 , iteration:122
+THREAD n:1 , iteration:88
 THREAD n:1 , iteration:89
 THREAD n:1 , iteration:90
 THREAD n:1 , iteration:91
 THREAD n:1 , iteration:92
 THREAD n:1 , iteration:93
+Locks table:
+[Lock: ObjectID: 968 - status: FREE - Holders: []]
+
 THREAD n:1 , iteration:94
-THREAD n:1 , iteration:95
-THREAD n:2 , iteration:94
-THREAD n:1 , iteration:96
-THREAD n:1 , iteration:97
-THREAD n:2 , iteration:95
-THREAD n:1 , iteration:98
-THREAD n:2 , iteration:96
-THREAD n:2 , iteration:97
-THREAD n:1 , iteration:99
-THREAD n:1 , iteration:100
-THREAD n:2 , iteration:98
-THREAD n:1 , iteration:101
-THREAD n:2 , iteration:99
-THREAD n:2 , iteration:100
-THREAD n:1 , iteration:102
-THREAD n:2 , iteration:101
-THREAD n:1 , iteration:103
-THREAD n:2 , iteration:102
-THREAD n:1 , iteration:104
-THREAD n:2 , iteration:103
-THREAD n:2 , iteration:104
-THREAD n:1 , iteration:105
-THREAD n:2 , iteration:105
-THREAD n:1 , iteration:106
-THREAD n:2 , iteration:106
-THREAD n:1 , iteration:107
-THREAD n:1 , iteration:108
-THREAD n:2 , iteration:107
-THREAD n:1 , iteration:109
-THREAD n:2 , iteration:108
-THREAD n:1 , iteration:110
-THREAD n:2 , iteration:109
-THREAD n:1 , iteration:111
-THREAD n:2 , iteration:110
-THREAD n:1 , iteration:112
-THREAD n:2 , iteration:111
-THREAD n:1 , iteration:113
-THREAD n:2 , iteration:112
-THREAD n:1 , iteration:114
-THREAD n:2 , iteration:113
-THREAD n:1 , iteration:115
-THREAD n:2 , iteration:114
-THREAD n:1 , iteration:116
-THREAD n:2 , iteration:115
-THREAD n:1 , iteration:117
-THREAD n:2 , iteration:116
-THREAD n:2 , iteration:117
-THREAD n:1 , iteration:118
-THREAD n:2 , iteration:118
-THREAD n:1 , iteration:119
-THREAD n:2 , iteration:119
-THREAD n:1 , iteration:120
-THREAD n:2 , iteration:120
-THREAD n:2 , iteration:121
-THREAD n:2 , iteration:122
 THREAD n:2 , iteration:123
-THREAD n:1 , iteration:121
-THREAD n:1 , iteration:122
 THREAD n:2 , iteration:124
-THREAD n:1 , iteration:123
-THREAD n:1 , iteration:124
 THREAD n:2 , iteration:125
 THREAD n:2 , iteration:126
-THREAD n:1 , iteration:125
 THREAD n:2 , iteration:127
-THREAD n:1 , iteration:126
-THREAD n:1 , iteration:127
 THREAD n:2 , iteration:128
 THREAD n:2 , iteration:129
-THREAD n:1 , iteration:128
 THREAD n:2 , iteration:130
-THREAD n:1 , iteration:129
-THREAD n:1 , iteration:130
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [120072]]
+
 THREAD n:2 , iteration:131
-THREAD n:1 , iteration:131
+THREAD n:1 , iteration:95
+THREAD n:1 , iteration:96
+THREAD n:1 , iteration:97
+THREAD n:1 , iteration:98
+THREAD n:1 , iteration:99
+THREAD n:1 , iteration:100
+THREAD n:1 , iteration:101
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: []]
+
+THREAD n:1 , iteration:102
 THREAD n:2 , iteration:132
-THREAD n:1 , iteration:132
+*****I am the Graph Manager: the map I see is:{53743=[]}
 THREAD n:2 , iteration:133
 THREAD n:2 , iteration:134
-THREAD n:1 , iteration:133
 THREAD n:2 , iteration:135
-THREAD n:1 , iteration:134
 THREAD n:2 , iteration:136
-THREAD n:1 , iteration:135
 THREAD n:2 , iteration:137
-THREAD n:1 , iteration:136
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [26724]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [53743]]
+
 THREAD n:2 , iteration:138
-THREAD n:1 , iteration:137
 THREAD n:2 , iteration:139
-THREAD n:1 , iteration:138
-THREAD n:1 , iteration:139
 THREAD n:2 , iteration:140
-THREAD n:1 , iteration:140
 THREAD n:2 , iteration:141
 THREAD n:2 , iteration:142
-THREAD n:1 , iteration:141
-THREAD n:1 , iteration:142
-THREAD n:1 , iteration:143
 THREAD n:2 , iteration:143
-THREAD n:1 , iteration:144
 THREAD n:2 , iteration:144
 THREAD n:2 , iteration:145
-THREAD n:1 , iteration:145
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [53743]]
+
+THREAD n:1 , iteration:103
+THREAD n:1 , iteration:104
+THREAD n:1 , iteration:105
+THREAD n:1 , iteration:106
+THREAD n:1 , iteration:107
+THREAD n:1 , iteration:108
+THREAD n:1 , iteration:109
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26372]]
+
 THREAD n:2 , iteration:146
-THREAD n:1 , iteration:146
 THREAD n:2 , iteration:147
-THREAD n:1 , iteration:147
 THREAD n:2 , iteration:148
 THREAD n:2 , iteration:149
 THREAD n:2 , iteration:150
 THREAD n:2 , iteration:151
-THREAD n:1 , iteration:148
-THREAD n:1 , iteration:149
-THREAD n:1 , iteration:150
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26372]]
+
 THREAD n:2 , iteration:152
-THREAD n:1 , iteration:151
+THREAD n:1 , iteration:110
+THREAD n:1 , iteration:111
+THREAD n:1 , iteration:112
+THREAD n:1 , iteration:113
+THREAD n:1 , iteration:114
+THREAD n:1 , iteration:115
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [26096]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [26096]]
+
+THREAD n:1 , iteration:116
+THREAD n:1 , iteration:117
+THREAD n:1 , iteration:118
+THREAD n:1 , iteration:119
+THREAD n:1 , iteration:120
+THREAD n:1 , iteration:121
+Locks table:
+
+
+THREAD n:1 , iteration:122
 THREAD n:2 , iteration:153
 THREAD n:2 , iteration:154
 THREAD n:2 , iteration:155
 THREAD n:2 , iteration:156
 THREAD n:2 , iteration:157
 THREAD n:2 , iteration:158
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [25999]]
+
 THREAD n:2 , iteration:159
+THREAD n:1 , iteration:123
+THREAD n:1 , iteration:124
+THREAD n:1 , iteration:125
+THREAD n:1 , iteration:126
+THREAD n:1 , iteration:127
+THREAD n:1 , iteration:128
+THREAD n:1 , iteration:129
+THREAD n:1 , iteration:130
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [54354]]
+
+*****I am the Graph Manager: the map I see is:{33517=[54354]}
+THREAD n:1 , iteration:131
+THREAD n:1 , iteration:132
+THREAD n:1 , iteration:133
+THREAD n:1 , iteration:134
+THREAD n:1 , iteration:135
+THREAD n:1 , iteration:136
+THREAD n:1 , iteration:137
+THREAD n:1 , iteration:138
+THREAD n:1 , iteration:139
+Locks table:
+
+
 THREAD n:2 , iteration:160
 THREAD n:2 , iteration:161
 THREAD n:2 , iteration:162
 THREAD n:2 , iteration:163
 THREAD n:2 , iteration:164
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [119920]]
+
 THREAD n:2 , iteration:165
+THREAD n:1 , iteration:140
+THREAD n:1 , iteration:141
+THREAD n:1 , iteration:142
+THREAD n:1 , iteration:143
+THREAD n:1 , iteration:144
+THREAD n:1 , iteration:145
+THREAD n:1 , iteration:146
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57956]]
+
+THREAD n:1 , iteration:147
+THREAD n:1 , iteration:148
+THREAD n:1 , iteration:149
+THREAD n:1 , iteration:150
+THREAD n:1 , iteration:151
+THREAD n:1 , iteration:152
+Locks table:
+
+
+THREAD n:1 , iteration:153
 THREAD n:2 , iteration:166
 THREAD n:2 , iteration:167
 THREAD n:2 , iteration:168
 THREAD n:2 , iteration:169
 THREAD n:2 , iteration:170
 THREAD n:2 , iteration:171
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57197]]
+
+THREAD n:1 , iteration:154
+THREAD n:1 , iteration:155
+THREAD n:1 , iteration:156
+THREAD n:1 , iteration:157
+THREAD n:1 , iteration:158
+Locks table:
+
+
+THREAD n:1 , iteration:159
 THREAD n:2 , iteration:172
 THREAD n:2 , iteration:173
 THREAD n:2 , iteration:174
 THREAD n:2 , iteration:175
 THREAD n:2 , iteration:176
 THREAD n:2 , iteration:177
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57716]]
+
 THREAD n:2 , iteration:178
-*****I am the Graph Manager: the map I see is:{}
-THREAD n:1 , iteration:152
-THREAD n:1 , iteration:153
-THREAD n:1 , iteration:154
-THREAD n:1 , iteration:155
-THREAD n:1 , iteration:156
-THREAD n:1 , iteration:157
-THREAD n:2 , iteration:179
-THREAD n:1 , iteration:158
-THREAD n:2 , iteration:180
-THREAD n:1 , iteration:159
-THREAD n:2 , iteration:181
 THREAD n:1 , iteration:160
 THREAD n:1 , iteration:161
-THREAD n:2 , iteration:182
 THREAD n:1 , iteration:162
-THREAD n:2 , iteration:183
-THREAD n:2 , iteration:184
 THREAD n:1 , iteration:163
 THREAD n:1 , iteration:164
-THREAD n:2 , iteration:185
 THREAD n:1 , iteration:165
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57850]]
+
+THREAD n:2 , iteration:179
+THREAD n:2 , iteration:180
+THREAD n:2 , iteration:181
+THREAD n:2 , iteration:182
+THREAD n:2 , iteration:183
+THREAD n:2 , iteration:184
+THREAD n:2 , iteration:185
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [54000]][Lock: ObjectID: 973 - status: WRITELOCK - Holders: [54000]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57850]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [54000]]
+
+*****I am the Graph Manager: the map I see is:{57850=[54000]}
 THREAD n:2 , iteration:186
-THREAD n:1 , iteration:166
-THREAD n:1 , iteration:167
 THREAD n:2 , iteration:187
-THREAD n:1 , iteration:168
 THREAD n:2 , iteration:188
-THREAD n:1 , iteration:169
 THREAD n:2 , iteration:189
-THREAD n:1 , iteration:170
 THREAD n:2 , iteration:190
-THREAD n:1 , iteration:171
 THREAD n:2 , iteration:191
-THREAD n:1 , iteration:172
 THREAD n:2 , iteration:192
-THREAD n:1 , iteration:173
 THREAD n:2 , iteration:193
-THREAD n:1 , iteration:174
-THREAD n:1 , iteration:175
 THREAD n:2 , iteration:194
-THREAD n:1 , iteration:176
 THREAD n:2 , iteration:195
-THREAD n:1 , iteration:177
 THREAD n:2 , iteration:196
-THREAD n:1 , iteration:178
 THREAD n:2 , iteration:197
-THREAD n:1 , iteration:179
 THREAD n:2 , iteration:198
 THREAD n:2 , iteration:199
-THREAD n:1 , iteration:180
-THREAD n:2 , iteration:200
-THREAD n:1 , iteration:181
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [1071]][Lock: ObjectID: 973 - status: WRITELOCK - Holders: [1071]]THREAD n:2 , iteration:200
 THREAD n:2 , iteration:201
-THREAD n:1 , iteration:182
-THREAD n:1 , iteration:183
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57850]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [120581]]
+
 THREAD n:2 , iteration:202
-THREAD n:1 , iteration:184
 THREAD n:2 , iteration:203
 THREAD n:2 , iteration:204
-THREAD n:1 , iteration:185
-THREAD n:1 , iteration:186
 THREAD n:2 , iteration:205
 THREAD n:2 , iteration:206
-THREAD n:1 , iteration:187
-THREAD n:1 , iteration:188
 THREAD n:2 , iteration:207
 THREAD n:2 , iteration:208
-THREAD n:1 , iteration:189
 THREAD n:2 , iteration:209
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [33011]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57850]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [33011]]
+
 THREAD n:2 , iteration:210
 THREAD n:2 , iteration:211
 THREAD n:2 , iteration:212
 THREAD n:2 , iteration:213
 THREAD n:2 , iteration:214
-THREAD n:1 , iteration:190
-THREAD n:1 , iteration:191
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [119695]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [57850]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [119695]]
+
 THREAD n:2 , iteration:215
-THREAD n:1 , iteration:192
 THREAD n:2 , iteration:216
-THREAD n:1 , iteration:193
 THREAD n:2 , iteration:217
-THREAD n:1 , iteration:194
 THREAD n:2 , iteration:218
-THREAD n:1 , iteration:195
+THREAD n:1 , iteration:166
+THREAD n:1 , iteration:167
+THREAD n:1 , iteration:168
+THREAD n:1 , iteration:169
+THREAD n:1 , iteration:170
+Locks table:
+
+
 THREAD n:2 , iteration:219
-THREAD n:1 , iteration:196
-THREAD n:1 , iteration:197
-THREAD n:1 , iteration:198
 THREAD n:2 , iteration:220
-THREAD n:1 , iteration:199
 THREAD n:2 , iteration:221
-THREAD n:1 , iteration:200
 THREAD n:2 , iteration:222
-THREAD n:1 , iteration:201
-THREAD n:1 , iteration:202
 THREAD n:2 , iteration:223
-THREAD n:1 , iteration:203
 THREAD n:2 , iteration:224
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [28623]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [53950]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [28623]]
+
 THREAD n:2 , iteration:225
-THREAD n:1 , iteration:204
 THREAD n:2 , iteration:226
-THREAD n:1 , iteration:205
-THREAD n:1 , iteration:206
 THREAD n:2 , iteration:227
-THREAD n:1 , iteration:207
 THREAD n:2 , iteration:228
 THREAD n:2 , iteration:229
-THREAD n:1 , iteration:208
 THREAD n:2 , iteration:230
-THREAD n:1 , iteration:209
-THREAD n:1 , iteration:210
+*****I am the Graph Manager: the map I see is:{53950=[]}
 THREAD n:2 , iteration:231
-THREAD n:1 , iteration:211
 THREAD n:2 , iteration:232
 THREAD n:2 , iteration:233
-THREAD n:1 , iteration:212
 THREAD n:2 , iteration:234
-THREAD n:1 , iteration:213
-THREAD n:1 , iteration:214
 THREAD n:2 , iteration:235
 THREAD n:2 , iteration:236
-THREAD n:1 , iteration:215
-THREAD n:1 , iteration:216
 THREAD n:2 , iteration:237
 THREAD n:2 , iteration:238
-THREAD n:1 , iteration:217
 THREAD n:2 , iteration:239
-THREAD n:1 , iteration:218
 THREAD n:2 , iteration:240
-THREAD n:1 , iteration:219
-THREAD n:1 , iteration:220
+Locks table:
+[Lock: ObjectID: 968 - status: WRITELOCK - Holders: [26165]][Lock: ObjectID: 54 - status: WRITELOCK - Holders: [53950]][Lock: ObjectID: 798 - status: WRITELOCK - Holders: [26165]]
+
 THREAD n:2 , iteration:241
-THREAD n:1 , iteration:221
 THREAD n:2 , iteration:242
 THREAD n:2 , iteration:243
-THREAD n:1 , iteration:222
-THREAD n:1 , iteration:223
 THREAD n:2 , iteration:244
-THREAD n:1 , iteration:224
 THREAD n:2 , iteration:245
-THREAD n:1 , iteration:225
 THREAD n:2 , iteration:246
-THREAD n:1 , iteration:226
 THREAD n:2 , iteration:247
-THREAD n:1 , iteration:227
 THREAD n:2 , iteration:248
-THREAD n:1 , iteration:228
 THREAD n:2 , iteration:249
-THREAD n:1 , iteration:229
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [53950]]
+
+THREAD n:1 , iteration:171
+THREAD n:1 , iteration:172
+THREAD n:1 , iteration:173
+THREAD n:1 , iteration:174
+THREAD n:1 , iteration:175
+THREAD n:1 , iteration:176
 THREAD n:2 , iteration:250
+THREAD n:1 , iteration:177
 THREAD n:2 , iteration:251
+THREAD n:1 , iteration:178
+2017-01-19 21:42:59.621:WARN:oejs.HttpChannel:qtp1938558411-112: //localhost:8081/PROCESSORDERS
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1437)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1461)
+	at com.acertaininventorymanager.business.WaitingGraphManager.addEdges(WaitingGraphManager.java:35)
+	at com.acertaininventorymanager.business.Strict2PLManager.tryToAcquireLock(Strict2PLManager.java:54)
+	at com.acertaininventorymanager.business.CustomerTransactionsHandler.processOrders(CustomerTransactionsHandler.java:82)
+	at com.acertaininventorymanager.server.CtmHTTPMessageHandler.processOrders(CtmHTTPMessageHandler.java:163)
+	at com.acertaininventorymanager.server.CtmHTTPMessageHandler.handle(CtmHTTPMessageHandler.java:92)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
 THREAD n:2 , iteration:252
 THREAD n:2 , iteration:253
-*****I am the Graph Manager: the map I see is:{}
-THREAD n:1 , iteration:230
 THREAD n:2 , iteration:254
 THREAD n:2 , iteration:255
-THREAD n:1 , iteration:231
 THREAD n:2 , iteration:256
-THREAD n:1 , iteration:232
 THREAD n:2 , iteration:257
-THREAD n:1 , iteration:233
-THREAD n:1 , iteration:234
 THREAD n:2 , iteration:258
-THREAD n:1 , iteration:235
 THREAD n:2 , iteration:259
 THREAD n:2 , iteration:260
-THREAD n:1 , iteration:236
 THREAD n:2 , iteration:261
-THREAD n:1 , iteration:237
 THREAD n:2 , iteration:262
-THREAD n:1 , iteration:238
 THREAD n:2 , iteration:263
-THREAD n:1 , iteration:239
-THREAD n:1 , iteration:240
 THREAD n:2 , iteration:264
 THREAD n:2 , iteration:265
 THREAD n:2 , iteration:266
-THREAD n:1 , iteration:241
 THREAD n:2 , iteration:267
-THREAD n:1 , iteration:242
 THREAD n:2 , iteration:268
-THREAD n:1 , iteration:243
-THREAD n:1 , iteration:244
 THREAD n:2 , iteration:269
-THREAD n:1 , iteration:245
 THREAD n:2 , iteration:270
-THREAD n:1 , iteration:246
 THREAD n:2 , iteration:271
-THREAD n:1 , iteration:247
+*****I am the Graph Manager: the map I see is:{1245=[]}Exception in thread "Thread-127" 
+com.esotericsoftware.kryo.KryoException: Encountered unregistered class ID: 58
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readClass(DefaultClassResolver.java:137)
+	at com.esotericsoftware.kryo.Kryo.readClass(Kryo.java:693)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:804)
+	at com.acertaininventorymanager.utils.InventoryKryoSerializer.deserialize(InventoryKryoSerializer.java:70)
+	at com.acertaininventorymanager.utils.InventoryUtility.performHttpExchange(InventoryUtility.java:202)
+	at com.acertaininventorymanager.client.ClientHTTPProxy.processOrders(ClientHTTPProxy.java:112)
+	at com.acertaininventorymanager.tests.AtomicityTests$3.run(AtomicityTests.java:147)
 THREAD n:2 , iteration:272
-THREAD n:1 , iteration:248
 THREAD n:2 , iteration:273
 THREAD n:2 , iteration:274
-THREAD n:1 , iteration:249
 THREAD n:2 , iteration:275
-THREAD n:1 , iteration:250
 THREAD n:2 , iteration:276
-THREAD n:1 , iteration:251
 THREAD n:2 , iteration:277
-THREAD n:1 , iteration:252
 THREAD n:2 , iteration:278
 THREAD n:2 , iteration:279
 THREAD n:2 , iteration:280
@@ -584,43 +720,9 @@ THREAD n:2 , iteration:283
 THREAD n:2 , iteration:284
 THREAD n:2 , iteration:285
 THREAD n:2 , iteration:286
-THREAD n:1 , iteration:253
 THREAD n:2 , iteration:287
 THREAD n:2 , iteration:288
-THREAD n:1 , iteration:254
 THREAD n:2 , iteration:289
-THREAD n:1 , iteration:255
-THREAD n:1 , iteration:256
-THREAD n:1 , iteration:257
-THREAD n:1 , iteration:258
-THREAD n:1 , iteration:259
-THREAD n:1 , iteration:260
-THREAD n:1 , iteration:261
-THREAD n:1 , iteration:262
-THREAD n:1 , iteration:263
-THREAD n:1 , iteration:264
-THREAD n:1 , iteration:265
-THREAD n:1 , iteration:266
-THREAD n:1 , iteration:267
-THREAD n:1 , iteration:268
-THREAD n:1 , iteration:269
-THREAD n:1 , iteration:270
-THREAD n:1 , iteration:271
-THREAD n:1 , iteration:272
-THREAD n:1 , iteration:273
-THREAD n:1 , iteration:274
-THREAD n:1 , iteration:275
-THREAD n:1 , iteration:276
-THREAD n:1 , iteration:277
-THREAD n:1 , iteration:278
-THREAD n:1 , iteration:279
-THREAD n:1 , iteration:280
-THREAD n:1 , iteration:281
-THREAD n:1 , iteration:282
-THREAD n:1 , iteration:283
-THREAD n:1 , iteration:284
-THREAD n:1 , iteration:285
-THREAD n:1 , iteration:286
 THREAD n:2 , iteration:290
 THREAD n:2 , iteration:291
 THREAD n:2 , iteration:292
@@ -648,74 +750,29 @@ THREAD n:2 , iteration:313
 THREAD n:2 , iteration:314
 THREAD n:2 , iteration:315
 THREAD n:2 , iteration:316
-*****I am the Graph Manager: the map I see is:{}
 THREAD n:2 , iteration:317
 THREAD n:2 , iteration:318
 THREAD n:2 , iteration:319
-THREAD n:1 , iteration:287
 THREAD n:2 , iteration:320
+*****I am the Graph Manager: the map I see is:{1245=[]}
 THREAD n:2 , iteration:321
-THREAD n:1 , iteration:288
-THREAD n:1 , iteration:289
 THREAD n:2 , iteration:322
 THREAD n:2 , iteration:323
-THREAD n:1 , iteration:290
-THREAD n:1 , iteration:291
 THREAD n:2 , iteration:324
-THREAD n:1 , iteration:292
 THREAD n:2 , iteration:325
-THREAD n:1 , iteration:293
 THREAD n:2 , iteration:326
-THREAD n:1 , iteration:294
 THREAD n:2 , iteration:327
-THREAD n:1 , iteration:295
-THREAD n:1 , iteration:296
-THREAD n:1 , iteration:297
-THREAD n:1 , iteration:298
-THREAD n:1 , iteration:299
-THREAD n:1 , iteration:300
 THREAD n:2 , iteration:328
-THREAD n:1 , iteration:301
 THREAD n:2 , iteration:329
-THREAD n:1 , iteration:302
 THREAD n:2 , iteration:330
-THREAD n:1 , iteration:303
 THREAD n:2 , iteration:331
-THREAD n:1 , iteration:304
-THREAD n:1 , iteration:305
 THREAD n:2 , iteration:332
 THREAD n:2 , iteration:333
-THREAD n:1 , iteration:306
 THREAD n:2 , iteration:334
-THREAD n:1 , iteration:307
 THREAD n:2 , iteration:335
-THREAD n:1 , iteration:308
 THREAD n:2 , iteration:336
-THREAD n:1 , iteration:309
 THREAD n:2 , iteration:337
-THREAD n:1 , iteration:310
 THREAD n:2 , iteration:338
-THREAD n:1 , iteration:311
-THREAD n:1 , iteration:312
-THREAD n:1 , iteration:313
-THREAD n:1 , iteration:314
-THREAD n:1 , iteration:315
-THREAD n:1 , iteration:316
-THREAD n:1 , iteration:317
-THREAD n:1 , iteration:318
-THREAD n:1 , iteration:319
-THREAD n:1 , iteration:320
-THREAD n:1 , iteration:321
-THREAD n:1 , iteration:322
-THREAD n:1 , iteration:323
-THREAD n:1 , iteration:324
-THREAD n:1 , iteration:325
-THREAD n:1 , iteration:326
-THREAD n:1 , iteration:327
-THREAD n:1 , iteration:328
-THREAD n:1 , iteration:329
-THREAD n:1 , iteration:330
-THREAD n:1 , iteration:331
 THREAD n:2 , iteration:339
 THREAD n:2 , iteration:340
 THREAD n:2 , iteration:341
@@ -733,67 +790,28 @@ THREAD n:2 , iteration:352
 THREAD n:2 , iteration:353
 THREAD n:2 , iteration:354
 THREAD n:2 , iteration:355
-THREAD n:1 , iteration:332
 THREAD n:2 , iteration:356
 THREAD n:2 , iteration:357
-THREAD n:1 , iteration:333
-THREAD n:1 , iteration:334
 THREAD n:2 , iteration:358
-THREAD n:1 , iteration:335
 THREAD n:2 , iteration:359
-THREAD n:1 , iteration:336
 THREAD n:2 , iteration:360
-THREAD n:1 , iteration:337
 THREAD n:2 , iteration:361
 THREAD n:2 , iteration:362
 THREAD n:2 , iteration:363
-THREAD n:1 , iteration:338
 THREAD n:2 , iteration:364
-THREAD n:1 , iteration:339
 THREAD n:2 , iteration:365
-THREAD n:1 , iteration:340
-THREAD n:1 , iteration:341
 THREAD n:2 , iteration:366
 THREAD n:2 , iteration:367
-THREAD n:1 , iteration:342
-THREAD n:1 , iteration:343
 THREAD n:2 , iteration:368
 THREAD n:2 , iteration:369
-THREAD n:1 , iteration:344
-THREAD n:1 , iteration:345
 THREAD n:2 , iteration:370
 THREAD n:2 , iteration:371
 THREAD n:2 , iteration:372
-THREAD n:1 , iteration:346
+*****I am the Graph Manager: the map I see is:{1245=[]}
 THREAD n:2 , iteration:373
-THREAD n:1 , iteration:347
 THREAD n:2 , iteration:374
-THREAD n:1 , iteration:348
-THREAD n:1 , iteration:349
 THREAD n:2 , iteration:375
-THREAD n:1 , iteration:350
-THREAD n:1 , iteration:351
-*****I am the Graph Manager: the map I see is:{}
-THREAD n:1 , iteration:352
-THREAD n:1 , iteration:353
-THREAD n:1 , iteration:354
-THREAD n:1 , iteration:355
-THREAD n:1 , iteration:356
-THREAD n:1 , iteration:357
-THREAD n:1 , iteration:358
-THREAD n:1 , iteration:359
-THREAD n:1 , iteration:360
-THREAD n:1 , iteration:361
-THREAD n:1 , iteration:362
-THREAD n:1 , iteration:363
-THREAD n:1 , iteration:364
-THREAD n:1 , iteration:365
-THREAD n:1 , iteration:366
-THREAD n:1 , iteration:367
-THREAD n:1 , iteration:368
-THREAD n:1 , iteration:369
 THREAD n:2 , iteration:376
-THREAD n:1 , iteration:370
 THREAD n:2 , iteration:377
 THREAD n:2 , iteration:378
 THREAD n:2 , iteration:379
@@ -826,101 +844,35 @@ THREAD n:2 , iteration:405
 THREAD n:2 , iteration:406
 THREAD n:2 , iteration:407
 THREAD n:2 , iteration:408
-THREAD n:1 , iteration:371
-THREAD n:1 , iteration:372
-THREAD n:1 , iteration:373
-THREAD n:1 , iteration:374
-THREAD n:1 , iteration:375
-THREAD n:1 , iteration:376
-THREAD n:1 , iteration:377
-THREAD n:1 , iteration:378
-THREAD n:1 , iteration:379
-THREAD n:1 , iteration:380
-THREAD n:1 , iteration:381
-THREAD n:1 , iteration:382
-THREAD n:1 , iteration:383
-THREAD n:1 , iteration:384
-THREAD n:1 , iteration:385
-THREAD n:1 , iteration:386
-THREAD n:1 , iteration:387
 THREAD n:2 , iteration:409
-THREAD n:1 , iteration:388
 THREAD n:2 , iteration:410
-THREAD n:1 , iteration:389
 THREAD n:2 , iteration:411
 THREAD n:2 , iteration:412
-THREAD n:1 , iteration:390
-THREAD n:1 , iteration:391
-THREAD n:1 , iteration:392
-THREAD n:1 , iteration:393
-THREAD n:1 , iteration:394
-THREAD n:1 , iteration:395
-THREAD n:1 , iteration:396
-THREAD n:1 , iteration:397
-THREAD n:1 , iteration:398
-THREAD n:1 , iteration:399
-THREAD n:1 , iteration:400
-THREAD n:1 , iteration:401
-THREAD n:1 , iteration:402
-THREAD n:1 , iteration:403
-THREAD n:1 , iteration:404
-THREAD n:1 , iteration:405
-THREAD n:1 , iteration:406
-THREAD n:1 , iteration:407
-THREAD n:1 , iteration:408
-*****I am the Graph Manager: the map I see is:{}
 THREAD n:2 , iteration:413
 THREAD n:2 , iteration:414
 THREAD n:2 , iteration:415
-THREAD n:1 , iteration:409
-THREAD n:1 , iteration:410
-THREAD n:1 , iteration:411
-THREAD n:1 , iteration:412
-THREAD n:1 , iteration:413
-THREAD n:1 , iteration:414
-THREAD n:1 , iteration:415
-THREAD n:1 , iteration:416
-THREAD n:1 , iteration:417
-THREAD n:1 , iteration:418
-THREAD n:1 , iteration:419
-THREAD n:1 , iteration:420
 THREAD n:2 , iteration:416
-THREAD n:1 , iteration:421
 THREAD n:2 , iteration:417
-THREAD n:1 , iteration:422
 THREAD n:2 , iteration:418
-THREAD n:1 , iteration:423
 THREAD n:2 , iteration:419
-THREAD n:1 , iteration:424
 THREAD n:2 , iteration:420
-THREAD n:1 , iteration:425
 THREAD n:2 , iteration:421
-THREAD n:1 , iteration:426
 THREAD n:2 , iteration:422
 THREAD n:2 , iteration:423
-THREAD n:1 , iteration:427
 THREAD n:2 , iteration:424
 THREAD n:2 , iteration:425
 THREAD n:2 , iteration:426
 THREAD n:2 , iteration:427
-THREAD n:1 , iteration:428
-THREAD n:1 , iteration:429
 THREAD n:2 , iteration:428
-THREAD n:1 , iteration:430
 THREAD n:2 , iteration:429
-THREAD n:1 , iteration:431
 THREAD n:2 , iteration:430
 THREAD n:2 , iteration:431
-THREAD n:1 , iteration:432
-THREAD n:1 , iteration:433
+*****I am the Graph Manager: the map I see is:{1245=[]}
 THREAD n:2 , iteration:432
 THREAD n:2 , iteration:433
-THREAD n:1 , iteration:434
 THREAD n:2 , iteration:434
-THREAD n:1 , iteration:435
 THREAD n:2 , iteration:435
 THREAD n:2 , iteration:436
-THREAD n:1 , iteration:436
 THREAD n:2 , iteration:437
 THREAD n:2 , iteration:438
 THREAD n:2 , iteration:439
@@ -937,110 +889,47 @@ THREAD n:2 , iteration:449
 THREAD n:2 , iteration:450
 THREAD n:2 , iteration:451
 THREAD n:2 , iteration:452
-THREAD n:1 , iteration:437
-THREAD n:1 , iteration:438
-THREAD n:1 , iteration:439
-THREAD n:1 , iteration:440
-THREAD n:1 , iteration:441
-THREAD n:1 , iteration:442
-THREAD n:1 , iteration:443
-THREAD n:1 , iteration:444
-THREAD n:1 , iteration:445
-THREAD n:1 , iteration:446
-THREAD n:1 , iteration:447
-THREAD n:1 , iteration:448
-THREAD n:1 , iteration:449
-THREAD n:1 , iteration:450
-THREAD n:1 , iteration:451
-THREAD n:1 , iteration:452
-THREAD n:1 , iteration:453
-THREAD n:1 , iteration:454
-THREAD n:1 , iteration:455
-THREAD n:1 , iteration:456
-THREAD n:1 , iteration:457
-THREAD n:1 , iteration:458
-THREAD n:1 , iteration:459
 THREAD n:2 , iteration:453
-THREAD n:1 , iteration:460
-THREAD n:1 , iteration:461
 THREAD n:2 , iteration:454
-THREAD n:1 , iteration:462
 THREAD n:2 , iteration:455
-THREAD n:1 , iteration:463
 THREAD n:2 , iteration:456
-*****I am the Graph Manager: the map I see is:{}
 THREAD n:2 , iteration:457
-THREAD n:1 , iteration:464
 THREAD n:2 , iteration:458
 THREAD n:2 , iteration:459
-THREAD n:1 , iteration:465
 THREAD n:2 , iteration:460
 THREAD n:2 , iteration:461
-THREAD n:1 , iteration:466
 THREAD n:2 , iteration:462
-THREAD n:1 , iteration:467
 THREAD n:2 , iteration:463
-THREAD n:1 , iteration:468
 THREAD n:2 , iteration:464
-THREAD n:1 , iteration:469
 THREAD n:2 , iteration:465
-THREAD n:1 , iteration:470
-THREAD n:1 , iteration:471
 THREAD n:2 , iteration:466
 THREAD n:2 , iteration:467
-THREAD n:1 , iteration:472
-THREAD n:1 , iteration:473
 THREAD n:2 , iteration:468
 THREAD n:2 , iteration:469
 THREAD n:2 , iteration:470
-THREAD n:1 , iteration:474
 THREAD n:2 , iteration:471
-THREAD n:1 , iteration:475
 THREAD n:2 , iteration:472
-THREAD n:1 , iteration:476
-THREAD n:1 , iteration:477
-THREAD n:1 , iteration:478
-THREAD n:1 , iteration:479
 THREAD n:2 , iteration:473
 THREAD n:2 , iteration:474
-THREAD n:1 , iteration:480
 THREAD n:2 , iteration:475
-THREAD n:1 , iteration:481
-THREAD n:1 , iteration:482
 THREAD n:2 , iteration:476
-THREAD n:1 , iteration:483
 THREAD n:2 , iteration:477
 THREAD n:2 , iteration:478
-THREAD n:1 , iteration:484
 THREAD n:2 , iteration:479
-THREAD n:1 , iteration:485
-THREAD n:1 , iteration:486
 THREAD n:2 , iteration:480
-THREAD n:1 , iteration:487
 THREAD n:2 , iteration:481
-THREAD n:1 , iteration:488
 THREAD n:2 , iteration:482
-THREAD n:1 , iteration:489
 THREAD n:2 , iteration:483
-THREAD n:1 , iteration:490
 THREAD n:2 , iteration:484
 THREAD n:2 , iteration:485
-THREAD n:1 , iteration:491
-THREAD n:1 , iteration:492
 THREAD n:2 , iteration:486
-THREAD n:1 , iteration:493
 THREAD n:2 , iteration:487
+*****I am the Graph Manager: the map I see is:{1245=[]}
 THREAD n:2 , iteration:488
-THREAD n:1 , iteration:494
 THREAD n:2 , iteration:489
-THREAD n:1 , iteration:495
-THREAD n:1 , iteration:496
 THREAD n:2 , iteration:490
 THREAD n:2 , iteration:491
-THREAD n:1 , iteration:497
 THREAD n:2 , iteration:492
-THREAD n:1 , iteration:498
-THREAD n:1 , iteration:499
 THREAD n:2 , iteration:493
 THREAD n:2 , iteration:494
 THREAD n:2 , iteration:495
@@ -1048,3 +937,3655 @@ THREAD n:2 , iteration:496
 THREAD n:2 , iteration:497
 THREAD n:2 , iteration:498
 THREAD n:2 , iteration:499
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+*****I am the Graph Manager: the map I see is:{7356=[1245], 1245=[]}
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+
+Locks table:
+[Lock: ObjectID: 54 - status: WRITELOCK - Holders: [1245]]
+

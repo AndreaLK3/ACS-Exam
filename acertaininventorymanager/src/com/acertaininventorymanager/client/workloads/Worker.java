@@ -15,8 +15,13 @@ import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
 import com.acertaininventorymanager.business.Customer;
+import com.acertaininventorymanager.business.ItemPurchase;
 import com.acertaininventorymanager.client.ClientHTTPProxy;
 import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
+import com.acertaininventorymanager.utils.EmptyRegionException;
+import com.acertaininventorymanager.utils.InexistentCustomerException;
+import com.acertaininventorymanager.utils.InventoryManagerException;
+import com.acertaininventorymanager.utils.NonPositiveIntegerException;
 
 /**
  * 
@@ -29,12 +34,15 @@ public class Worker implements Callable<WorkerRunResult> {
     private int numSuccessfulFrequentBookStoreInteraction = 0;
     private int numTotalFrequentBookStoreInteraction = 0;
     
-	private ClientHTTPProxy ctm;	
+	private ClientHTTPProxy ctm;
+	private Set<Integer> customerIDs;
+	private Integer numOfRegions;
     
     // for now useless
     //private Comparator<StockBook> comparator;
     
-    public Worker(WorkloadConfiguration config, ClientHTTPProxy theCtm, Set<Integer> registeredCustomersIDs) {
+    public Worker(WorkloadConfiguration config, ClientHTTPProxy theCtm, Set<Integer> registeredCustomersIDs
+    				, Integer numOfRegions) {
     	configuration = config;
     	/*comparator = new Comparator<StockBook>() {
 			@Override
@@ -44,6 +52,8 @@ public class Worker implements Callable<WorkerRunResult> {
 			
 		};*/
 		ctm = theCtm; 
+		customerIDs = registeredCustomersIDs;
+		this.numOfRegions = numOfRegions;
     }
 
     /**
@@ -78,19 +88,25 @@ public class Worker implements Callable<WorkerRunResult> {
     }
 
 
-	private void runRegionsLookupInteraction() {
-		// TODO Auto-generated method stub
-		
+	private void runRegionsLookupInteraction() throws NonPositiveIntegerException, EmptyRegionException, InventoryManagerException {
+		Set<Integer> regionIDs = new HashSet<>();
+		for (Integer regId = 1; regId<= numOfRegions; regId++){
+			regionIDs.add(regId);
+		}
+		ctm.getTotalsForRegions(regionIDs);
 	}
 
-	private void runFrequentPurchaseInteraction() {
-		
-		
+	private void runFrequentPurchaseInteraction() throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
+		Set<ItemPurchase> ps = ElementsGenerator.createSetOfItemPurchases(customerIDs, configuration.getNumOfCustomersFrequent(),
+													configuration.getNumOfItemsFrequent());
+		ctm.processOrders(ps);		
 	}
 
-	private void runRarePurchaseInteraction() {
-		// TODO Auto-generated method stub
-		
+	private void runRarePurchaseInteraction() throws NonPositiveIntegerException, InexistentCustomerException, InventoryManagerException {
+		Set<ItemPurchase> ps = ElementsGenerator.createSetOfItemPurchases(customerIDs, 
+										configuration.getNumOfCustomersRare(),
+										configuration.getNumOfItemsRare());
+		ctm.processOrders(ps);		
 	}
 
 	/**

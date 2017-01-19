@@ -1,0 +1,23 @@
+2017-01-19 22:24:17.402:INFO::Thread-4: Logging initialized @1716ms
+2017-01-19 22:24:17.659:INFO:oejs.Server:Thread-1: jetty-9.3.14.v20161028
+2017-01-19 22:24:17.659:INFO:oejs.Server:Thread-5: jetty-9.3.14.v20161028
+2017-01-19 22:24:17.659:INFO:oejs.Server:Thread-2: jetty-9.3.14.v20161028
+2017-01-19 22:24:17.675:INFO:oejs.Server:Thread-4: jetty-9.3.14.v20161028
+2017-01-19 22:24:17.675:INFO:oejs.Server:Thread-3: jetty-9.3.14.v20161028
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+2017-01-19 22:24:18.478:INFO:oejs.AbstractConnector:Thread-4: Started ServerConnector@b06a697{HTTP/1.1,[http/1.1]}{0.0.0.0:8085}
+2017-01-19 22:24:18.478:INFO:oejs.AbstractConnector:Thread-1: Started ServerConnector@4965608f{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2017-01-19 22:24:18.478:INFO:oejs.Server:Thread-4: Started @2803ms
+2017-01-19 22:24:18.478:INFO:oejs.Server:Thread-1: Started @2803ms
+2017-01-19 22:24:18.478:INFO:oejs.AbstractConnector:Thread-3: Started ServerConnector@26b51718{HTTP/1.1,[http/1.1]}{0.0.0.0:8084}
+2017-01-19 22:24:18.487:INFO:oejs.Server:Thread-3: Started @2804ms
+2017-01-19 22:24:18.487:INFO:oejs.AbstractConnector:Thread-2: Started ServerConnector@43077e5d{HTTP/1.1,[http/1.1]}{0.0.0.0:8083}
+2017-01-19 22:24:18.488:INFO:oejs.Server:Thread-2: Started @2805ms
+2017-01-19 22:24:18.489:INFO:oejs.AbstractConnector:Thread-5: Started ServerConnector@3fa45c66{HTTP/1.1,[http/1.1]}{0.0.0.0:8086}
+2017-01-19 22:24:18.489:INFO:oejs.Server:Thread-5: Started @2818ms
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
+*****I am the Graph Manager: the map I see is:{}
