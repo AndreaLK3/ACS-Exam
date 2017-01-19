@@ -3,6 +3,7 @@ package com.acertaininventorymanager.tests;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -32,6 +33,8 @@ public class AtomicityIDMtests {
 	public final static int NUM_OF_IDM=5;
 	public final static int RANDOMINT_BOUND = 1000;
 	public final static int ITERATIONS = 1000;
+	public final static int NUM_OF_CUSTOMERS = 20;
+	public final static Set<Integer> REGIONS = new HashSet<Integer>(Arrays.asList(1, 2, 3));
 	
 	private static ItemDataHandler theIdm;
 	private static Set<Customer> customers;
@@ -51,7 +54,7 @@ public class AtomicityIDMtests {
 	@Before
 	public void setUp() throws Exception {
 
-		customers = RPCtests.createSetOfCustomers();
+		customers = RPCtests.createSetOfCustomers(NUM_OF_CUSTOMERS, REGIONS);
 
 		Set<ItemPurchase> randomPurchases = RPCtests.createSetOfItemPurchases(customers);
 		

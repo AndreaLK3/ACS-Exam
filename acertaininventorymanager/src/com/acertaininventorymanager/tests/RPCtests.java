@@ -99,12 +99,12 @@ public class RPCtests {
 	@Before
 	public void setUp() throws Exception {
 		if (localTest == true){
-			customers = createSetOfCustomers();
+			customers = createSetOfCustomers(NUM_OF_CUSTOMERS, REGIONS);
 			ctm = new CustomerTransactionsHandler(NUM_OF_IDM, customers);
 		}
 		else {
 			client.removeAllCustomers();
-			customers = createSetOfCustomers();
+			customers = createSetOfCustomers(NUM_OF_CUSTOMERS, REGIONS);
 			client.addCustomers(customers);
 		}
 		Set<ItemPurchase> purchases = createSetOfItemPurchases(customers);
@@ -112,13 +112,15 @@ public class RPCtests {
 	}
 
 	/**Helper function: creates a set of customers, with cID in [0,999] and 
-	 * belonging to one region chosen at random.*/
-	public static Set<Customer> createSetOfCustomers(){
+	 * belonging to one region chosen at random.
+	 * @param numOfCustomers 
+	 * @param regions */
+	public static Set<Customer> createSetOfCustomers(int numOfCustomers, Set<Integer> regions){
 		Set<Customer> setOfCustomers = new HashSet<>();
 		
-		for (int i=1; i<=NUM_OF_CUSTOMERS; i++){
+		for (int i=1; i<=numOfCustomers; i++){
 			int cId = randGen.nextInt(1000)+1;
-			int cReg = randGen.nextInt(REGIONS.size())+1;
+			int cReg = randGen.nextInt(regions.size())+1;
 			Customer c = new Customer(cId, cReg);
 			setOfCustomers.add(c);
 		}

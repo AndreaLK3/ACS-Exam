@@ -2,7 +2,11 @@ package com.acertaininventorymanager.tests;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import javax.naming.InitialContext;
@@ -14,6 +18,7 @@ import org.junit.Test;
 
 import com.acertaininventorymanager.business.Customer;
 import com.acertaininventorymanager.business.ItemPurchase;
+import com.acertaininventorymanager.business.RegionTotal;
 import com.acertaininventorymanager.client.ClientHTTPProxy;
 import com.acertaininventorymanager.client.InvManagerClientConstants;
 import com.acertaininventorymanager.interfaces.CustomerTransactionManager;
@@ -24,15 +29,19 @@ import com.acertaininventorymanager.utils.InventoryManagerException;
 
 public class AtomicityTests {
 
+	public final static Random randGen = new Random();
 	public final static int NUM_OF_IDM=5;
-	public final static int RANDOMINT_BOUND = 1000;
+	public final static int RANDOMINT_BOUND = 10000;
+	public final static int NUM_OF_CUSTOMERS = 20;
+	public final static Set<Integer> REGIONS = new HashSet<Integer>(Arrays.asList(1, 2, 3));
 	public final static int ITERATIONS = 100;
 	
 	private static ClientHTTPProxy client;
 	private static CustomerTransactionManager ctm;
 	private static Set<Customer> customers;
 	private static int[] itemIds = {2026,2027,2028,2029};
-	private static Set<ItemPurchase> fixedPurchases;
+	private static int fixedUnitPrice = 15, fixedQuantity = 7;
+	private static Set<ItemPurchase> fixedPurchases1, fixedPurchases2;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -51,66 +60,89 @@ public class AtomicityTests {
 		    }
 		}.start();
 		////////// 
-		//////////Start the IDM Servers (and register the threads)/////////
-		for (int i=1; i<=NUM_OF_IDM; i++){
-			int portNumber = InvManagerClientConstants.DEFAULT_PORT + i;
-	       	String portNumberS = String.valueOf(portNumber);
-			Thread t = new Thread() {
-			    public void run() {
-			        try {
-			        	String[] args = {portNumberS};
-						IdmHTTPServer.main(args);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-			    }
-			};
-			t.start();
+		//////////Start the IDM Servers /////////
+			for (int i=1; i<=NUM_OF_IDM; i++){
+				int portNumber = InvManagerClientConstants.DEFAULT_PORT + i;
+	        	String portNumberS = String.valueOf(portNumber);
+				new Thread() {
+				    public void run() {
+				        try {
+				        	String[] args = {portNumberS};
+							IdmHTTPServer.main(args);
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+				    }
+				}.start();
 		}
 		///////// 
+		customers = RPCtests.createSetOfCustomers(NUM_OF_CUSTOMERS, REGIONS);
+		client.addCustomers(customers);
 		initializePurchasesForConcurrentAddRemoval();
 
 	}
 
-	/**Helper function*/
+	/**Helper function.
+	 * The sets of purchases '1' and '2' have a fixed quantity and unit price for the given itemids.*/
 	private static void initializePurchasesForConcurrentAddRemoval(){
-
+		fixedPurchases1 = new HashSet<>();
+		fixedPurchases2 = new HashSet<>();
 		for (int itemId : itemIds){
-			int orderId = itemId*2;
-			int customerId = itemId*3;
-			int quantity = RPCtests.randGen.nextInt(RANDOMINT_BOUND)+1;
-			int unitPrice = RPCtests.randGen.nextInt(RANDOMINT_BOUND)+1;
-			fixedPurchases.add(new ItemPurchase(orderId, customerId, itemId, quantity, unitPrice));
+			int orderId = RPCtests.randGen.nextInt(RANDOMINT_BOUND)+1;
+			Customer[] theCustomers = customers.toArray(new Customer[0]);
+			int customerId =  theCustomers[randGen.nextInt(theCustomers.length)].getCustomerId();
+			int quantity = fixedQuantity;
+			int unitPrice = fixedUnitPrice;
+			fixedPurchases1.add(new ItemPurchase(orderId, customerId, itemId, quantity, unitPrice));
+		}
+		for (int itemId : itemIds){
+			int orderId = RPCtests.randGen.nextInt(RANDOMINT_BOUND)+1;
+			Customer[] theCustomers = customers.toArray(new Customer[0]);
+			int customerId =  theCustomers[randGen.nextInt(theCustomers.length)].getCustomerId();
+			int quantity = fixedQuantity;
+			int unitPrice = fixedUnitPrice;
+			fixedPurchases2.add(new ItemPurchase(orderId, customerId, itemId, quantity, unitPrice));
+
 		}
 	}
 
-	/**Initialization before every test: create a random set of customers, 
-	 * create a random set of purchases, and process the orders in the system.
-	 * Then, add the fixed purchases a number of times >= the number of thread iterations.*/
+	/**Initialization before every test: Add the fixed purchases a number of times >= the number of thread iterations.*/
 	@Before
 	public void setUp() throws Exception {
-		client.removeAllCustomers();
-		customers = RPCtests.createSetOfCustomers();
-		client.addCustomers(customers);
-		Set<ItemPurchase> randomPurchases = RPCtests.createSetOfItemPurchases(customers);
-		client.processOrders(randomPurchases);
-		
+
 		for (int i=0; i<ITERATIONS; i++){
-			client.processOrders(fixedPurchases);
+			client.processOrders(fixedPurchases1);
+			client.processOrders(fixedPurchases2);
 		}
+		return;
 	}
 
 
 	/**In this test: 
-	 * Thread1 adds a number */
+	 * Thread1 and Thread2 add concurrently the sets of fixed purchases '1' and '2'.
+	 * The total value bought across all regions will be either == (the sumValue of all the items that were bought), 
+	 * or == sumValue - integer*transactionValue.
+	 * (Taking into account that some transactions may need to be rolled back due to deadlocks,
+	 * the total will not be necessarily equal to the sum of all the prices*quantity).
+	 * */
 	@Test
-	public void testConcurrentAddRemove() {
+	public void testConcurrentAdd1Add2() {
 
-		Thread adder = new Thread(){
+		List<RegionTotal> oldRegionTotals = new ArrayList<>();
+		long oldSum=0, newSum=0;
+		try {
+			oldRegionTotals = ctm.getTotalsForRegions(REGIONS);
+			oldSum = getTotalOfRegionTotals(oldRegionTotals);
+		} catch (InventoryManagerException e) {
+			e.printStackTrace();
+			fail();
+		}
+		
+		Thread adder1 = new Thread(){
 			public void run() {
 			for (int i=0; i<ITERATIONS; i++){
 				try {
-					client.processOrders(fixedPurchases);
+					client.processOrders(fixedPurchases1);
 				} catch (InventoryManagerException e) {
 					e.printStackTrace();
 				}
@@ -120,11 +152,11 @@ public class AtomicityTests {
 		};
 		
 		
-		Thread remover = new Thread(){
+		Thread adder2 = new Thread(){
 			public void run() {
 				for (int i=0; i<ITERATIONS; i++){
 					try {
-						client.removeOrders(fixedPurchases);
+						client.processOrders(fixedPurchases2);
 					} catch (InventoryManagerException e) {
 						e.printStackTrace();
 					}
@@ -132,6 +164,39 @@ public class AtomicityTests {
 			}
 		};
 		
+		
+		adder1.start();
+		adder2.start();
+		
+		try {
+			adder1.join();
+			adder2.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		List<RegionTotal> newRegionTotals = new ArrayList<>();
+		try {
+			newRegionTotals = ctm.getTotalsForRegions(REGIONS);
+			newSum = getTotalOfRegionTotals(newRegionTotals);
+		} catch (InventoryManagerException e) {
+			e.printStackTrace();
+			fail();
+		}
+				
+		int dueDifference = itemIds.length * fixedQuantity * fixedUnitPrice * ITERATIONS * 2;
+		
+		assertTrue ( (newSum - oldSum) % dueDifference == 0 );
+			
+	}
+	
+	
+	private long getTotalOfRegionTotals(List<RegionTotal> regionTotals){
+		long sum=0;
+		for (RegionTotal regTot : regionTotals){
+			sum = sum + regTot.getTotalValueBought();
+		}
+		return sum;
 	}
 
 }

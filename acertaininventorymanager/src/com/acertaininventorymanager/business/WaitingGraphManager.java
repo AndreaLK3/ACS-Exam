@@ -109,7 +109,7 @@ public class WaitingGraphManager {
 		
 		graphSize--;
 
-		List<Integer> adjNodes = new ArrayList<Integer>(graph.get(currentStart));
+		List<Integer> adjNodes = graph.get(currentStart);
 		if (adjNodes == null){
 			return reachableNodes;
 		}
